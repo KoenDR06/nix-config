@@ -1,5 +1,3 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
   inputs,
   outputs,
@@ -8,7 +6,6 @@
   pkgs,
   ...
 }: {
-  # You can import other home-manager modules here
   imports = [
     ./gnome.nix
   ];
@@ -51,17 +48,18 @@
   # Enable programs
   home.packages = with pkgs; [
     # Unbuilt
-    
 
     bitwarden
     discord
     jetbrains-toolbox
+    gnomeExtensions.just-perfection
+    htop
     parsec-bin
+    platformio-core
     spotify
     tailscale
+    whatsapp-for-linux
     zoxide
-    zsh
-
   ];
 
   programs.home-manager.enable = true;
@@ -72,7 +70,16 @@
   };
   programs.firefox.enable = true;
   programs.gh.enable = true;
-
+  programs.zsh = {
+    shellAliases = {
+      update = "sudo nixos-rebuild switch --flake .#laptop-koen";
+    };
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "agnoster";
+    };
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
