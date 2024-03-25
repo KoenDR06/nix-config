@@ -47,13 +47,15 @@
   
   # Enable programs
   home.packages = with pkgs; [
-    # Unbuilt
-
     bitwarden
     discord
+    jetbrains.jdk 
     jetbrains-toolbox
+    gimp
+    gnome.gnome-tweaks
     gnomeExtensions.just-perfection
     htop
+    inkscape
     parsec-bin
     platformio-core
     spotify
