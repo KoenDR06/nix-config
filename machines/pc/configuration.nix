@@ -136,6 +136,23 @@
   services.xserver.displayManager.gdm.enable = true;
   boot.loader.systemd-boot.enable = true;  
 
+  systemd.timers."update-config" = {
+    wantedBy = [ "timers.target" ];
+    timerConfig = {
+      OnBootSec = "1m";
+      Unit = "update-config.service";
+    };
+  };
+
+  systemd.services."update-config" = {
+    script = ''
+    '';
+    serviceConfig = {
+      Type = "oneshot";
+      User = "root";
+    };
+  };
+
 
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
