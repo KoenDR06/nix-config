@@ -75,6 +75,7 @@
       
     "org/gnome/settings-daemon/plugins/power" = {
       power-button-action = "nothing";
+      sleep-inactive-ac-type = "nothing";
     };
     
     "org/gnome/mutter" = {
