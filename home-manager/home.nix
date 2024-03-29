@@ -56,6 +56,7 @@
     gnomeExtensions.just-perfection
     htop
     inkscape
+    libreoffice
     parsec-bin
     platformio-core
     spotify
