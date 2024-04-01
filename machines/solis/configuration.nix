@@ -15,7 +15,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
     users = {
-      horseman = import ../../home-manager/home.nix;
+      horseman = import ../../home-manager/server-apps.nix;
     };
   };
 
@@ -47,7 +47,12 @@
   };
 
   networking.hostName = "solis";
-  boot.loader.systemd-boot.enable = true;  
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sda";
+  boot.loader.grub.useOSProber = true;
+
+  virtualisation.docker.enable = true;
+  services.tailscale.enable = true;
 
   users.users = {
     horseman = {

@@ -28,7 +28,7 @@
   # Enable programs
   home.packages = with pkgs; [
     htop
-    zoxide
+    tailscale
   ];
 
   programs.home-manager.enable = true;
