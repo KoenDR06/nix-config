@@ -62,8 +62,13 @@
       luna = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          # > Our main nixos configuration file <
-          ./nixos/configuration.nix
+          ./machines/luna/configuration.nix
+        ];
+      };
+      terra = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          ./machines/terra/configuration.nix
         ];
       };
     };

@@ -8,23 +8,23 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4c50d5fb-2734-4acf-9aa9-daa4dbd8c982";
+    { device = "/dev/disk/by-uuid/5b1cef65-3c1b-4c46-b117-20271902390f";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/7FE8-93C8";
+    { device = "/dev/disk/by-uuid/0433-B98A";
       fsType = "vfat";
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/1a5004e0-dfcb-4986-aa3d-e2cc9e81f70b"; }
+    [ { device = "/dev/disk/by-uuid/6fbb72cf-415f-48f8-a850-5d91f6e7dae7"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -36,6 +36,5 @@
   # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
