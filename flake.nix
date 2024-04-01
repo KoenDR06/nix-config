@@ -1,4 +1,4 @@
-{
+r{
   description = "Your new nix config";
 
   inputs = {
@@ -69,6 +69,12 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./machines/terra/configuration.nix
+        ];
+      };
+      solis = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          ./machines/solis/configuration.nix
         ];
       };
     };

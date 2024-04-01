@@ -52,15 +52,12 @@
   programs.home-manager.enable = true;
   programs.git = {
     enable = true;
-    userName = "KoenDR06"; userEmail = 
-    "koen.de.ruiter@hotmail.com";
+    userName = "KoenDR06";
+    userEmail = "koen.de.ruiter@hotmail.com";
   };
   programs.firefox.enable = true;
   programs.gh.enable = true;
   programs.zsh = {
-    shellAliases = {
-      update = "sudo nixos-rebuild switch --flake .#laptop-koen";
-    };
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" ];
