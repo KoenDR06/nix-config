@@ -111,6 +111,8 @@
       panel-run-dialog = ["<Alt>F2"];
       switch-to-workspace-left = ["<Control><Super>Left"];
       switch-to-workspace-right = ["<Control><Super>Right"];
+      switch-applications = "@as []";
+      switch-applications-backward = "@as []";
     };
     
     "org/gnome/settings-daemon/plugins/media-keys" = {
