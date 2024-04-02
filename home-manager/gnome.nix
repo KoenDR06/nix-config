@@ -50,6 +50,7 @@
         "window-list@gnome-shell-extensions.gcampax.github.com"
         "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
       ];
+      disable-user-extensions = false;
     };
         
     "org/gnome/shell/extensions/just-perfection" = {
@@ -103,6 +104,8 @@
     };
     
     "org/gnome/desktop/wm/keybindings" = {
+      switch-applications = "@as []";
+      switch-applications-backward = "@as []";
       switch-windows = ["<Alt>Tab"];
       switch-windows-backward = ["<Shift><Alt>Tab"];
       minimize = ["<Super>Down"];
@@ -111,8 +114,6 @@
       panel-run-dialog = ["<Alt>F2"];
       switch-to-workspace-left = ["<Control><Super>Left"];
       switch-to-workspace-right = ["<Control><Super>Right"];
-      switch-applications = "@as []";
-      switch-applications-backward = "@as []";
     };
     
     "org/gnome/settings-daemon/plugins/media-keys" = {

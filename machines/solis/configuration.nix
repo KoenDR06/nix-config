@@ -51,6 +51,8 @@
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
 
+  environment.shells = with pkgs; [ zsh ];
+
   virtualisation.docker.enable = true;
   services.tailscale.enable = true;
 

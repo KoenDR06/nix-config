@@ -46,6 +46,7 @@
     spotify
     tailscale
     whatsapp-for-linux
+    zsh
     zoxide
   ];
 
@@ -55,15 +56,16 @@
     userName = "KoenDR06";
     userEmail = "koen.de.ruiter@hotmail.com";
   };
-  programs.firefox.enable = true;
+
   programs.gh.enable = true;
-  programs.zsh = {
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" ];
-      theme = "agnoster";
-    };
-  };
+#  programs.zsh = {
+#    enable = true;
+#    oh-my-zsh = {
+#      enable = true;
+#      plugins = [ "git" ];
+#      theme = "agnoster";
+#    };
+#  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
