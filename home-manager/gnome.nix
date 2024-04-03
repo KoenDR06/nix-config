@@ -104,8 +104,8 @@
     };
     
     "org/gnome/desktop/wm/keybindings" = {
-      switch-applications = "@as []";
-      switch-applications-backward = "@as []";
+      switch-applications = "disabled";
+      switch-applications-backward = "disabled";
       switch-windows = ["<Alt>Tab"];
       switch-windows-backward = ["<Shift><Alt>Tab"];
       minimize = ["<Super>Down"];
@@ -128,7 +128,7 @@
     };
     
     "org/gnome/mutter/wayland/keybindings" = {
-      restore-shortcuts = "@as []";
+      restore-shortcuts = "disabled";
     };
   };
 }
