@@ -41,8 +41,10 @@
     htop
     inkscape
     libreoffice
+    mullvad-vpn
     parsec-bin
     platformio-core
+    qbittorrent
     spotify
     tailscale
     whatsapp-for-linux
