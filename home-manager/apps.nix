@@ -41,7 +41,6 @@
     htop
     inkscape
     libreoffice
-    mullvad
     mullvad-vpn
     parsec-bin
     platformio-core

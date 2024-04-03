@@ -28,6 +28,8 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  # End NVIDIA
+
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
@@ -71,6 +73,16 @@
   boot.loader.systemd-boot.enable = true;  
 
   environment.shells = with pkgs; [ zsh ];
+
+  services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.package = pkgs.mullvad-vpn;
+  networking.nameservers = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+  services.resolved = {
+    enable = true;
+    dnssec = "true";
+    domains = [ "~." ];
+    fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+  };
 
   users.users = {
     horseman = {
