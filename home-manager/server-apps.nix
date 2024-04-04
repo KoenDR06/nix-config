@@ -29,6 +29,7 @@
   home.packages = with pkgs; [
     htop
     tailscale
+    wakeonlan
   ];
 
   programs.home-manager.enable = true;
