@@ -28,7 +28,7 @@
   # Enable programs
   home.packages = with pkgs; [
     htop
-    python
+    python3
     tailscale
     wakeonlan
   ];
