@@ -35,7 +35,7 @@
     jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
-    jetbrains.jdk 
+    jdk 
     gimp
     gnome.gnome-tweaks
     gnomeExtensions.just-perfection
