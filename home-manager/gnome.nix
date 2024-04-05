@@ -7,7 +7,6 @@
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
       show-battery-percentage = true;
-      locate-pointer = true;
     };
     
     "org/gnome/desktop/search-providers" = {
