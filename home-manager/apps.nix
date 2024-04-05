@@ -29,6 +29,7 @@
   
   # Enable programs
   home.packages = with pkgs; [
+    
     bitwarden
     discord
     jetbrains.clion
@@ -46,6 +47,7 @@
     python3
     platformio-core
     qbittorrent
+    retext
     spotify
     whatsapp-for-linux
     zsh
