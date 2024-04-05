@@ -55,6 +55,8 @@
 
   environment.shells = with pkgs; [ zsh ];
 
+  services.tailscale.enable = true;
+
   users.users = {
     horseman = {
       initialPassword = "1234";

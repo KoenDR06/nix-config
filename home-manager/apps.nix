@@ -46,7 +46,6 @@
     platformio-core
     qbittorrent
     spotify
-    tailscale
     whatsapp-for-linux
     zsh
     zoxide
