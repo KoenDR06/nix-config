@@ -27,6 +27,7 @@
   
   # Enable programs
   home.packages = with pkgs; [
+    docker-compose
     htop
     python3
     tailscale
