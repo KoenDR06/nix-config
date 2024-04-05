@@ -43,6 +43,7 @@
     libreoffice
     mullvad-vpn
     parsec-bin
+    python3
     platformio-core
     qbittorrent
     spotify
