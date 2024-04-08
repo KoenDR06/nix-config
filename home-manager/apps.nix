@@ -29,12 +29,13 @@
   
   # Enable programs
   home.packages = with pkgs; [
+    
     bitwarden
     discord
     jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
-    jetbrains.jdk 
+    jdk 
     gimp
     gnome.gnome-tweaks
     gnomeExtensions.just-perfection
@@ -46,6 +47,7 @@
     python3
     platformio-core
     qbittorrent
+    retext
     spotify
     whatsapp-for-linux
     zsh

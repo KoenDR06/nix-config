@@ -73,6 +73,8 @@
   services.xserver.displayManager.gdm.enable = true;
   boot.loader.systemd-boot.enable = true;  
 
+  services.tailscale.enable = true;
+
   environment.shells = with pkgs; [ zsh ];
 
   services.mullvad-vpn.enable = true;

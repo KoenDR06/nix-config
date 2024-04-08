@@ -27,8 +27,9 @@
   
   # Enable programs
   home.packages = with pkgs; [
+    docker-compose
     htop
-    python
+    python3
     tailscale
     wakeonlan
   ];
