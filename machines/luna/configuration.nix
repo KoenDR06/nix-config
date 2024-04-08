@@ -10,6 +10,7 @@
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix
     ../../pkgs/firefox.nix
+    ../../pkgs/zsh.nix
   ];
 
   home-manager = {
@@ -53,8 +54,6 @@
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   boot.loader.systemd-boot.enable = true;  
-
-  environment.shells = with pkgs; [ zsh ];
 
   services.tailscale.enable = true;
 

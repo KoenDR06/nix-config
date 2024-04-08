@@ -11,6 +11,7 @@
     ./hardware-configuration.nix
     ./refind.nix
     ../../pkgs/firefox.nix
+    ../../pkgs/zsh.nix
   ];
 
   # NVIDIA Drivers

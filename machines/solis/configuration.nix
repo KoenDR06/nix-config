@@ -9,6 +9,7 @@
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix
+    ../../pkgs/zsh.nix
   ];
 
 
