@@ -118,6 +118,9 @@
     "org/gnome/settings-daemon/plugins/media-keys" = {
       screensaver = ["<Super>l"];
       home = ["<Super>e"];
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+      ];
     };
     
     "org/gnome/shell/keybindings" = {

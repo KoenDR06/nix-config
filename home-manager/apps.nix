@@ -30,8 +30,10 @@
   # Enable programs
   home.packages = with pkgs; [
     
+    acpid
     bitwarden
     discord
+    fzf
     jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
@@ -43,6 +45,7 @@
     inkscape
     libreoffice
     mullvad-vpn
+    neofetch
     parsec-bin
     python3
     platformio-core

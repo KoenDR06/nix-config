@@ -20,5 +20,7 @@
       plugins = ["git"];
       theme = "robbyrussell";
     };
+
+    shellInit = "eval \"$(zoxide init zsh --cmd cd)\"";
   };
 }

@@ -56,6 +56,7 @@
   boot.loader.systemd-boot.enable = true;  
 
   services.tailscale.enable = true;
+  services.acpid.enable = true;
 
   users.users = {
     horseman = {
