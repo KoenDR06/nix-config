@@ -66,6 +66,7 @@
   };
 
   networking.hostName = "terra";
+  time.timeZone = "Europe/Amsterdam";
 
   services.xserver.enable = true;
   services.xserver.desktopManager.gnome.enable = true;

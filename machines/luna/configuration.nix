@@ -47,6 +47,7 @@
   };
 
   networking.hostName = "luna";
+  time.timeZone = "Europe/Amsterdam";
 
   services.xserver.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
