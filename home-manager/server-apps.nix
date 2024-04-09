@@ -33,6 +33,7 @@
     python3
     tailscale
     wakeonlan
+    zoxide
   ];
 
   programs.home-manager.enable = true;
