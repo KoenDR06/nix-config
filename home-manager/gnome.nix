@@ -103,8 +103,8 @@
     };
     
     "org/gnome/desktop/wm/keybindings" = {
-      switch-applications = "disabled";
-      switch-applications-backward = "disabled";
+      switch-applications = ["<Control><Super><Alt>Z"];
+      switch-applications-backward = ["<Control><Super><Alt><Shift>Z"];
       switch-windows = ["<Alt>Tab"];
       switch-windows-backward = ["<Shift><Alt>Tab"];
       minimize = ["<Super>Down"];
