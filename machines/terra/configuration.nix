@@ -75,6 +75,7 @@
   boot.loader.systemd-boot.enable = true;  
 
   services.tailscale.enable = true;
+  virtualisation.docker.enable = true;
 
   environment.shells = with pkgs; [ zsh ];
 

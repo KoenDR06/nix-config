@@ -33,6 +33,7 @@
     acpid
     bitwarden
     discord
+    docker-compose
     fzf
     jetbrains.clion
     jetbrains.pycharm-professional
