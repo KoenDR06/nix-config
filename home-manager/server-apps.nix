@@ -29,6 +29,7 @@
   home.packages = with pkgs; [
     docker-compose
     htop
+    jdk
     python3
     tailscale
     wakeonlan
