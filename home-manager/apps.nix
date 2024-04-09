@@ -47,8 +47,13 @@
     mullvad-vpn
     neofetch
     parsec-bin
-    python3
     platformio-core
+    python3
+    python311Packages.joblib
+    python311Packages.numpy
+    python311Packages.scikit-learn
+    python311Packages.scipy
+    python311Packages.threadpoolctl
     qbittorrent
     retext
     spotify
