@@ -38,7 +38,6 @@
     jetbrains.clion
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
-    jetbrains.rust-rover
     jdk 
     gimp
     gnome.gnome-tweaks
