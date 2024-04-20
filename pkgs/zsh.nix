@@ -13,6 +13,7 @@
 
     shellAliases = {
       update = "sudo nixos-rebuild switch --flake";
+      compose = "sudo docker compose";
     };
 
     ohMyZsh = {
