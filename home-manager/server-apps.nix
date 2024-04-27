@@ -32,6 +32,7 @@
     jdk
     python3
     tailscale
+    tmux
     wakeonlan
     zoxide
   ];
@@ -43,13 +44,6 @@
     userEmail = "koen.de.ruiter@hotmail.com";
   };
   programs.gh.enable = true;
-  programs.zsh = {
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" ];
-      theme = "agnoster";
-    };
-  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

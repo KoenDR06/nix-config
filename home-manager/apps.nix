@@ -71,14 +71,6 @@
   };
 
   programs.gh.enable = true;
-#  programs.zsh = {
-#    enable = true;
-#    oh-my-zsh = {
-#      enable = true;
-#      plugins = [ "git" ];
-#      theme = "agnoster";
-#    };
-#  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
