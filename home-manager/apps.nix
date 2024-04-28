@@ -6,9 +6,7 @@
   pkgs,
   ...
 }: {
-  imports = [
-    ./gnome.nix
-  ];
+  imports = [];
 
   nixpkgs = {
     overlays = [
