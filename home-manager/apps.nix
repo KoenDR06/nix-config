@@ -30,7 +30,6 @@
   # Enable programs
   home.packages = with pkgs; [
     
-    acpid
     bitwarden
     discord
     docker-compose
