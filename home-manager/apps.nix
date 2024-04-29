@@ -44,6 +44,7 @@
     neofetch
     parsec-bin
     platformio-core
+    pulseaudio
     python3
     python311Packages.joblib
     python311Packages.numpy
