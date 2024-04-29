@@ -37,8 +37,6 @@
     jetbrains.pycharm-professional
     jdk 
     gimp
-    gnome.gnome-tweaks
-    gnomeExtensions.just-perfection
     htop
     inkscape
     libreoffice
