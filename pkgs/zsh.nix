@@ -14,6 +14,7 @@
     shellAliases = {
       update = "sudo nixos-rebuild switch --flake";
       compose = "sudo docker compose";
+      wolpc = "wakeonlan D8:5E:D3:A8:B1:0";
     };
 
     ohMyZsh = {
