@@ -70,8 +70,8 @@
   time.timeZone = "Europe/Amsterdam";
 
   services.xserver.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   boot.loader.systemd-boot.enable = true;  
 
   services.tailscale.enable = true;
