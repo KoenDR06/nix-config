@@ -53,6 +53,7 @@
     python311Packages.threadpoolctl
     qbittorrent
     retext
+    solaar
     spotify
     whatsapp-for-linux
     zsh

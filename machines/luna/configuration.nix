@@ -65,7 +65,10 @@
       initialPassword = "1234";
       isNormalUser = true;
       openssh.authorizedKeys.keys = [];
-      extraGroups = ["wheel"];
+      extraGroups = [
+                     "wheel"
+                     "networkmanager"
+                    ];
     };
   };
 
