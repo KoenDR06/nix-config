@@ -77,6 +77,8 @@
   services.tailscale.enable = true;
   virtualisation.docker.enable = true;
 
+  hardware.pulseaudio.enable = true;
+
   environment.shells = with pkgs; [ zsh ];
 
   services.mullvad-vpn.enable = true;

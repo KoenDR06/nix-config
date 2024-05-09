@@ -55,6 +55,8 @@
   services.xserver.displayManager.sddm.enable = true;
   boot.loader.systemd-boot.enable = true;  
 
+  hardware.pulseaudio.enable = true;
+
   services.tailscale.enable = true;
   services.acpid.enable = true;
 
