@@ -72,6 +72,7 @@
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.autoNumlock = true;
   boot.loader.systemd-boot.enable = true;  
 
   services.tailscale.enable = true;
