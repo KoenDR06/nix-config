@@ -11,6 +11,8 @@
     enableCompletion = true;
     autosuggestions.enable = true;
 
+    history.size = 10000;
+
     shellAliases = {
       update = "sudo nixos-rebuild switch --flake";
       compose = "sudo docker compose";
