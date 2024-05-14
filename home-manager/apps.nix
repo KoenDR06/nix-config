@@ -35,10 +35,11 @@
     jetbrains.clion
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
-    jdk 
+    jdk
     gimp
     htop
     inkscape
+    inotify-tools
     libreoffice
     mullvad-vpn
     neofetch
@@ -54,6 +55,7 @@
     retext
     solaar
     spotify
+    thunderbird
     whatsapp-for-linux
     zsh
     zoxide
