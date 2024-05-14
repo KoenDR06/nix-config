@@ -37,6 +37,7 @@
     jetbrains.pycharm-professional
     jdk
     gimp
+    gnupg
     htop
     inkscape
     inotify-tools
