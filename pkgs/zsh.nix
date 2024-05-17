@@ -22,8 +22,7 @@
         "git"
         "zsh-interactive-cd"
         "python"
-        "marked2"
-        "git auto-fetch"
+        "git-auto-fetch"
       ];
       theme = "agnoster";
     };
