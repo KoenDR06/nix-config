@@ -53,6 +53,7 @@
     python311Packages.scipy
     python311Packages.threadpoolctl
     qbittorrent
+    reaper
     retext
     solaar
     spotify
