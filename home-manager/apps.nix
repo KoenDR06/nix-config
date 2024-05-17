@@ -56,6 +56,7 @@
     reaper
     retext
     solaar
+    syncthing
     spotify
     thunderbird
     whatsapp-for-linux
