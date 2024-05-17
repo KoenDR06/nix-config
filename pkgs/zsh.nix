@@ -18,10 +18,16 @@
 
     ohMyZsh = {
       enable = true;
-      plugins = ["git"];
+      plugins = [
+        "git"
+        "zsh-interactive-cd"
+        "python"
+        "marked2"
+        "git auto-fetch"
+      ];
       theme = "agnoster";
     };
 
-    shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi;  eval \"$(zoxide init zsh --cmd cd)\"";
+    shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi";
   };
 }

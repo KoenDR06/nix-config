@@ -60,7 +60,6 @@
     thunderbird
     whatsapp-for-linux
     zsh
-    zoxide
   ];
 
   programs.home-manager.enable = true;

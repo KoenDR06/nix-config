@@ -35,7 +35,6 @@
     tailscale
     tmux
     wakeonlan
-    zoxide
   ];
 
   programs.home-manager.enable = true;
