@@ -22,6 +22,6 @@
       theme = "agnoster";
     };
 
-    shellInit = "eval \"$(zoxide init zsh --cmd cd)\"";
+    shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi;  eval \"$(zoxide init zsh --cmd cd)\"";
   };
 }
