@@ -6,9 +6,7 @@
   pkgs,
   ...
 }: {
-  imports = [
-    ./plasma.nix
-  ];
+  imports = [];
 
   nixpkgs = {
     overlays = [
