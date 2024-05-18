@@ -26,6 +26,7 @@
   services.desktopManager.plasma6.enable = true;
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.autoNumlock = true;
+  services.xserver.displayManager.defaultSession = "plasmax11";
   boot.loader.systemd-boot.enable = true;  
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
 
