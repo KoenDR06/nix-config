@@ -6,7 +6,9 @@
   pkgs,
   ...
 }: {
-  imports = [];
+  imports = [
+    inputs.sops-nix.homeManagerModules.sops
+  ];
 
   nixpkgs = {
     overlays = [

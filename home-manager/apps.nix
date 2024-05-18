@@ -6,7 +6,9 @@
   pkgs,
   ...
 }: {
-  imports = [];
+  imports = [
+    inputs.sops-nix.homeManager.sops
+  ];
 
   nixpkgs = {
     overlays = [
@@ -56,7 +58,6 @@
     reaper
     retext
     solaar
-    syncthing
     spotify
     thunderbird
     whatsapp-for-linux

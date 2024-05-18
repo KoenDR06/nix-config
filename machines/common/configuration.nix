@@ -51,6 +51,36 @@
     fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
   };
 
+ # services.syncthing = {
+ #   enable = true;
+ #   user = "horseman";
+ #   dataDir = "/home/horseman";
+ #   configDir = "/home/horseman/.config/syncthing";
+ #   overrideDevices = true;
+ #   overrideFolders = true;
+ #   settings = {
+ #     devices = {
+ #       "luna" = ;
+ #       "terra" = ;
+ #       "solis" = ;
+ #     };
+ #     folders = {
+ #       "Documents" = {
+ #         path = "/home/horseman/Documents";
+ #         devices = [ "solis" "terra" "luna" ];
+ #       }:
+ #       "Programming" = {
+ #         path = "/home/horseman/Programming";
+ #         devices = [ "solis" "terra" "luna" ];
+ #       };
+ #     };
+ #     gui = {
+ #       user = ;
+ #       password = ;
+ #     };
+ #   };
+ # };
+
   users.users = {
     horseman = {
       initialPassword = "1234";
