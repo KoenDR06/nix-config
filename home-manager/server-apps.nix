@@ -28,6 +28,7 @@
   # Enable programs
   home.packages = with pkgs; [
     docker-compose
+    fzf
     htop
     gnupg
     jdk
