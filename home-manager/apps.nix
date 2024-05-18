@@ -7,7 +7,7 @@
   ...
 }: {
   imports = [
-    inputs.sops-nix.homeManager.sops
+    ./plasma.nix
   ];
 
   nixpkgs = {
