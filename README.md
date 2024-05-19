@@ -9,4 +9,4 @@
     * Whatsapp
 
 * Configure Display setup and refresh rate
-* Rebuild: sudo nixos-rebuild switch --flake .#hostname
+* Rebuild: update .#hostname

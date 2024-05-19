@@ -27,6 +27,6 @@
       theme = "agnoster";
     };
 
-    shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi";
+    # shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi";
   };
 }
