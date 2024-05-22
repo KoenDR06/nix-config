@@ -1,9 +1,9 @@
-{ pkgs, ...}:
 {
   programs.plasma = {
     enable = true;
     shortcuts = {
-      "ActivityManager"."switch-to-activity-037b4336-809c-4a07-a148-9ef660a5cc9c" = [ ];
+      "ActivityManager"."switch-to-activity-c82192f5-3d2d-4f8d-9c58-364b4cca1b53" = [ ];
+      "ActivityManager"."switch-to-activity-d15629d7-eac1-4856-990c-e88d4acd7c5d" = [ ];
       "KDE Keyboard Layout Switcher"."Switch to Last-Used Keyboard Layout" = "Meta+Alt+L";
       "KDE Keyboard Layout Switcher"."Switch to Next Keyboard Layout" = "Meta+Alt+K";
       "kaccess"."Toggle Screen Reader On and Off" = "Meta+Alt+S";
@@ -128,8 +128,8 @@
       "kwin"."Window One Desktop to the Right" = "Meta+Ctrl+Shift+Right";
       "kwin"."Window One Screen Down" = "Meta+Shift+Down";
       "kwin"."Window One Screen Up" = "Meta+Shift+Up";
-      "kwin"."Window One Screen to the Left" = [ ];
-      "kwin"."Window One Screen to the Right" = [ ];
+      "kwin"."Window One Screen to the Left" = "Meta+Shift+Left";
+      "kwin"."Window One Screen to the Right" = "Meta+Shift+Right";
       "kwin"."Window Operations Menu" = "Alt+F3";
       "kwin"."Window Pack Down" = [ ];
       "kwin"."Window Pack Left" = [ ];
@@ -234,11 +234,11 @@
       "services/lookandfeeltool.desktop"."_launch" = "Ctrl+Sleep";
       "services/org.kde.konsole.desktop"."_launch" = "Meta+T";
       "services/org.kde.spectacle.desktop"."ActiveWindowScreenShot" = [ ];
-      "services/org.kde.spectacle.desktop"."FullScreenScreenShot" = [ ];
+      "services/org.kde.spectacle.desktop"."FullScreenScreenShot" = "Print";
       "services/org.kde.spectacle.desktop"."RecordRegion" = [ ];
       "services/org.kde.spectacle.desktop"."RecordScreen" = [ ];
       "services/org.kde.spectacle.desktop"."RecordWindow" = [ ];
-      "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = [ ];
+      "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
       "services/org.kde.spectacle.desktop"."WindowUnderCursorScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."_launch" = [ ];
     };
@@ -246,16 +246,24 @@
       "baloofilerc"."General"."dbVersion" = 2;
       "baloofilerc"."General"."exclude filters" = "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
       "baloofilerc"."General"."exclude filters version" = 9;
+      "baloofilerc"."General"."exclude folders[$e]" = "$HOME/Programming/";
       "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize" = false;
       "dolphinrc"."KFileDialog Settings"."Places Icons Static Size" = 22;
-      "kactivitymanagerdrc"."activities"."037b4336-809c-4a07-a148-9ef660a5cc9c" = "Default";
-      "kactivitymanagerdrc"."main"."currentActivity" = "037b4336-809c-4a07-a148-9ef660a5cc9c";
+      "kactivitymanagerdrc"."activities"."c82192f5-3d2d-4f8d-9c58-364b4cca1b53" = "Default";
+      "kactivitymanagerdrc"."activities"."d15629d7-eac1-4856-990c-e88d4acd7c5d" = "Stay Awake";
+      "kactivitymanagerdrc"."activities-icons"."d15629d7-eac1-4856-990c-e88d4acd7c5d" = "activities";
+      "kactivitymanagerdrc"."main"."currentActivity" = "c82192f5-3d2d-4f8d-9c58-364b4cca1b53";
+      "kactivitymanagerdrc"."main"."runningActivities" = "c82192f5-3d2d-4f8d-9c58-364b4cca1b53";
+      "kactivitymanagerdrc"."main"."stoppedActivities" = "";
+      "kcminputrc"."Keyboard"."NumLock" = 0;
+      "kcminputrc"."Libinput/1133/49970/Logitech Gaming Mouse G502"."ScrollFactor" = 0.5;
       "kcminputrc"."Libinput/1133/50504/Logitech USB Receiver Mouse"."PointerAccelerationProfile" = 1;
       "kcminputrc"."Libinput/1133/50504/Logitech USB Receiver Mouse"."ScrollFactor" = 0.5;
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."ClickMethod" = 2;
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."Enabled" = true;
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
       "kded5rc"."Module-device_automounter"."autoload" = false;
+      "kdeglobals"."DirSelect Dialog"."DirSelectDialog Size" = "820,584";
       "kdeglobals"."General"."AllowKDEAppsToRememberWindowPositions" = true;
       "kdeglobals"."KDE"."SingleClick" = true;
       "kdeglobals"."KFileDialog Settings"."Allow Expansion" = false;
@@ -282,7 +290,7 @@
       "kdeglobals"."WM"."inactiveBackground" = "239,240,241";
       "kdeglobals"."WM"."inactiveBlend" = "239,240,241";
       "kdeglobals"."WM"."inactiveForeground" = "112,125,138";
-      "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name" = "Activity Manager";
+      "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name" = "System Settings";
       "kglobalshortcutsrc"."KDE Keyboard Layout Switcher"."_k_friendly_name" = "Keyboard Layout Switcher";
       "kglobalshortcutsrc"."kaccess"."_k_friendly_name" = "Accessibility";
       "kglobalshortcutsrc"."kcm_touchpad"."_k_friendly_name" = "Touchpad";
@@ -292,6 +300,7 @@
       "kglobalshortcutsrc"."mediacontrol"."_k_friendly_name" = "Media Controller";
       "kglobalshortcutsrc"."org_kde_powerdevil"."_k_friendly_name" = "KDE Power Management System";
       "kglobalshortcutsrc"."plasmashell"."_k_friendly_name" = "plasmashell";
+      "krunnerrc"."Plugins"."baloosearchEnabled" = true;
       "krunnerrc"."Plugins"."browserhistoryEnabled" = false;
       "krunnerrc"."Plugins"."browsertabsEnabled" = false;
       "krunnerrc"."Plugins"."krunner_appstreamEnabled" = false;
@@ -300,6 +309,7 @@
       "krunnerrc"."Plugins"."krunner_webshortcutsEnabled" = false;
       "krunnerrc"."Plugins/Favorites"."plugins" = "krunner_services";
       "ksmserverrc"."General"."loginMode" = "emptySession";
+      "ksmserverrc"."SubSession: 037b4336-809c-4a07-a148-9ef660a5cc9c"."count" = 0;
       "kwalletrc"."Wallet"."First Use" = false;
       "kwinrc"."Desktops"."Id_1" = "e1429fd3-ee1a-43d1-a96c-3e98155ffa70";
       "kwinrc"."Desktops"."Id_2" = "91da48f0-dcd0-40fa-937a-9f6a40f98a61";
@@ -326,10 +336,13 @@
       "kwinrc"."Plugins"."translucencyEnabled" = true;
       "kwinrc"."Script-desktopchangeosd"."PopupHideDelay" = 200;
       "kwinrc"."Tiling"."padding" = 4;
-      "kwinrc"."Tiling/71ed7714-9051-5fa1-88b9-b1a4cb02cd13"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.3515624999999996},{\"width\":0.3593750000000003},{\"width\":0.2890625000000001}]}";
-      "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling/ece7370d-6d13-5618-ad29-14697e609bd2"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/17eb1f34-04ff-505f-99d3-b39b78e9af59"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/71ed7714-9051-5fa1-88b9-b1a4cb02cd13"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.3515624999999996},{\"width\":0.3593750000000003},{\"width\":0.2890625000000001}\x5d}";
+      "kwinrc"."Tiling/73f4fa9f-1055-5c2e-9515-22c988437f87"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/ece7370d-6d13-5618-ad29-14697e609bd2"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
       "kwinrc"."Windows"."HideUtilityWindowsForInactive" = false;
       "kwinrc"."Windows"."RollOverDesktops" = true;
       "kwinrc"."Windows"."SnapOnlyWhenOverlapping" = true;
@@ -343,8 +356,18 @@
       "kwinrulesrc"."1"."aboverule" = 3;
       "kwinrulesrc"."1"."wmclasscomplete" = true;
       "kwinrulesrc"."1"."wmclassmatch" = 2;
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."Description" = "Window settings for org.kde.konsole";
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."noborder" = true;
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."noborderrule" = 3;
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."title" = "~ : zsh — Konsole";
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."types" = 1;
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."wmclass" = "konsole org.kde.konsole";
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."wmclasscomplete" = true;
+      "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."wmclassmatch" = 1;
       "kwinrulesrc"."General"."count" = 1;
       "kwinrulesrc"."General"."rules" = 1;
+      "kxkbrc"."Layout"."Options" = "terminate:ctrl_alt_bksp";
+      "kxkbrc"."Layout"."ResetOldOptions" = true;
       "plasma-localerc"."Formats"."LANG" = "en_US.UTF-8";
       "plasma-localerc"."Formats"."LC_MEASUREMENT" = "C";
       "plasma-localerc"."Formats"."LC_PAPER" = "C";
