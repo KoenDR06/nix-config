@@ -6,6 +6,7 @@
   programs.firefox = {
     enable = true;
     policies = {
+      Preferences.general.autoScroll = true;
       ExtensionSettings = {
         "*".installation_mode = "blocked";
         # uBlock Origin:
