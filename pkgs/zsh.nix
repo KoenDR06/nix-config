@@ -25,9 +25,9 @@
         "python"
         "git-auto-fetch"
       ];
-      theme = "agnoster";
+      theme = "aussiegeek";
     };
 
-    # shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi";
+    shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi";
   };
 }
