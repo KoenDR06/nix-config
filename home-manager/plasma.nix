@@ -2,6 +2,7 @@
   programs.plasma = {
     enable = true;
     shortcuts = {
+      "ActivityManager"."switch-to-activity-037b4336-809c-4a07-a148-9ef660a5cc9c" = [ ];
       "ActivityManager"."switch-to-activity-c82192f5-3d2d-4f8d-9c58-364b4cca1b53" = [ ];
       "ActivityManager"."switch-to-activity-d15629d7-eac1-4856-990c-e88d4acd7c5d" = [ ];
       "KDE Keyboard Layout Switcher"."Switch to Last-Used Keyboard Layout" = "Meta+Alt+L";
@@ -19,7 +20,7 @@
       "kmix"."mic_mute" = "Microphone Mute";
       "kmix"."mute" = "Volume Mute";
       "ksmserver"."Halt Without Confirmation" = [ ];
-      "ksmserver"."Lock Session" = ["Meta+L" "Screensaver"];
+      "ksmserver"."Lock Session" = ["" "Meta+L" "Screensaver"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
       "ksmserver"."Log Out Without Confirmation" = [ ];
       "ksmserver"."Reboot" = [ ];
@@ -32,7 +33,7 @@
       "kwin"."Decrease Opacity" = [ ];
       "kwin"."Edit Tiles" = "Meta+Y";
       "kwin"."Expose" = "Ctrl+F9";
-      "kwin"."ExposeAll" = ["Ctrl+F10" "Launch (C)"];
+      "kwin"."ExposeAll" = ["" "Ctrl+F10" "Launch (C)"];
       "kwin"."ExposeClass" = "Ctrl+F7";
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
@@ -53,7 +54,7 @@
       "kwin"."Setup Window Shortcut" = [ ];
       "kwin"."Show Desktop" = "Meta+D";
       "kwin"."Switch One Desktop Down" = "Meta+Ctrl+Down";
-      "kwin"."Switch One Desktop Up" = ["Meta+Ctrl+Left" "Meta+Ctrl+Up"];
+      "kwin"."Switch One Desktop Up" = ["" "Meta+Ctrl+Left" "Meta+Ctrl+Up"];
       "kwin"."Switch One Desktop to the Left" = [ ];
       "kwin"."Switch One Desktop to the Right" = [ ];
       "kwin"."Switch Window Down" = "Meta+Alt+Down";
@@ -114,7 +115,7 @@
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
       "kwin"."Window Lower" = [ ];
-      "kwin"."Window Maximize" = ["Meta+PgUp" "Meta+Up"];
+      "kwin"."Window Maximize" = ["" "Meta+PgUp" "Meta+Up"];
       "kwin"."Window Maximize Horizontal" = [ ];
       "kwin"."Window Maximize Vertical" = [ ];
       "kwin"."Window Minimize" = "Meta+PgDown";
@@ -181,7 +182,7 @@
       "kwin"."Window to Screen 6" = [ ];
       "kwin"."Window to Screen 7" = [ ];
       "kwin"."view_actual_size" = "Meta+0";
-      "kwin"."view_zoom_in" = ["Meta++" "Meta+="];
+      "kwin"."view_zoom_in" = ["" "Meta++" "Meta+\x3d"];
       "kwin"."view_zoom_out" = "Meta+-";
       "mediacontrol"."mediavolumedown" = [ ];
       "mediacontrol"."mediavolumeup" = [ ];
@@ -203,7 +204,7 @@
       "org_kde_powerdevil"."Sleep" = [ ];
       "org_kde_powerdevil"."Toggle Keyboard Backlight" = "Keyboard Light On/Off";
       "org_kde_powerdevil"."Turn Off Screen" = [ ];
-      "org_kde_powerdevil"."powerProfile" = ["Battery" "Meta+B"];
+      "org_kde_powerdevil"."powerProfile" = ["" "Battery" "Meta+B"];
       "plasmashell"."activate task manager entry 1" = "Meta+1";
       "plasmashell"."activate task manager entry 10" = [ ];
       "plasmashell"."activate task manager entry 2" = "Meta+2";
@@ -247,8 +248,10 @@
       "baloofilerc"."General"."exclude filters" = "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
       "baloofilerc"."General"."exclude filters version" = 9;
       "baloofilerc"."General"."exclude folders[$e]" = "$HOME/Programming/";
+      "baloofilerc"."General"."exclude folders\x5b$e\x5d" = "$HOME/Programming/";
       "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize" = false;
       "dolphinrc"."KFileDialog Settings"."Places Icons Static Size" = 22;
+      "kactivitymanagerdrc"."activities"."037b4336-809c-4a07-a148-9ef660a5cc9c" = "Default";
       "kactivitymanagerdrc"."activities"."c82192f5-3d2d-4f8d-9c58-364b4cca1b53" = "Default";
       "kactivitymanagerdrc"."activities"."d15629d7-eac1-4856-990c-e88d4acd7c5d" = "Stay Awake";
       "kactivitymanagerdrc"."activities-icons"."d15629d7-eac1-4856-990c-e88d4acd7c5d" = "activities";
@@ -310,6 +313,7 @@
       "krunnerrc"."Plugins/Favorites"."plugins" = "krunner_services";
       "ksmserverrc"."General"."loginMode" = "emptySession";
       "ksmserverrc"."SubSession: 037b4336-809c-4a07-a148-9ef660a5cc9c"."count" = 0;
+      "ksmserverrc"."SubSession: c82192f5-3d2d-4f8d-9c58-364b4cca1b53"."count" = 0;
       "kwalletrc"."Wallet"."First Use" = false;
       "kwinrc"."Desktops"."Id_1" = "e1429fd3-ee1a-43d1-a96c-3e98155ffa70";
       "kwinrc"."Desktops"."Id_2" = "91da48f0-dcd0-40fa-937a-9f6a40f98a61";
@@ -335,14 +339,18 @@
       "kwinrc"."Plugins"."shakecursorEnabled" = true;
       "kwinrc"."Plugins"."translucencyEnabled" = true;
       "kwinrc"."Script-desktopchangeosd"."PopupHideDelay" = 200;
+      "kwinrc"."SubSession: 037b4336-809c-4a07-a148-9ef660a5cc9c"."active" = "-1";
+      "kwinrc"."SubSession: 037b4336-809c-4a07-a148-9ef660a5cc9c"."count" = 0;
+      "kwinrc"."SubSession: c82192f5-3d2d-4f8d-9c58-364b4cca1b53"."active" = "-1";
+      "kwinrc"."SubSession: c82192f5-3d2d-4f8d-9c58-364b4cca1b53"."count" = 0;
       "kwinrc"."Tiling"."padding" = 4;
-      "kwinrc"."Tiling/17eb1f34-04ff-505f-99d3-b39b78e9af59"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling/71ed7714-9051-5fa1-88b9-b1a4cb02cd13"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.3515624999999996},{\"width\":0.3593750000000003},{\"width\":0.2890625000000001}\x5d}";
-      "kwinrc"."Tiling/73f4fa9f-1055-5c2e-9515-22c988437f87"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
-      "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
-      "kwinrc"."Tiling/ece7370d-6d13-5618-ad29-14697e609bd2"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/17eb1f34-04ff-505f-99d3-b39b78e9af59"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/71ed7714-9051-5fa1-88b9-b1a4cb02cd13"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.3515624999999996},{\"width\":0.3593750000000003},{\"width\":0.2890625000000001}x5d}";
+      "kwinrc"."Tiling/73f4fa9f-1055-5c2e-9515-22c988437f87"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
+      "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
+      "kwinrc"."Tiling/ece7370d-6d13-5618-ad29-14697e609bd2"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Windows"."HideUtilityWindowsForInactive" = false;
       "kwinrc"."Windows"."RollOverDesktops" = true;
       "kwinrc"."Windows"."SnapOnlyWhenOverlapping" = true;
