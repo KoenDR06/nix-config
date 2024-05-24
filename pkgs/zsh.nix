@@ -28,7 +28,5 @@
       custom = "/home/horseman/nix-config/pkgs/zsh/";
       theme = "jonathan";
     };
-
-    shellInit = "if [[ $(tty) == \"/dev/tty\"* ]]; then; bash; fi";
   };
 }
