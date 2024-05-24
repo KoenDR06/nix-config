@@ -1,0 +1,7 @@
+keys:
+  - &terra age167thunwadsswd0u37tajk85wy4x7sgw6sg3j2aspcax7essmge6qwen0uz
+creation_rules:
+  - path_regex: secrets/secrets.yaml$
+    key_groups:
+    - age:
+      - *terra

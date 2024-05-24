@@ -58,6 +58,7 @@
     reaper
     retext
     solaar
+    sops
     spotify
     thunderbird
     whatsapp-for-linux

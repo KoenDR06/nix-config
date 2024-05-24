@@ -1,18 +1,21 @@
 {
-  description = "Your new nix config";
-
   inputs = {
-    # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Home manager
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     plasma-manager = {
       url = "github:pjones/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
+    };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -21,6 +24,7 @@
     nixpkgs,
     home-manager,
     plasma-manager,
+    sops-nix,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -60,6 +64,7 @@
         modules = [
           ./machines/luna/configuration.nix
           home-manager.nixosModules.home-manager
+          sops-nix.nixosModules.sops
           {
             home-manager.sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
           }
@@ -70,6 +75,7 @@
         modules = [
           ./machines/terra/configuration.nix
           home-manager.nixosModules.home-manager
+          sops-nix.nixosModules.sops
           {
             home-manager.sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
           }
@@ -79,6 +85,7 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./machines/solis/configuration.nix
+          sops-nix.nixosModules.sops
         ];
       };
     };

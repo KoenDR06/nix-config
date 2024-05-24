@@ -33,6 +33,7 @@
     gnupg
     jdk
     python3
+    sops
     tailscale
     tmux
     wakeonlan

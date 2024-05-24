@@ -8,6 +8,7 @@
 }: {
   imports = [
     ../../pkgs/zsh.nix
+#    inputs.sops-nix.nixosModules.sops
   ];
 
   nixpkgs = {
@@ -51,35 +52,51 @@
     fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
   };
 
- # services.syncthing = {
- #   enable = true;
- #   user = "horseman";
- #   dataDir = "/home/horseman";
- #   configDir = "/home/horseman/.config/syncthing";
- #   overrideDevices = true;
- #   overrideFolders = true;
- #   settings = {
- #     devices = {
- #       "luna" = ;
- #       "terra" = ;
- #       "solis" = ;
- #     };
- #     folders = {
- #       "Documents" = {
- #         path = "/home/horseman/Documents";
- #         devices = [ "solis" "terra" "luna" ];
- #       }:
- #       "Programming" = {
- #         path = "/home/horseman/Programming";
- #         devices = [ "solis" "terra" "luna" ];
- #       };
- #     };
- #     gui = {
- #       user = ;
- #       password = ;
- #     };
- #   };
- # };
+#  sops = {
+#    defaultSopsFile = ../../secrets/secrets.yaml;
+#    defaultSopsFormat = "yaml";
+#    age = {
+#      sshKeyPaths = [ "/etc/ssh/id_ed25519" ];
+#      keyFile = "/home/horseman/.config/sops/age/keys.txt";
+#      generateKey = true;
+#    };
+#
+#    secrets = {
+#      "syncthing/solis".owner = "horseman";
+#      "syncthing/terra".owner = "horseman";
+#      "syncthing/luna".owner = "horseman";
+#    };
+#  };
+
+#  services.syncthing = {
+#    enable = true;
+#    user = "horseman";
+#    dataDir = "/home/horseman";
+#    configDir = "/home/horseman/.config/syncthing";
+#    overrideDevices = true;
+#    overrideFolders = true;
+#    settings = {
+#      devices = {
+#        "luna" = ;
+#        "terra" = ;
+#        "solis" = ;
+#      };
+#      folders = {
+#        "Documents" = {
+#          path = "/home/horseman/Documents";
+#          devices = [ "solis" "terra" "luna" ];
+#        }:
+#        "Programming" = {
+#          path = "/home/horseman/Programming";
+#          devices = [ "solis" "terra" "luna" ];
+#        };
+#      };
+#      gui = {
+#        user = ;
+#        password = ;
+#      };
+#    };
+#  };
 
   users.users = {
     horseman = {
@@ -91,8 +108,8 @@
         "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmYI+jn1B69r4GUEeVE1/q+HSNcLzT+qG0nEpIjyO3VCsocLIJqT6cJtPKTh/j9RPySvz1lo2ZFemCeKBfsdHy95JoYqbAcoJ9jacH3X8LixIiGin6ew/h6QJONU1UAuxcEDoEyeHfmNBRdgaahNTWtgvFd1YhB4WQwN9THZ/axGdnWLi/y0y98aqERw98fGOhAzxqZyeGkWK5ByRiiGmfrmU7IsX916z5s9OPFYeIGvI3UPKL5awpQMrD/+VhtQjAy8guWbBKbN+7cVU/JQjhaPAeVC18iON++Ux6pGq1/yA+IFDb/fFofXD70vRYemg7zSVbf2ceBg8iSR2OdcZVPfhIKq7mx62TcYVY7aDlz7fFedl7tVhxRd5Ze7T/kbRQtbqL++3UQaZwnx6HoXGMvdIbKV/KHcmqjQQClzWZyk8oI+VbkF/nfTgShW/X0UQYzBSdsCb4XywzfnLRH4Ops/v7ZOc2zBApl7j1Oj+nW7dJ5/P6FgMw553tNXnEVXqGvdvalmDl/hjR3UVedm18ZKwu+6+1mcHsDGKCi5C79zVksr9IbFNICosA23xfrnKQYmncBzobbY4N39SToI9ulcukOJj26ooAG3RhHqSyOkcM3nTUbHwKb/19J+NAm2iT9ipNGurwwPO4VcJY36237es7MEkmQHfD1ZOo6biafw= horseman@terra"
       ];
       extraGroups = [
-                     "wheel"
-                     "networkmanager"
+        "wheel"
+        "networkmanager"
       ];
     };
   };
