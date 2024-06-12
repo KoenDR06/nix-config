@@ -36,6 +36,7 @@
     sops
     tailscale
     tmux
+    unzip
     wakeonlan
   ];
 

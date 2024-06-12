@@ -28,8 +28,7 @@
   };
   
   # Enable programs
-  home.packages = with pkgs; [
-    
+  home.packages = with pkgs; [    
     bitwarden
     discord
     docker-compose
@@ -61,6 +60,7 @@
     sops
     spotify
     thunderbird
+    unzip
     whatsapp-for-linux
     zsh
   ];
