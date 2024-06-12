@@ -20,12 +20,12 @@
     driSupport = true;
     driSupport32Bit = true;
   };
-  services.xserver.videoDrivers = ["nvidia"]; # or "nvidiaLegacy470 etc.
+  services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
     powerManagement.finegrained = false;
-    open = false;
+    open = true;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
@@ -45,7 +45,8 @@
   services.desktopManager.plasma6.enable = true;
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.autoNumlock = true;
-  services.xserver.displayManager.defaultSession = "plasmax11";
+  services.xserver.displayManager.sddm.wayland.enable = false;
+  services.xserver.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;
 
   virtualisation.docker.enable = true;
@@ -53,15 +54,9 @@
 
    services.jack = {
     jackd.enable = true;
-    # support ALSA only programs via ALSA JACK PCM plugin
     alsa.enable = false;
-    # support ALSA only programs via loopback device (supports programs like Steam)
     loopback = {
       enable = true;
-      # buffering parameters for dmix device to work with ALSA only semi-professional sound programs
-      #dmixConfig = ''
-      #  period_size 2048
-      #'';
     };
   };
 
