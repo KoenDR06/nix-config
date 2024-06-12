@@ -37,6 +37,7 @@
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
     jdk
+    gcc
     gimp
     gnupg
     htop

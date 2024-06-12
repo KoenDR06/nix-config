@@ -29,8 +29,9 @@
   home.packages = with pkgs; [
     docker-compose
     fzf
-    htop
+    gcc
     gnupg
+    htop
     jdk
     python3
     sops
