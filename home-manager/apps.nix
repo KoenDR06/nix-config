@@ -39,6 +39,7 @@
     jdk
     gcc
     gimp
+    gnome.gnome-calculator
     gnupg
     htop
     inkscape
