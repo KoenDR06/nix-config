@@ -15,6 +15,7 @@
       compose = "sudo docker compose";
       wolpc = "wakeonlan D8:5E:D3:A8:B1:0";
       capture-config = "nix run github:pjones/plasma-manager > ~/nix-config/home-manager/plasma.nix";
+      reboot-to-windows = "sudo efibootmgr -n 0000";
     };
 
     ohMyZsh = {

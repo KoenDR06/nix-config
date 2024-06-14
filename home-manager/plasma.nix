@@ -20,7 +20,7 @@
       "kmix"."mic_mute" = "Microphone Mute";
       "kmix"."mute" = "Volume Mute";
       "ksmserver"."Halt Without Confirmation" = [ ];
-      "ksmserver"."Lock Session" = ["" "Meta+L" "Screensaver"];
+      "ksmserver"."Lock Session" = ["Meta+L" "Screensaver"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
       "ksmserver"."Log Out Without Confirmation" = [ ];
       "ksmserver"."Reboot" = [ ];
@@ -33,7 +33,7 @@
       "kwin"."Decrease Opacity" = [ ];
       "kwin"."Edit Tiles" = "Meta+Y";
       "kwin"."Expose" = "Ctrl+F9";
-      "kwin"."ExposeAll" = ["" "Ctrl+F10" "Launch (C)"];
+      "kwin"."ExposeAll" = ["Ctrl+F10" "Launch (C)"];
       "kwin"."ExposeClass" = "Ctrl+F7";
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
@@ -53,8 +53,9 @@
       "kwin"."Overview" = "Meta+W";
       "kwin"."Setup Window Shortcut" = [ ];
       "kwin"."Show Desktop" = "Meta+D";
+      "kwin"."Suspend Compositing" = "Alt+Shift+F12";
       "kwin"."Switch One Desktop Down" = "Meta+Ctrl+Down";
-      "kwin"."Switch One Desktop Up" = ["" "Meta+Ctrl+Left" "Meta+Ctrl+Up"];
+      "kwin"."Switch One Desktop Up" = ["Meta+Ctrl+Left" "Meta+Ctrl+Up"];
       "kwin"."Switch One Desktop to the Left" = [ ];
       "kwin"."Switch One Desktop to the Right" = [ ];
       "kwin"."Switch Window Down" = "Meta+Alt+Down";
@@ -115,7 +116,7 @@
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
       "kwin"."Window Lower" = [ ];
-      "kwin"."Window Maximize" = ["" "Meta+PgUp" "Meta+Up"];
+      "kwin"."Window Maximize" = ["Meta+PgUp" "Meta+Up"];
       "kwin"."Window Maximize Horizontal" = [ ];
       "kwin"."Window Maximize Vertical" = [ ];
       "kwin"."Window Minimize" = "Meta+PgDown";
@@ -182,7 +183,7 @@
       "kwin"."Window to Screen 6" = [ ];
       "kwin"."Window to Screen 7" = [ ];
       "kwin"."view_actual_size" = "Meta+0";
-      "kwin"."view_zoom_in" = ["" "Meta++" "Meta+\x3d"];
+      "kwin"."view_zoom_in" = "Meta++";
       "kwin"."view_zoom_out" = "Meta+-";
       "mediacontrol"."mediavolumedown" = [ ];
       "mediacontrol"."mediavolumeup" = [ ];
@@ -204,7 +205,7 @@
       "org_kde_powerdevil"."Sleep" = [ ];
       "org_kde_powerdevil"."Toggle Keyboard Backlight" = "Keyboard Light On/Off";
       "org_kde_powerdevil"."Turn Off Screen" = [ ];
-      "org_kde_powerdevil"."powerProfile" = ["" "Battery" "Meta+B"];
+      "org_kde_powerdevil"."powerProfile" = ["Battery" "Meta+B"];
       "plasmashell"."activate task manager entry 1" = "Meta+1";
       "plasmashell"."activate task manager entry 10" = [ ];
       "plasmashell"."activate task manager entry 2" = "Meta+2";
@@ -235,11 +236,11 @@
       "services/lookandfeeltool.desktop"."_launch" = "Ctrl+Sleep";
       "services/org.kde.konsole.desktop"."_launch" = "Meta+T";
       "services/org.kde.spectacle.desktop"."ActiveWindowScreenShot" = [ ];
-      "services/org.kde.spectacle.desktop"."FullScreenScreenShot" = "Print";
+      "services/org.kde.spectacle.desktop"."FullScreenScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."RecordRegion" = [ ];
       "services/org.kde.spectacle.desktop"."RecordScreen" = [ ];
       "services/org.kde.spectacle.desktop"."RecordWindow" = [ ];
-      "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
+      "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."WindowUnderCursorScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."_launch" = [ ];
     };
@@ -249,6 +250,9 @@
       "baloofilerc"."General"."exclude filters version" = 9;
       "baloofilerc"."General"."exclude folders[$e]" = "$HOME/Programming/";
       "baloofilerc"."General"."exclude folders\x5b$e\x5d" = "$HOME/Programming/";
+      "baloofilerc"."General"."exclude foldersx5b$ex5d" = "$HOME/Programming/";
+      "dolphinrc"."DetailsMode"."PreviewSize" = 256;
+      "dolphinrc"."IconsMode"."PreviewSize" = 144;
       "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize" = false;
       "dolphinrc"."KFileDialog Settings"."Places Icons Static Size" = 22;
       "kactivitymanagerdrc"."activities"."037b4336-809c-4a07-a148-9ef660a5cc9c" = "Default";
@@ -264,6 +268,7 @@
       "kcminputrc"."Libinput/1133/50504/Logitech USB Receiver Mouse"."ScrollFactor" = 0.5;
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."ClickMethod" = 2;
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."Enabled" = true;
+      "kcminputrc"."Mouse"."X11LibInputXAccelProfileFlat" = true;
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
       "kded5rc"."Module-device_automounter"."autoload" = false;
       "kdeglobals"."DirSelect Dialog"."DirSelectDialog Size" = "820,584";
@@ -293,7 +298,7 @@
       "kdeglobals"."WM"."inactiveBackground" = "239,240,241";
       "kdeglobals"."WM"."inactiveBlend" = "239,240,241";
       "kdeglobals"."WM"."inactiveForeground" = "112,125,138";
-      "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name" = "System Settings";
+      "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name" = "Activity Manager";
       "kglobalshortcutsrc"."KDE Keyboard Layout Switcher"."_k_friendly_name" = "Keyboard Layout Switcher";
       "kglobalshortcutsrc"."kaccess"."_k_friendly_name" = "Accessibility";
       "kglobalshortcutsrc"."kcm_touchpad"."_k_friendly_name" = "Touchpad";
@@ -344,11 +349,13 @@
       "kwinrc"."SubSession: c82192f5-3d2d-4f8d-9c58-364b4cca1b53"."active" = "-1";
       "kwinrc"."SubSession: c82192f5-3d2d-4f8d-9c58-364b4cca1b53"."count" = 0;
       "kwinrc"."Tiling"."padding" = 4;
-      "kwinrc"."Tiling/17eb1f34-04ff-505f-99d3-b39b78e9af59"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/17eb1f34-04ff-505f-99d3-b39b78e9af59"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/5e0aab53-ff8f-58db-aaca-df0f46f273c6"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/71ed7714-9051-5fa1-88b9-b1a4cb02cd13"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.3515624999999996},{\"width\":0.3593750000000003},{\"width\":0.2890625000000001}x5d}";
-      "kwinrc"."Tiling/73f4fa9f-1055-5c2e-9515-22c988437f87"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/73f4fa9f-1055-5c2e-9515-22c988437f87"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/88b07ab8-dd78-5153-a6bc-f367d4aed265"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
-      "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/ece7370d-6d13-5618-ad29-14697e609bd2"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Windows"."HideUtilityWindowsForInactive" = false;
