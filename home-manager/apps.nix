@@ -64,6 +64,7 @@
     thunderbird
     unzip
     whatsapp-for-linux
+    youtube-dl
     zsh
   ];
 
