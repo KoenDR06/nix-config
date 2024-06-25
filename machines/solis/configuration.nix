@@ -26,4 +26,7 @@
   boot.loader.grub.useOSProber = true;
 
   virtualisation.docker.enable = true;
+
+  services.resolved.enable = true;
+  services.resolved.extraConfig = "DNSStubListener=no\n";
 }
