@@ -8,7 +8,6 @@
 }: {
   imports = [
     ../../pkgs/zsh.nix
-#    inputs.sops-nix.nixosModules.sops
   ];
 
   nixpkgs = {
@@ -52,51 +51,58 @@
     fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
   };
 
-#  sops = {
-#    defaultSopsFile = ../../secrets/secrets.yaml;
-#    defaultSopsFormat = "yaml";
-#    age = {
-#      sshKeyPaths = [ "/etc/ssh/id_ed25519" ];
-#      keyFile = "/home/horseman/.config/sops/age/keys.txt";
-#      generateKey = true;
-#    };
-#
-#    secrets = {
-#      "syncthing/solis".owner = "horseman";
-#      "syncthing/terra".owner = "horseman";
-#      "syncthing/luna".owner = "horseman";
-#    };
-#  };
+  sops = {
+    defaultSopsFile = ../../secrets/secrets.yaml;
+    defaultSopsFormat = "yaml";
+    age = {
+      sshKeyPaths = [ "/home/horseman/.ssh/id_ed25519" ];
+      keyFile = "/home/horseman/.config/sops/age/keys.txt";
+      generateKey = true;
+    };
 
-#  services.syncthing = {
-#    enable = true;
-#    user = "horseman";
-#    dataDir = "/home/horseman";
-#    configDir = "/home/horseman/.config/syncthing";
-#    overrideDevices = true;
-#    overrideFolders = true;
-#    settings = {
-#      devices = {
-#        "luna" = ;
-#        "terra" = ;
-#        "solis" = ;
-#      };
-#      folders = {
-#        "Documents" = {
-#          path = "/home/horseman/Documents";
+    secrets = {
+      "syncthing/solis".owner = "horseman";
+      "syncthing/terra".owner = "horseman";
+      "syncthing/luna".owner = "horseman";
+      "syncthing/gui_user".owner = "horseman";
+      "syncthing/gui_password".owner = "horseman";
+      
+    };
+  };
+
+#  services.syncthing.enable = true;
+
+  services.syncthing = {
+    enable = true;
+    user = "horseman";
+    dataDir = "/home/horseman";
+    configDir = "/home/horseman/.config/syncthing";
+    overrideDevices = true;
+    overrideFolders = true;
+    settings = {
+      devices = {
+        "luna" = config.sops.secrets."syncthing/luna";
+        "terra" = config.sops.secrets."syncthing/terra";
+#        "solis" = config.sops.secrets."syncthing/solis";
+      };
+      folders = {
+        "Documents" = {
+          path = "/home/horseman/Documents";
 #          devices = [ "solis" "terra" "luna" ];
-#        }:
-#        "Programming" = {
-#          path = "/home/horseman/Programming";
+          devices = [ "terra" "luna" ];
+        };
+        "Programming" = {
+          path = "/home/horseman/Programming";
 #          devices = [ "solis" "terra" "luna" ];
-#        };
-#      };
-#      gui = {
-#        user = ;
-#        password = ;
-#      };
-#    };
-#  };
+          devices = [ "terra" "luna" ];
+        };
+      };
+      gui = {
+        user = config.sops.secrets."syncthing/gui_user";
+        password = config.sops.secrets."syncthing/gui_password";
+      };
+    };
+  };
 
   users.users = {
     horseman = {
