@@ -59,42 +59,41 @@
       keyFile = "/home/horseman/.config/sops/age/keys.txt";
       generateKey = true;
     };
-
     secrets = {
-      "syncthing/solis".owner = "horseman";
-      "syncthing/terra".owner = "horseman";
       "syncthing/luna".owner = "horseman";
+      "syncthing/terra".owner = "horseman";
+      "syncthing/solis".owner = "horseman";
       "syncthing/gui_user".owner = "horseman";
-      "syncthing/gui_password".owner = "horseman";
-      
+      "syncthing/gui_password".owner = "horseman";      
+    };
+    templates = {
+      "syncluna".content = ''${config.sops.placeholder."syncthing/luna"}'';
+      "syncterra".content = ''${config.sops.placeholder."syncthing/terra"}'';
+      "syncsolis".content = ''${config.sops.placeholder."syncthing/solis"}''; 
     };
   };
-
-#  services.syncthing.enable = true;
 
   services.syncthing = {
     enable = true;
     user = "horseman";
     dataDir = "/home/horseman";
-    configDir = "/home/horseman/.config/syncthing";
+    configDir = "/home/horseman/nix-config/config/syncthing";
     overrideDevices = true;
     overrideFolders = true;
     settings = {
       devices = {
-        "luna" = config.sops.secrets."syncthing/luna";
-        "terra" = config.sops.secrets."syncthing/terra";
-#        "solis" = config.sops.secrets."syncthing/solis";
+        "luna" = { id = config.sops.templates."syncluna".content; };
+        "terra" = { id = config.sops.templates."syncterra".content; };
+        "solis" = { id = config.sops.templates."syncsolis".content; };
       };
       folders = {
         "Documents" = {
           path = "/home/horseman/Documents";
-#          devices = [ "solis" "terra" "luna" ];
-          devices = [ "terra" "luna" ];
+          devices = [ "luna" "terra" "solis" ];
         };
         "Programming" = {
           path = "/home/horseman/Programming";
-#          devices = [ "solis" "terra" "luna" ];
-          devices = [ "terra" "luna" ];
+          devices = [ "luna" "terra" "solis" ];
         };
       };
       gui = {
