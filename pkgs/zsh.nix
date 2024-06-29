@@ -25,6 +25,7 @@
         "zsh-interactive-cd"
         "python"
         "git-auto-fetch"
+        "wd"
       ];
       custom = "/home/horseman/nix-config/pkgs/zsh/";
       theme = "jonathan";
