@@ -76,7 +76,7 @@
     user = "horseman";
     dataDir = "/home/horseman";
     configDir = "/home/horseman/nix-config/config/syncthing";
-    overrideDevices = true;
+    overrideDevices = false;
     overrideFolders = true;
     settings = {
       devices = {
