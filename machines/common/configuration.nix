@@ -63,8 +63,6 @@
       "syncthing/luna".owner = "horseman";
       "syncthing/terra".owner = "horseman";
       "syncthing/solis".owner = "horseman";
-      "syncthing/gui_user".owner = "horseman";
-      "syncthing/gui_password".owner = "horseman";      
     };
     templates = {
       "syncluna".content = ''${config.sops.placeholder."syncthing/luna"}'';
@@ -95,10 +93,6 @@
           path = "/home/horseman/Programming";
           devices = [ "luna" "terra" "solis" ];
         };
-      };
-      gui = {
-        user = config.sops.secrets."syncthing/gui_user";
-        password = config.sops.secrets."syncthing/gui_password";
       };
     };
   };
