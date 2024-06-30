@@ -49,6 +49,8 @@
   services.xserver.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;
 
+  networking.networkmanager.enable = true;
+
   virtualisation.docker.enable = true;
   hardware.pulseaudio.enable = true;
 
