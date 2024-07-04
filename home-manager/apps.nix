@@ -32,16 +32,17 @@
     bitwarden
     discord
     docker-compose
+    file
     fzf
-    jetbrains.clion
-    jetbrains.idea-ultimate
-    jetbrains.pycharm-professional
-    jdk
     gcc
     gimp
     gnome.gnome-calculator
     gnupg
     htop
+    jdk
+    jetbrains.clion
+    jetbrains.idea-ultimate
+    jetbrains.pycharm-professional
     inkscape
     inotify-tools
     libreoffice
@@ -63,6 +64,7 @@
     spotify
     thunderbird
     unzip
+    vlc
     whatsapp-for-linux
     youtube-dl
     zsh
