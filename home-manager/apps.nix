@@ -30,7 +30,7 @@
   # Enable programs
   home.packages = with pkgs; [    
     bitwarden
-    discord
+    discord-ptb
     docker-compose
     file
     fzf
