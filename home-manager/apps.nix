@@ -64,6 +64,7 @@
     spotify
     thunderbird
     unzip
+    vim
     vlc
     whatsapp-for-linux
     youtube-dl
