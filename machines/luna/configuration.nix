@@ -24,11 +24,14 @@
 
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.autoNumlock = true;
-  services.xserver.displayManager.defaultSession = "plasmax11";
+  services.xserver.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;  
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
+
+  programs.ssh.askPassword = lib.mkForce "/nix/store/qrzq7dqp8dkffb5dvi42q647dhm87ady-ksshaskpass-6.0.3/bin/ksshaskpass";
 
   hardware.pulseaudio.enable = true;
   networking.networkmanager.enable = true;

@@ -43,11 +43,14 @@
 
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
+  srevices.desktopManager.gnome.enable = true;
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.autoNumlock = true;
   services.xserver.displayManager.sddm.wayland.enable = false;
   services.xserver.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;
+
+  programs.ssh.askPassword = lib.mkForce "/nix/store/qrzq7dqp8dkffb5dvi42q647dhm87ady-ksshaskpass-6.0.3/bin/ksshaskpass";
 
   networking.networkmanager.enable = true;
 

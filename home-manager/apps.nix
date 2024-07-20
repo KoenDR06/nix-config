@@ -8,6 +8,7 @@
 }: {
   imports = [
     ./plasma.nix
+    ./gnome.nix
   ];
 
   nixpkgs = {
