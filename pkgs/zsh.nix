@@ -26,6 +26,7 @@
         "python"
         "git-auto-fetch"
         "wd"
+        "nix-shell"
       ];
       custom = "/home/horseman/nix-config/pkgs/zsh/";
       theme = "jonathan";
