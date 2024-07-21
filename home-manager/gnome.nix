@@ -43,6 +43,7 @@
     "org/gnome/shell" = {
       favorite-apps = [
         "firefox.desktop"
+        "org.gnome.Console.desktop"
         "org.gnome.Nautilus.desktop"
         "spotify.desktop"
         "com.github.eneshecan.WhatsAppForLinux.desktop"
