@@ -55,9 +55,15 @@
   networking.networkmanager.enable = true;
 
   virtualisation.docker.enable = true;
-  hardware.pulseaudio.enable = true;
 
-   services.jack = {
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+  services.jack = {
     jackd.enable = true;
     alsa.enable = false;
     loopback = {

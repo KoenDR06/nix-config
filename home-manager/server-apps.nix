@@ -24,8 +24,7 @@
     username = "horseman";
     homeDirectory = "/home/horseman";
   };
-  
-  # Enable programs
+
   home.packages = with pkgs; [
     docker-compose
     fzf
@@ -47,11 +46,10 @@
     userName = "KoenDR06";
     userEmail = "koen.de.ruiter@hotmail.com";
   };
+
   programs.gh.enable = true;
 
-  # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.05";
 }

@@ -27,15 +27,13 @@
     username = "horseman";
     homeDirectory = "/home/horseman";
   };
-  
-  # Enable programs
-  home.packages = with pkgs; [    
+
+  home.packages = with pkgs; [
     bitwarden
     discord-ptb
     docker-compose
     file
     fzf
-    gcc
     gimp
     gnome.gnome-calculator
     gnupg
@@ -64,8 +62,8 @@
     sops
     spotify
     thunderbird
+    tmux
     unzip
-    vim
     vlc
     whatsapp-for-linux
     youtube-dl
@@ -81,9 +79,7 @@
 
   programs.gh.enable = true;
 
-  # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.05";
 }
