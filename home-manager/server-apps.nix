@@ -26,6 +26,7 @@
   };
 
   home.packages = with pkgs; [
+    direnv
     docker-compose
     fzf
     gcc
