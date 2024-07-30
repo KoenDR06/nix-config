@@ -30,6 +30,7 @@
 
   home.packages = with pkgs; [
     bitwarden
+    direnv
     discord-ptb
     docker-compose
     file

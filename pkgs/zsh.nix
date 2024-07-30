@@ -31,5 +31,7 @@
       custom = "/home/horseman/nix-config/pkgs/zsh/";
       theme = "jonathan";
     };
+
+    shellInit = "eval \"$(direnv hook zsh)\"";
   };
 }
