@@ -43,7 +43,7 @@
 
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
-  srevices.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.autoNumlock = true;
   services.xserver.displayManager.sddm.wayland.enable = false;
@@ -56,13 +56,7 @@
 
   virtualisation.docker.enable = true;
 
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
+  hardware.pulseaudio.enable = true;
   services.jack = {
     jackd.enable = true;
     alsa.enable = false;
