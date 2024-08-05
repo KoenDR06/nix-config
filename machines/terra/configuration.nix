@@ -15,11 +15,8 @@
   ];
 
   # NVIDIA Drivers
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
+  hardware.graphics.enable32Bit = true;
+  hardware.graphics.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
     modesetting.enable = true;
@@ -44,10 +41,10 @@
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.autoNumlock = true;
-  services.xserver.displayManager.sddm.wayland.enable = false;
-  services.xserver.displayManager.defaultSession = "plasma";
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.autoNumlock = true;
+  services.displayManager.sddm.wayland.enable = false;
+  services.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;
 
   programs.ssh.askPassword = lib.mkForce "/nix/store/qrzq7dqp8dkffb5dvi42q647dhm87ady-ksshaskpass-6.0.3/bin/ksshaskpass";

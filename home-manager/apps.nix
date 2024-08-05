@@ -36,7 +36,7 @@
     file
     fzf
     gimp
-    gnome.gnome-calculator
+    gnome-calculator
     gnupg
     htop
     jdk
@@ -67,7 +67,6 @@
     unzip
     vlc
     whatsapp-for-linux
-    youtube-dl
     zsh
   ];
 
