@@ -13,9 +13,10 @@
     shellAliases = {
       update = "sudo nixos-rebuild switch --flake";
       compose = "sudo docker compose";
-      wolpc = "wakeonlan D8:5E:D3:A8:B1:0";
+      wolpc = config.sops.templates."zshwolpc".content;
       capture-config = "nix run github:pjones/plasma-manager > ~/nix-config/home-manager/plasma.nix";
       reboot-to-windows = "sudo efibootmgr -n 0000";
+      mkdir = "mkdir -p";
     };
 
     ohMyZsh = {
@@ -26,7 +27,6 @@
         "python"
         "git-auto-fetch"
         "wd"
-#        "nix-shell"
       ];
       custom = "/home/horseman/nix-config/pkgs/zsh/";
       theme = "jonathan";

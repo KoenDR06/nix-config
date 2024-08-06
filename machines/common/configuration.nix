@@ -65,11 +65,13 @@
       "syncthing/luna".owner = "horseman";
       "syncthing/terra".owner = "horseman";
       "syncthing/solis".owner = "horseman";
+      "zsh/wolpc".owner = "horseman";
     };
     templates = {
       "syncluna".content = ''${config.sops.placeholder."syncthing/luna"}'';
       "syncterra".content = ''${config.sops.placeholder."syncthing/terra"}'';
       "syncsolis".content = ''${config.sops.placeholder."syncthing/solis"}''; 
+      "zshwolpc".content = ''${config.sops.placeholder."zsh/wolpc"}'';
     };
   };
 
