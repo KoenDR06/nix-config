@@ -11,7 +11,9 @@
     enableCompletion = true;
 
     shellAliases = {
-      update = "sudo nixos-rebuild switch --flake";
+      wd = "wd --config ~/nix-config/config/.warprc";
+      rebuild = "sudo nixos-rebuild switch --flake";
+      update = "sudo nix flake update && rebuild";
       compose = "sudo docker compose";
       wolpc = config.sops.templates."zshwolpc".content;
       capture-config = "nix run github:pjones/plasma-manager > ~/nix-config/home-manager/plasma.nix";
