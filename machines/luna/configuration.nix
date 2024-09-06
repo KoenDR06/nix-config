@@ -31,8 +31,6 @@
   boot.loader.systemd-boot.enable = true;  
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
 
-  programs.ssh.askPassword = lib.mkForce "/nix/store/qrzq7dqp8dkffb5dvi42q647dhm87ady-ksshaskpass-6.0.3/bin/ksshaskpass";
-
   hardware.pulseaudio.enable = true;
   services.jack = {
     jackd.enable = true;
