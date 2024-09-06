@@ -25,10 +25,9 @@
 
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.autoNumlock = true;
-  services.xserver.displayManager.defaultSession = "plasma";
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.autoNumlock = true;
+  services.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;  
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
 
