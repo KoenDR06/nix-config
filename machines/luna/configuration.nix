@@ -31,9 +31,9 @@
   boot.loader.systemd-boot.enable = true;  
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
 
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
   services.jack = {
-    jackd.enable = true;
+    jackd.enable = false;
     alsa.enable = true;
     loopback.enable = false;
   };

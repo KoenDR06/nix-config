@@ -15,7 +15,7 @@
       rebuild = "sudo nixos-rebuild switch --flake";
       update = "sudo nix flake update && rebuild";
       compose = "sudo docker compose";
-      wolpc = "wakeonlan D8::5E:D3:A8:B1:0A";
+      wolpc = "wakeonlan D8:5E:D3:A8:B1:0A";
       capture-config = "nix run github:pjones/plasma-manager > ~/nix-config/home-manager/plasma.nix";
       reboot-to-windows = "sudo efibootmgr -n 0000";
       mkdir = "mkdir -p";

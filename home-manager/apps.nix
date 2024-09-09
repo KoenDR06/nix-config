@@ -44,11 +44,13 @@
     jetbrains.clion
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
+    jetbrains.rider
     inkscape
     inotify-tools
     libreoffice
     mullvad-vpn
     neofetch
+    obsidian
     parsec-bin
     platformio-core
     python3
@@ -67,6 +69,7 @@
     tmux
     unzip
     vlc
+    wakeonlan
     whatsapp-for-linux
     zsh
   ];

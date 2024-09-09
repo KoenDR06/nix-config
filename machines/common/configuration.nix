@@ -23,6 +23,11 @@
 
   nix.registry = (lib.mapAttrs (_: flake: {inherit flake;})) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    dotnetCorePackages.sdk_9_0
+  ];
+
   nix.nixPath = ["/etc/nix/path"];
   environment.etc =
     lib.mapAttrs'
