@@ -6,11 +6,7 @@
   pkgs,
   ...
 }: {
-  imports = [
-    ./neovim.nix
-    ./plasma.nix
-    ./gnome.nix
-  ];
+  imports = [];
 
   nixpkgs = {
     overlays = [
@@ -34,6 +30,8 @@
     direnv
     discord-ptb
     docker-compose
+    dotnetCorePackages.dotnet_9.runtime
+    dotnetCorePackages.dotnet_9.sdk
     file
     fzf
     gimp
@@ -48,6 +46,7 @@
     inkscape
     inotify-tools
     libreoffice
+    mono5
     mullvad-vpn
     neofetch
     obsidian
