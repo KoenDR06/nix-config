@@ -34,6 +34,7 @@
     dotnetCorePackages.dotnet_9.sdk
     file
     fzf
+    ghex
     gimp
     gnome-calculator
     gnupg
@@ -46,6 +47,7 @@
     inkscape
     inotify-tools
     libreoffice
+    lsix
     mono5
     mullvad-vpn
     neofetch
@@ -64,6 +66,7 @@
     solaar
     sops
     spotify
+    sxiv
     thunderbird
     tmux
     unzip
