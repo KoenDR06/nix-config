@@ -53,13 +53,11 @@
 
   virtualisation.docker.enable = true;
 
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
   services.jack = {
     jackd.enable = true;
     alsa.enable = false;
-    loopback = {
-      enable = true;
-    };
+    loopback.enable = true;
   };
 
   users.extraUsers.horseman.extraGroups = [ "jackaudio" ];
