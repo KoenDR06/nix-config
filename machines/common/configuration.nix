@@ -43,9 +43,7 @@
   };
 
   time.timeZone = "Europe/Amsterdam";
-
   services.lorri.enable = true;
-
   services.tailscale.enable = true;
 
   services.mullvad-vpn.enable = true;
@@ -70,11 +68,16 @@
       "syncthing/luna".owner = "horseman";
       "syncthing/terra".owner = "horseman";
       "syncthing/solis".owner = "horseman";
+      "syncthing/user".owner = "horseman";
+      "syncthing/password".owner = "horseman";
     };
     templates = {
       "syncluna".content = ''${config.sops.placeholder."syncthing/luna"}'';
       "syncterra".content = ''${config.sops.placeholder."syncthing/terra"}'';
       "syncsolis".content = ''${config.sops.placeholder."syncthing/solis"}''; 
+      "syncuser".content = ''${config.sops.placeholder."syncthing/user"}''; 
+      "syncpassword".content = ''${config.sops.placeholder."syncthing/password"}''; 
+      
     };
   };
 
@@ -83,9 +86,13 @@
     user = "horseman";
     dataDir = "/home/horseman";
     configDir = "/home/horseman/.config/syncthing";
-    overrideDevices = false;
+    overrideDevices = true;
     overrideFolders = true;
     settings = {
+      gui = {
+        user = config.sops.templates."syncuser".content;
+        password = config.sops.templates."syncpassword".content;
+      };
       devices = {
         "luna" = { id = config.sops.templates."syncluna".content; };
         "terra" = { id = config.sops.templates."syncterra".content; };
@@ -94,10 +101,6 @@
       folders = {
         "Documents" = {
           path = "/home/horseman/Documents";
-          devices = [ "luna" "terra" "solis" ];
-        };
-        "Programming" = {
-          path = "/home/horseman/Programming";
           devices = [ "luna" "terra" "solis" ];
         };
       };
