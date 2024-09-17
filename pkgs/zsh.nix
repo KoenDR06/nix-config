@@ -11,7 +11,7 @@
     enableCompletion = true;
 
     shellAliases = {
-      wd = "wd --config ~/nix-config/config/.warprc";
+      clone-dotfiles = "cp /home/horseman/nix-config/config/dotfiles/.\* /home/horseman/";
       rebuild = "sudo nixos-rebuild switch --flake";
       update = "sudo nix flake update && rebuild";
       compose = "sudo docker compose";
