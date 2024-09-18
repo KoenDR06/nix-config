@@ -22,6 +22,9 @@
 
   networking.hostName = "luna";
   networking.networkmanager.enable = true;
+  networking.extraHosts = ''
+    127.0.0.1 koala.rails.local members.rails.local leden.rails.local intro.rails.local
+  '';
 
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
@@ -37,6 +40,8 @@
     alsa.enable = true;
     loopback.enable = false;
   };
+
+  virtualisation.docker.enable = true;
 
   users.extraUsers.horseman.extraGroups = [ "jackaudio" ];
 }

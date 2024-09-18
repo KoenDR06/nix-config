@@ -6,7 +6,10 @@
   pkgs,
   ...
 }: {
-  imports = [];
+  imports = [
+    ./neovim.nix
+    ./plasma.nix
+  ];
 
   nixpkgs = {
     overlays = [
@@ -26,6 +29,7 @@
   };
 
   home.packages = with pkgs; [
+    alacritty
     bitwarden
     direnv
     discord-ptb
@@ -34,6 +38,7 @@
     dotnetCorePackages.dotnet_9.sdk
     file
     fzf
+    gcc
     ghex
     gimp
     gnome-calculator
@@ -44,6 +49,7 @@
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
     jetbrains.rider
+    jetbrains.rust-rover
     inkscape
     inotify-tools
     libreoffice

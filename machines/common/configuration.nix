@@ -37,6 +37,7 @@
     })
     config.nix.registry;
 
+  nix.settings.trusted-users = [ "root" "horseman" ];
   nix.settings = {
     experimental-features = "nix-command flakes";
     auto-optimise-store = true;
