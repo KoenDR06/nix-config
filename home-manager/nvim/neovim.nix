@@ -8,6 +8,7 @@
     vimAlias = true;
     
     extraConfig = ''
+      programs.neovim.extraConfig = lib.fileContents ./init.vim;
       set number relativenumber
 
     '';

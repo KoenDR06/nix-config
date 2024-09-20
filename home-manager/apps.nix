@@ -7,7 +7,7 @@
   ...
 }: {
   imports = [
-    ./neovim.nix
+    ./nvim/neovim.nix
     ./plasma.nix
   ];
 
