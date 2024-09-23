@@ -1,23 +1,26 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   programs.neovim = {
     enable = true;
     vimAlias = true;
-    
-    extraConfig = ''
-      programs.neovim.extraConfig = lib.fileContents ./init.vim;
-      set number relativenumber
-
-    '';
 
     plugins = [
-      { plugin = pkgs.vimPlugins.vim-numbertoggle; }
+      { 
+        plugin = pkgs.vimPlugins.vim-numbertoggle;
+        config = "set number norelativenumber";
+      }
       { plugin = pkgs.vimPlugins.vim-sleuth; }
-      { plugin = pkgs.vimPlugins.lualine-nvim; }
+      { 
+        plugin = pkgs.vimPlugins.lualine-nvim; 
+        config = lib.fileContents ./lualine.vim;
+      }
       { plugin = pkgs.vimPlugins.neoscroll-nvim; }
     ];
   };
 }
+
+
