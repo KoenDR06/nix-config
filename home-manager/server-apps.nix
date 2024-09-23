@@ -6,7 +6,9 @@
   pkgs,
   ...
 }: {
-  imports = [];
+  imports = [
+    ./nvim/neovim.nix
+  ];
 
   nixpkgs = {
     overlays = [
