@@ -49,7 +49,6 @@
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
     jetbrains.rider
-    jetbrains.rust-rover
     inkscape
     inotify-tools
     libreoffice
