@@ -1,4 +1,5 @@
-nix:~/nix-config
 docs:~/Documents
-prog:~/Programming
 down:~/Downloads
+nix:~/nix-config
+obs:~/Documents/Uni/Obsidian
+prog:~/Programming
