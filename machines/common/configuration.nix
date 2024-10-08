@@ -66,19 +66,12 @@
       generateKey = false;
     };
     secrets = {
-      "syncthing/luna".owner = "horseman";
-      "syncthing/terra".owner = "horseman";
-      "syncthing/solis".owner = "horseman";
       "syncthing/user".owner = "horseman";
       "syncthing/password".owner = "horseman";
     };
     templates = {
-      "syncluna".content = ''${config.sops.placeholder."syncthing/luna"}'';
-      "syncterra".content = ''${config.sops.placeholder."syncthing/terra"}'';
-      "syncsolis".content = ''${config.sops.placeholder."syncthing/solis"}''; 
       "syncuser".content = ''${config.sops.placeholder."syncthing/user"}''; 
-      "syncpassword".content = ''${config.sops.placeholder."syncthing/password"}''; 
-      
+      "syncpassword".content = ''${config.sops.placeholder."syncthing/password"}'';       
     };
   };
 
@@ -95,9 +88,9 @@
         password = config.sops.templates."syncpassword".content;
       };
       devices = {
-        "luna" = { id = config.sops.templates."syncluna".content; };
-        "terra" = { id = config.sops.templates."syncterra".content; };
-        "solis" = { id = config.sops.templates."syncsolis".content; };
+        "luna" = { id = "MW4ZTAX-D7KDLRL-YHNGNCF-V6FW5L4-SCKQKES-BO7KV43-L5667GL-JHIYEAA"; };
+        "terra" = { id = "2QWRFLY-ZUY5C6C-X36R5CY-PJSGLYY-5HWIWJN-2YYWRPU-T66GJMU-GXTQ6QK"; };
+        "solis" = { id = "TI3T3BI-7TPOMUM-CWOL3M5-QBHTBVD-EX2DQVC-62UHHA3-JTUSN5F-5S47JQD"; };
       };
       folders = {
         "Documents" = {
