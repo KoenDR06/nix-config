@@ -101,6 +101,7 @@
       };
       folders = {
         "Documents" = {
+          id = "documentFolder";
           path = "/home/horseman/Documents";
           devices = [ "luna" "terra" "solis" ];
         };
