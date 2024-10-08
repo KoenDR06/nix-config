@@ -72,6 +72,7 @@
     sops
     spotify
     sxiv
+    termdown
     thunderbird
     tmux
     unzip

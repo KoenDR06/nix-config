@@ -9,7 +9,7 @@
       "kaccess"."Toggle Screen Reader On and Off" = "Meta+Alt+S";
       "kcm_touchpad"."Disable Touchpad" = "Touchpad Off";
       "kcm_touchpad"."Enable Touchpad" = "Touchpad On";
-      "kcm_touchpad"."Toggle Touchpad" = ["Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku,Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku"];
+      "kcm_touchpad"."Toggle Touchpad" = ["Touchpad Toggle" "" "Meta+Ctrl+Zenkaku Hankaku,Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku"];
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
       "kmix"."decrease_volume" = "Volume Down";
       "kmix"."decrease_volume_small" = "Shift+Volume Down";
@@ -27,9 +27,7 @@
       "ksmserver"."Reboot Without Confirmation" = [ ];
       "ksmserver"."Shut Down" = [ ];
       "kwin"."Activate Window Demanding Attention" = "Meta+Ctrl+A";
-      "kwin"."ClearLastMouseMark" = "Meta+Shift+F12,none";
-      "kwin"."ClearMouseMarks" = "Meta+Shift+F11,none";
-      "kwin"."Cube" = "Meta+Ctrl+G,Meta+C,Toggle Cube";
+      "kwin"."Cube" = "Meta+C,none,Toggle Cube";
       "kwin"."Cycle Overview" = [ ];
       "kwin"."Cycle Overview Opposite" = [ ];
       "kwin"."Decrease Opacity" = [ ];
@@ -40,9 +38,7 @@
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
       "kwin"."Increase Opacity" = [ ];
-      "kwin"."Invert" = "Meta+Ctrl+I\\, ,none";
       "kwin"."Invert Screen Colors" = [ ];
-      "kwin"."InvertWindow" = "Meta+Ctrl+U\\, ,none";
       "kwin"."Kill Window" = "Meta+Ctrl+Esc";
       "kwin"."MinimizeAll" = [ ];
       "kwin"."Move Tablet to Next Output" = [ ];
@@ -55,7 +51,6 @@
       "kwin"."Overview" = "Meta+W";
       "kwin"."Setup Window Shortcut" = [ ];
       "kwin"."Show Desktop" = "Meta+D";
-      "kwin"."Suspend Compositing" = "Alt+Shift+F12\\, ,none";
       "kwin"."Switch One Desktop Down" = "Meta+Ctrl+Down";
       "kwin"."Switch One Desktop Up" = "Meta+Ctrl+Up";
       "kwin"."Switch One Desktop to the Left" = "Meta+Ctrl+Left";
@@ -64,7 +59,7 @@
       "kwin"."Switch Window Left" = "Meta+Alt+Left";
       "kwin"."Switch Window Right" = "Meta+Alt+Right";
       "kwin"."Switch Window Up" = "Meta+Alt+Up";
-      "kwin"."Switch to Desktop 1" = "\\, Ctrl+F1\\, ,Ctrl+F1,Switch to Desktop 1";
+      "kwin"."Switch to Desktop 1" = "Ctrl+F1";
       "kwin"."Switch to Desktop 10" = [ ];
       "kwin"."Switch to Desktop 11" = [ ];
       "kwin"."Switch to Desktop 12" = [ ];
@@ -75,10 +70,10 @@
       "kwin"."Switch to Desktop 17" = [ ];
       "kwin"."Switch to Desktop 18" = [ ];
       "kwin"."Switch to Desktop 19" = [ ];
-      "kwin"."Switch to Desktop 2" = "\\, Ctrl+F2\\, ,Ctrl+F2,Switch to Desktop 2";
+      "kwin"."Switch to Desktop 2" = "Ctrl+F2";
       "kwin"."Switch to Desktop 20" = [ ];
-      "kwin"."Switch to Desktop 3" = "\\, Ctrl+F3\\, ,Ctrl+F3,Switch to Desktop 3";
-      "kwin"."Switch to Desktop 4" = "\\, Ctrl+F4\\, ,Ctrl+F4,Switch to Desktop 4";
+      "kwin"."Switch to Desktop 3" = "Ctrl+F3";
+      "kwin"."Switch to Desktop 4" = "Ctrl+F4";
       "kwin"."Switch to Desktop 5" = [ ];
       "kwin"."Switch to Desktop 6" = [ ];
       "kwin"."Switch to Desktop 7" = [ ];
@@ -118,7 +113,7 @@
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
       "kwin"."Window Lower" = [ ];
-      "kwin"."Window Maximize" = ["Meta+PgUp" "Meta+Up,Meta+PgUp,Maximize Window"];
+      "kwin"."Window Maximize" = "Meta+Up\\, Meta+PgUp\\, ,Meta+PgUp,Maximize Window";
       "kwin"."Window Maximize Horizontal" = [ ];
       "kwin"."Window Maximize Vertical" = [ ];
       "kwin"."Window Minimize" = "Meta+PgDown";
@@ -132,8 +127,8 @@
       "kwin"."Window One Desktop to the Right" = "Meta+Ctrl+Shift+Right";
       "kwin"."Window One Screen Down" = [ ];
       "kwin"."Window One Screen Up" = [ ];
-      "kwin"."Window One Screen to the Left" = [ ];
-      "kwin"."Window One Screen to the Right" = [ ];
+      "kwin"."Window One Screen to the Left" = "none,,Move Window One Screen to the Left";
+      "kwin"."Window One Screen to the Right" = "none,,Move Window One Screen to the Right";
       "kwin"."Window Operations Menu" = "Alt+F3";
       "kwin"."Window Pack Down" = [ ];
       "kwin"."Window Pack Left" = [ ];
@@ -144,7 +139,7 @@
       "kwin"."Window Quick Tile Bottom Right" = [ ];
       "kwin"."Window Quick Tile Left" = "Meta+Left";
       "kwin"."Window Quick Tile Right" = "Meta+Right";
-      "kwin"."Window Quick Tile Top" = "none,Meta+Up,Quick Tile Window to the Top";
+      "kwin"."Window Quick Tile Top" = "\\, Meta+Up\\, ,Meta+Up,Quick Tile Window to the Top";
       "kwin"."Window Quick Tile Top Left" = [ ];
       "kwin"."Window Quick Tile Top Right" = [ ];
       "kwin"."Window Raise" = [ ];
@@ -187,7 +182,7 @@
       "kwin"."view_actual_size" = ",Meta+0,Zoom to Actual Size";
       "kwin"."view_zoom_in" = ["Meta++" "Meta+=,Meta++" "Meta+=,Zoom In"];
       "kwin"."view_zoom_out" = "Meta+-";
-      "mediacontrol"."mediavolumedown" = "\\, ,,Media volume down";
+      "mediacontrol"."mediavolumedown" = "none,,Media volume down";
       "mediacontrol"."mediavolumeup" = [ ];
       "mediacontrol"."nextmedia" = "Media Next";
       "mediacontrol"."pausemedia" = "Media Pause";
@@ -210,7 +205,7 @@
       "org_kde_powerdevil"."powerProfile" = ["Battery" "" "Meta+B\\, ,Battery" "Meta+B,Switch Power Profile"];
       "plasmashell"."activate application launcher" = ["Meta" "" "Alt+F1\\, ,Meta" "Alt+F1,Activate Application Launcher"];
       "plasmashell"."activate task manager entry 1" = "Meta+1";
-      "plasmashell"."activate task manager entry 10" = "Meta+0";
+      "plasmashell"."activate task manager entry 10" = "\\, Meta+0\\, ,Meta+0,Activate Task Manager Entry 10";
       "plasmashell"."activate task manager entry 2" = "Meta+2";
       "plasmashell"."activate task manager entry 3" = "Meta+3";
       "plasmashell"."activate task manager entry 4" = "Meta+4";
@@ -219,7 +214,7 @@
       "plasmashell"."activate task manager entry 7" = "Meta+7";
       "plasmashell"."activate task manager entry 8" = "Meta+8";
       "plasmashell"."activate task manager entry 9" = "Meta+9";
-      "plasmashell"."clear-history" = [ ];
+      "plasmashell"."clear-history" = "\\, ,,Clear Clipboard History";
       "plasmashell"."clipboard_action" = "Meta+Ctrl+X";
       "plasmashell"."cycle-panels" = "Meta+Alt+P";
       "plasmashell"."cycleNextAction" = [ ];
@@ -297,6 +292,7 @@
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."ClickMethod" = 2;
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."Enabled" = true;
       "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."ScrollFactor" = 0.3;
+      "kcminputrc"."Libinput/1267/12432/ELAN1200:00 04F3:3090 Touchpad"."ScrollMethod" = 1;
       "kcminputrc"."Mouse"."X11LibInputXAccelProfileFlat" = true;
       "kded5rc"."Module-browserintegrationreminder"."autoload" = false;
       "kded5rc"."Module-device_automounter"."autoload" = false;
