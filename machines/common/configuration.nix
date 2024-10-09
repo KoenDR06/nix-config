@@ -85,7 +85,7 @@
     settings = {
       options = {
         urAccepted = -1;
-      }
+      };
       gui = {
         user = config.sops.templates."syncuser".content;
         password = config.sops.templates."syncpassword".content;
@@ -102,7 +102,7 @@
           name = "terra";
         };
         "solis" = {
-          id = "TI3T3BI-7TPOMUM-CWOL3M5-QBHTBVD-EX2DQVC-62UHHA3-JTUSN5F-5S47JQD";
+          id = "YOSYADZ-3OZ3XBH-7XEIK2W-DHAEIFD-5P5ZIHB-PAP74DH-T7GHLKT-O32YEA4";
           autoAcceptFolders = true;
           name = "solis";
         };
