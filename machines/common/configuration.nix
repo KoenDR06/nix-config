@@ -83,14 +83,29 @@
     overrideDevices = true;
     overrideFolders = true;
     settings = {
+      options = {
+        urAccepted = -1;
+      }
       gui = {
         user = config.sops.templates."syncuser".content;
         password = config.sops.templates."syncpassword".content;
       };
       devices = {
-        "luna" = { id = "MW4ZTAX-D7KDLRL-YHNGNCF-V6FW5L4-SCKQKES-BO7KV43-L5667GL-JHIYEAA"; };
-        "terra" = { id = "2QWRFLY-ZUY5C6C-X36R5CY-PJSGLYY-5HWIWJN-2YYWRPU-T66GJMU-GXTQ6QK"; };
-        "solis" = { id = "TI3T3BI-7TPOMUM-CWOL3M5-QBHTBVD-EX2DQVC-62UHHA3-JTUSN5F-5S47JQD"; };
+        "luna" = {
+          id = "MW4ZTAX-D7KDLRL-YHNGNCF-V6FW5L4-SCKQKES-BO7KV43-L5667GL-JHIYEAA";
+          autoAcceptFolders = true;
+          name = "luna";
+        };
+        "terra" = {
+          id = "2QWRFLY-ZUY5C6C-X36R5CY-PJSGLYY-5HWIWJN-2YYWRPU-T66GJMU-GXTQ6QK";
+          autoAcceptFolders = true;
+          name = "terra";
+        };
+        "solis" = {
+          id = "TI3T3BI-7TPOMUM-CWOL3M5-QBHTBVD-EX2DQVC-62UHHA3-JTUSN5F-5S47JQD";
+          autoAcceptFolders = true;
+          name = "solis";
+        };
       };
       folders = {
         "Documents" = {
