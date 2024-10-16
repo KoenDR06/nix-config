@@ -78,7 +78,6 @@
     unzip
     vlc
     wakeonlan
-    whatsapp-for-linux
     zsh
   ];
 
