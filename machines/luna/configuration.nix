@@ -43,5 +43,8 @@
 
   virtualisation.docker.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "horseman" ];
+
   users.extraUsers.horseman.extraGroups = [ "jackaudio" ];
 }
