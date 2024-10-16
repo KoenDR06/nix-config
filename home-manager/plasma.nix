@@ -9,7 +9,7 @@
       "kaccess"."Toggle Screen Reader On and Off" = "Meta+Alt+S";
       "kcm_touchpad"."Disable Touchpad" = "Touchpad Off";
       "kcm_touchpad"."Enable Touchpad" = "Touchpad On";
-      "kcm_touchpad"."Toggle Touchpad" = ["Touchpad Toggle"];
+      "kcm_touchpad"."Toggle Touchpad" = ["Touchpad Toggle,Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku"];
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
       "kmix"."decrease_volume" = "Volume Down";
       "kmix"."decrease_volume_small" = "Shift+Volume Down";
@@ -27,7 +27,7 @@
       "ksmserver"."Reboot Without Confirmation" = "none,,Reboot Without Confirmation";
       "ksmserver"."Shut Down" = "none,,Shut Down";
       "kwin"."Activate Window Demanding Attention" = "Meta+Ctrl+A";
-      "kwin"."Cube" = "Meta+G";
+      "kwin"."Cube" = "Meta+Ctrl+G,none,Toggle Cube";
       "kwin"."Cycle Overview" = [ ];
       "kwin"."Cycle Overview Opposite" = [ ];
       "kwin"."Decrease Opacity" = "none,,Decrease Opacity of Active Window by 5%";
@@ -74,8 +74,8 @@
       "kwin"."Switch to Desktop 20" = "none,,Switch to Desktop 20";
       "kwin"."Switch to Desktop 3" = "Ctrl+F3";
       "kwin"."Switch to Desktop 4" = "Ctrl+F4";
-      "kwin"."Switch to Desktop 5" = "Ctrl+F5";
-      "kwin"."Switch to Desktop 6" = "Ctrl+F6";
+      "kwin"."Switch to Desktop 5" = "Ctrl+F5,,Switch to Desktop 5";
+      "kwin"."Switch to Desktop 6" = "Ctrl+F6,,Switch to Desktop 6";
       "kwin"."Switch to Desktop 7" = "none,,Switch to Desktop 7";
       "kwin"."Switch to Desktop 8" = "none,,Switch to Desktop 8";
       "kwin"."Switch to Desktop 9" = "none,,Switch to Desktop 9";
@@ -223,7 +223,7 @@
       "plasmashell"."next activity" = [ ];
       "plasmashell"."previous activity" = [ ];
       "plasmashell"."repeat_action" = "Meta+Ctrl+R";
-      "plasmashell"."show dashboard" = "Ctrl+F12";
+      "plasmashell"."show dashboard" = "none,Ctrl+F12,Show Desktop";
       "plasmashell"."show-barcode" = "none,,Show Barcode…";
       "plasmashell"."show-on-mouse-pos" = "Meta+V";
       "plasmashell"."stop current activity" = "Meta+S";
