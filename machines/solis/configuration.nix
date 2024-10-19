@@ -29,6 +29,24 @@
   services.resolved.enable = true;
   services.resolved.extraConfig = "DNSStubListener=no\n";
 
+  systemd.timers."backupSyncthing" = {
+    wantedBy = [ "timers.target" ];
+      timerConfig = {
+        OnCalendar = "daily";
+        Persistent = true;
+      };
+  };
+
+  systemd.services."backupSyncthing" = {
+    script = ''
+      /home/horseman/nix-config/misc/backup.sh
+    '';
+    serviceConfig = {
+      Type = "oneshot";
+      User = "root";
+    };
+  };
+
   services.samba = {
     enable = false;
     securityType = "user";
