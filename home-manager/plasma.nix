@@ -3,13 +3,15 @@
     enable = true;
     shortcuts = {
       "ActivityManager"."switch-to-activity-b2ab5fe5-5164-403b-a54c-47948116f11a" = [ ];
+      "ActivityManager"."switch-to-activity-c82192f5-3d2d-4f8d-9c58-364b4cca1b53" = [ ];
+      "ActivityManager"."switch-to-activity-d15629d7-eac1-4856-990c-e88d4acd7c5d" = [ ];
       "ActivityManager"."switch-to-activity-df5108d4-687b-4cd3-835e-318d72116b93" = [ ];
       "KDE Keyboard Layout Switcher"."Switch to Last-Used Keyboard Layout" = "Meta+Alt+L";
       "KDE Keyboard Layout Switcher"."Switch to Next Keyboard Layout" = "Meta+Alt+K";
       "kaccess"."Toggle Screen Reader On and Off" = "Meta+Alt+S";
       "kcm_touchpad"."Disable Touchpad" = "Touchpad Off";
       "kcm_touchpad"."Enable Touchpad" = "Touchpad On";
-      "kcm_touchpad"."Toggle Touchpad" = ["Touchpad Toggle,Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku"];
+      "kcm_touchpad"."Toggle Touchpad" = ["Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku,Touchpad Toggle" "Meta+Ctrl+Zenkaku Hankaku"];
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
       "kmix"."decrease_volume" = "Volume Down";
       "kmix"."decrease_volume_small" = "Shift+Volume Down";
@@ -29,7 +31,7 @@
       "kwin"."Activate Window Demanding Attention" = "Meta+Ctrl+A";
       "kwin"."ClearLastMouseMark" = "Meta+Shift+F12";
       "kwin"."ClearMouseMarks" = "Meta+Shift+F11";
-      "kwin"."Cube" = "Meta+Ctrl+G,none,Toggle Cube";
+      "kwin"."Cube" = "Meta+C,none,Toggle Cube";
       "kwin"."Cycle Overview" = [ ];
       "kwin"."Cycle Overview Opposite" = [ ];
       "kwin"."Decrease Opacity" = "none,,Decrease Opacity of Active Window by 5%";
@@ -40,9 +42,9 @@
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
       "kwin"."Increase Opacity" = "none,,Increase Opacity of Active Window by 5%";
-      "kwin"."Invert" = "Meta+Ctrl+I";
+      "kwin"."Invert" = "Meta+Ctrl+I\\, ,none";
       "kwin"."Invert Screen Colors" = [ ];
-      "kwin"."InvertWindow" = "Meta+Ctrl+U";
+      "kwin"."InvertWindow" = "Meta+Ctrl+U\\, ,none";
       "kwin"."Kill Window" = "Meta+Ctrl+Esc";
       "kwin"."MinimizeAll" = [ ];
       "kwin"."Move Tablet to Next Output" = [ ];
@@ -78,8 +80,8 @@
       "kwin"."Switch to Desktop 20" = "none,,Switch to Desktop 20";
       "kwin"."Switch to Desktop 3" = "Ctrl+F3";
       "kwin"."Switch to Desktop 4" = "Ctrl+F4";
-      "kwin"."Switch to Desktop 5" = "Ctrl+F5,,Switch to Desktop 5";
-      "kwin"."Switch to Desktop 6" = "Ctrl+F6,,Switch to Desktop 6";
+      "kwin"."Switch to Desktop 5" = "none,,Switch to Desktop 5";
+      "kwin"."Switch to Desktop 6" = "none,,Switch to Desktop 6";
       "kwin"."Switch to Desktop 7" = "none,,Switch to Desktop 7";
       "kwin"."Switch to Desktop 8" = "none,,Switch to Desktop 8";
       "kwin"."Switch to Desktop 9" = "none,,Switch to Desktop 9";
@@ -102,9 +104,9 @@
       "kwin"."Toggle" = [ ];
       "kwin"."Toggle Night Color" = [ ];
       "kwin"."Toggle Window Raise/Lower" = "none,,Toggle Window Raise/Lower";
-      "kwin"."ToggleCurrentThumbnail" = "Meta+Ctrl+T";
-      "kwin"."ToggleMouseClick" = "Meta+*";
-      "kwin"."TrackMouse" = ",none,Track mouse";
+      "kwin"."ToggleCurrentThumbnail" = "Meta+Ctrl+T\\, ,none";
+      "kwin"."ToggleMouseClick" = "Meta+*\\, ,none";
+      "kwin"."TrackMouse" = [ ];
       "kwin"."Walk Through Windows" = "Alt+Tab";
       "kwin"."Walk Through Windows (Reverse)" = "Alt+Shift+Tab";
       "kwin"."Walk Through Windows Alternative" = "none,,Walk Through Windows Alternative";
@@ -134,7 +136,7 @@
       "kwin"."Window One Desktop to the Right" = "Meta+Ctrl+Shift+Right";
       "kwin"."Window One Screen Down" = "none,,Move Window One Screen Down";
       "kwin"."Window One Screen Up" = "none,,Move Window One Screen Up";
-      "kwin"."Window One Screen to the Left" = [ ];
+      "kwin"."Window One Screen to the Left" = "\\, ,,Move Window One Screen to the Left";
       "kwin"."Window One Screen to the Right" = [ ];
       "kwin"."Window Operations Menu" = "Alt+F3";
       "kwin"."Window Pack Down" = "none,,Move Window Down";
@@ -239,7 +241,7 @@
       "plasmashell"."toggle do not disturb" = "none,,Toggle do not disturb";
       "services/alacritty.desktop"."_launch" = "Alt+Q";
       "services/lookandfeeltool-4.desktop"."_launch" = "Ctrl+F12";
-      "services/lookandfeeltool.desktop"."_launch" = "Ctrl+Shift+F12";
+      "services/org.kde.konsole.desktop"."_launch" = [ ];
       "services/org.kde.plasma-systemmonitor.desktop"."_launch" = ["Ctrl+Shift+Esc" "Meta+Esc"];
       "services/org.kde.spectacle.desktop"."ActiveWindowScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."FullScreenScreenShot" = [ ];
@@ -249,6 +251,9 @@
       "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
       "services/org.kde.spectacle.desktop"."WindowUnderCursorScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."_launch" = [ ];
+      "services/switch-to-dark-theme.sh.desktop"."_launch" = [ ];
+      "services/switch-to-light-theme.sh.desktop"."_launch" = "Ctrl+Shift+F12";
+      "services/systemsettings.desktop"."_launch" = [ ];
     };
     configFile = {
       "baloofilerc"."General"."dbVersion" = 2;
@@ -260,8 +265,11 @@
       "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize" = false;
       "dolphinrc"."KFileDialog Settings"."Places Icons Static Size" = 22;
       "kactivitymanagerdrc"."activities"."b2ab5fe5-5164-403b-a54c-47948116f11a" = "Stay Awake";
+      "kactivitymanagerdrc"."activities"."c82192f5-3d2d-4f8d-9c58-364b4cca1b53" = "Default";
+      "kactivitymanagerdrc"."activities"."d15629d7-eac1-4856-990c-e88d4acd7c5d" = "Stay Awake";
       "kactivitymanagerdrc"."activities"."df5108d4-687b-4cd3-835e-318d72116b93" = "Default";
       "kactivitymanagerdrc"."activities-icons"."b2ab5fe5-5164-403b-a54c-47948116f11a" = "activities";
+      "kactivitymanagerdrc"."activities-icons"."d15629d7-eac1-4856-990c-e88d4acd7c5d" = "activities";
       "kactivitymanagerdrc"."activities-icons"."df5108d4-687b-4cd3-835e-318d72116b93" = "activities";
       "kactivitymanagerdrc"."main"."currentActivity" = "df5108d4-687b-4cd3-835e-318d72116b93";
       "kactivitymanagerdrc"."main"."runningActivities" = "df5108d4-687b-4cd3-835e-318d72116b93";
@@ -292,6 +300,7 @@
       "katerc"."filetree"."sortRole" = 0;
       "katerc"."filetree"."viewShade" = "211,190,222";
       "kcminputrc"."Keyboard"."NumLock" = 0;
+      "kcminputrc"."Libinput/1133/49970/Logitech Gaming Mouse G502"."PointerAccelerationProfile" = 2;
       "kcminputrc"."Libinput/1133/49970/Logitech Gaming Mouse G502"."ScrollFactor" = 0.5;
       "kcminputrc"."Libinput/1133/50504/Logitech USB Receiver Mouse"."MiddleButtonEmulation" = false;
       "kcminputrc"."Libinput/1133/50504/Logitech USB Receiver Mouse"."PointerAccelerationProfile" = 1;
@@ -309,6 +318,7 @@
       "kdeglobals"."General"."TerminalService" = "Alacritty.desktop";
       "kdeglobals"."General"."UseSystemBell" = true;
       "kdeglobals"."KDE"."AnimationDurationFactor" = 0.35355339059327373;
+      "kdeglobals"."KDE"."SingleClick" = true;
       "kdeglobals"."KFileDialog Settings"."Allow Expansion" = false;
       "kdeglobals"."KFileDialog Settings"."Automatically select filename extension" = true;
       "kdeglobals"."KFileDialog Settings"."Breadcrumb Navigation" = true;
@@ -371,6 +381,7 @@
       "kwinrc"."Effect-overview"."GridBorderActivate" = 7;
       "kwinrc"."Effect-shakecursor"."Magnification" = 10;
       "kwinrc"."Effect-slide"."HorizontalGap" = 0;
+      "kwinrc"."Effect-slide"."SlideBackground" = false;
       "kwinrc"."Effect-slide"."VerticalGap" = 0;
       "kwinrc"."Effect-trackmouse"."Alt" = true;
       "kwinrc"."Effect-trackmouse"."Shift" = true;
@@ -407,6 +418,7 @@
       "kwinrc"."Tiling/805020f2-e93e-5b0a-8771-dc3fefebe3c4"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/88b07ab8-dd78-5153-a6bc-f367d4aed265"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/a3d991e5-e4d6-5b87-b0c7-d6949c612be9"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
+      "kwinrc"."Tiling/cbff9b14-ae6d-566e-843b-52ffde27afab"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
@@ -427,6 +439,10 @@
       "kwinrulesrc"."096aaa12-acd7-4ed3-8682-1135d85ec9be"."aboverule" = 3;
       "kwinrulesrc"."096aaa12-acd7-4ed3-8682-1135d85ec9be"."wmclasscomplete" = true;
       "kwinrulesrc"."096aaa12-acd7-4ed3-8682-1135d85ec9be"."wmclassmatch" = 2;
+      "kwinrulesrc"."1"."Description" = "Application settings for org.kde.konsole";
+      "kwinrulesrc"."1"."aboverule" = 3;
+      "kwinrulesrc"."1"."wmclasscomplete" = true;
+      "kwinrulesrc"."1"."wmclassmatch" = 2;
       "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."Description" = "Window settings for org.kde.konsole";
       "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."noborder" = true;
       "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."noborderrule" = 3;
@@ -435,6 +451,8 @@
       "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."wmclass" = "konsole org.kde.konsole";
       "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."wmclasscomplete" = true;
       "kwinrulesrc"."6abee73a-6ad7-4238-8e85-ae830edacafa"."wmclassmatch" = 1;
+      "kwinrulesrc"."General"."count" = 1;
+      "kwinrulesrc"."General"."rules" = 1;
       "kxkbrc"."Layout"."Options" = "terminate:ctrl_alt_bksp";
       "kxkbrc"."Layout"."ResetOldOptions" = true;
       "plasma-localerc"."Formats"."LANG" = "en_US.UTF-8";
@@ -442,15 +460,19 @@
       "plasma-localerc"."Formats"."LC_PAPER" = "C";
       "plasma-localerc"."Formats"."LC_TIME" = "C";
       "plasmanotifyrc"."Applications/com.github.eneshecan.WhatsAppForLinux"."Seen" = true;
+      "plasmanotifyrc"."Applications/firefox"."Seen" = true;
       "plasmanotifyrc"."Notifications"."PopupPosition" = "BottomRight";
       "plasmarc"."Wallpapers"."usersWallpapers" = "/home/horseman/nix-config/misc/nixos_wallpaper_light_3840x2160.png,/home/horseman/nix-config/misc/nixos_wallpaper_dark_3840x2160.png";
       "spectaclerc"."Annotations"."annotationToolType" = 2;
+      "spectaclerc"."GuiConfig"."captureMode" = 0;
       "spectaclerc"."ImageSave"."lastImageSaveAsLocation" = "file:///home/horseman/Pictures/Screenshots/Screenshot_20240917_133224.png";
       "spectaclerc"."ImageSave"."lastImageSaveLocation" = "file:///home/horseman/Pictures/Screenshots/Screenshot_20240923_142906.png";
       "spectaclerc"."ImageSave"."translatedScreenshotsFolder" = "Screenshots";
       "spectaclerc"."VideoSave"."translatedScreencastsFolder" = "Screencasts";
+      "systemsettingsrc"."systemsettings_sidebar_mode"."HighlightNonDefaultSettings" = false;
     };
     dataFile = {
+      "dolphin/view_properties/global/.directory"."Dolphin"."VisibleRoles" = "Icons_text";
       "dolphin/view_properties/global/.directory"."Settings"."HiddenFilesShown" = true;
       "kate/anonymous.katesession"."Document 0"."URL" = "sftp://solis/home/horseman/wget-log.1";
       "kate/anonymous.katesession"."Kate Plugins"."cmaketoolsplugin" = false;
@@ -543,6 +565,7 @@
       "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."Count" = 1;
       "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."Documents" = "sftp://solis/home/horseman/wget-log.1";
       "kate/anonymous.katesession"."MainWindow0-ViewSpace 0"."View 0" = "sftp://solis/home/horseman/wget-log.1";
+      "kate/anonymous.katesession"."MainWindow0-ViewSpace 0 file:\\/\\/\\/home\\/horseman\\/gpus.json"."ScrollLine" = 2060;
       "kate/anonymous.katesession"."Open Documents"."Count" = 1;
       "kate/anonymous.katesession"."Open MainWindows"."Count" = 1;
       "kate/anonymous.katesession"."Plugin:kateprojectplugin:"."projects" = "";
