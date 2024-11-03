@@ -38,6 +38,28 @@
 
   networking.hostName = "terra";
 
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    kate
+    konsole
+  ];
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-calendar
+    gnome-characters
+    nautilus
+    gnome-clocks
+    gnome-contacts
+    evince
+    file-roller
+    geary
+    gnome-system-monitor
+    eog
+    gnome-logs
+    gnome-maps
+    gnome-music
+    seahorse
+    gnome-text-editor
+  ];
+
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
