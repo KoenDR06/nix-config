@@ -34,6 +34,7 @@
   boot.loader.systemd-boot.enable = true;  
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
 
+  hardware.bluetooth.enable = true;
   hardware.pulseaudio.enable = false;
   services.jack = {
     jackd.enable = false;
