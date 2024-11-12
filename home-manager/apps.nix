@@ -60,11 +60,11 @@
     parsec-bin
     platformio-core
     python3
-    python311Packages.joblib
-    python311Packages.numpy
-    python311Packages.scikit-learn
-    python311Packages.scipy
-    python311Packages.threadpoolctl
+    python312Packages.joblib
+    python312Packages.numpy
+    python312Packages.scikit-learn
+    python312Packages.scipy
+    python312Packages.threadpoolctl
     qbittorrent
     reaper
     retext

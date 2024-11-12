@@ -43,7 +43,7 @@
     '';
     serviceConfig = {
       Type = "oneshot";
-      User = "root";
+      User = "horseman";
     };
   };
 
