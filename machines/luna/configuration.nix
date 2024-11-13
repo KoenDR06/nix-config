@@ -42,6 +42,29 @@
     loopback.enable = false;
   };
 
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    kate
+    konsole
+  ];
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-calendar
+    gnome-characters
+    nautilus
+    gnome-clocks
+    gnome-contacts
+    evince
+    file-roller
+    geary
+    gnome-system-monitor
+    eog
+    gnome-logs
+    gnome-maps
+    gnome-music
+    seahorse
+    gnome-text-editor
+  ];
+
+
   virtualisation.docker.enable = true;
 
   virtualisation.virtualbox.host.enable = true;

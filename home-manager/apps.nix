@@ -72,6 +72,7 @@
     solaar
     sops
     spotify
+    sqlitebrowser
     sxiv
     termdown
     thunderbird
@@ -79,6 +80,7 @@
     unzip
     vlc
     wakeonlan
+    xclip
     zsh
   ];
 

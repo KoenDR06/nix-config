@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/run/current-system/sw/bin/zsh
 
 cd /home/horseman
 
