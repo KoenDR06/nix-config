@@ -34,8 +34,8 @@
     direnv
     discord-ptb
     docker-compose
-    dotnetCorePackages.dotnet_9.runtime
-    dotnetCorePackages.dotnet_9.sdk
+    dotnetCorePackages.sdk_8_0_1xx
+    dotnetPackages.Nuget
     file
     fzf
     gcc
@@ -44,6 +44,7 @@
     gnome-calculator
     gnupg
     htop
+    icu
     jdk
     jetbrains.clion
     jetbrains.idea-ultimate
@@ -53,7 +54,7 @@
     inotify-tools
     libreoffice
     lsix
-    mono5
+    msbuild
     mullvad-vpn
     neofetch
     obsidian
