@@ -72,6 +72,7 @@
     solaar
     sops
     spotify
+    sqlite
     sqlitebrowser
     sxiv
     termdown
