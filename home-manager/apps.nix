@@ -49,7 +49,7 @@
     jetbrains.clion
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
-    jetbrains.rider
+    jetbrains.webstorm
     inkscape
     inotify-tools
     libreoffice
@@ -57,6 +57,7 @@
     msbuild
     mullvad-vpn
     neofetch
+    nodejs_22
     obsidian
     parsec-bin
     platformio-core
