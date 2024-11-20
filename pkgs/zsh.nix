@@ -12,7 +12,7 @@
 
     shellAliases = {
       clone-dotfiles = "cp /home/horseman/nix-config/config/dotfiles/.\* /home/horseman/";
-      rebuild = "sudo nixos-rebuild switch --flake";
+      rebuild = "clone-dotfiles && sudo nixos-rebuild switch --flake";
       update = "sudo nix flake update && rebuild";
       compose = "sudo docker compose";
       wolpc = "wakeonlan D8:5E:D3:A8:B1:0A";
