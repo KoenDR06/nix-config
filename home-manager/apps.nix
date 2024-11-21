@@ -49,6 +49,7 @@
     jetbrains.clion
     jetbrains.idea-ultimate
     jetbrains.pycharm-professional
+    jetbrains.rider
     jetbrains.webstorm
     inkscape
     inotify-tools
@@ -79,6 +80,7 @@
     termdown
     thunderbird
     tmux
+    unityhub
     unzip
     vlc
     wakeonlan

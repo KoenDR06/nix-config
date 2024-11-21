@@ -1,2 +1,3 @@
 secrets/*
 !secrets/secrets.yaml
+flake.lock
