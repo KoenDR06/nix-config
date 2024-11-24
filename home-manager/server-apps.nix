@@ -28,6 +28,7 @@
   };
 
   home.packages = with pkgs; [
+    busybox
     direnv
     docker-compose
     fzf

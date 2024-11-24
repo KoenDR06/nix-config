@@ -36,6 +36,7 @@
     docker-compose
     dotnetCorePackages.sdk_8_0_1xx
     dotnetPackages.Nuget
+    ethtool
     file
     fzf
     gcc
