@@ -28,7 +28,6 @@
   };
 
   home.packages = with pkgs; [
-    busybox
     direnv
     docker-compose
     fzf
@@ -36,6 +35,7 @@
     gnupg
     htop
     jdk
+    nodejs_22
     python3
     sops
     tailscale
