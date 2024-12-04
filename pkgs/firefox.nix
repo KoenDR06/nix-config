@@ -26,7 +26,7 @@
         };
         # Advent of Code delta-rank
         "{78b07db2-25ed-4088-9c92-5c5dcfca3c3c}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/advent-of-code-delta-rank/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/advent-of-code-delta-score/latest.xpi";
           installation_mode = "force_installed";
         };
       };

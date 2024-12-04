@@ -56,7 +56,7 @@
     inotify-tools
     libreoffice
     lsix
-    msbuild
+    #msbuild
     mullvad-vpn
     neofetch
     nodejs_22
