@@ -23,7 +23,7 @@
       "ksmserver"."Halt Without Confirmation" = "none,,Shut Down Without Confirmation";
       "ksmserver"."Lock Session" = ["Meta+L" "Screensaver,Meta+L" "Screensaver,Lock Session"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
-      "ksmserver"."Log Out Without Confirmation" = "\\, ,,Log Out Without Confirmation";
+      "ksmserver"."Log Out Without Confirmation" = [ ];
       "ksmserver"."LogOut" = "none,,Log Out";
       "ksmserver"."Reboot" = "none,,Reboot";
       "ksmserver"."Reboot Without Confirmation" = "none,,Reboot Without Confirmation";
@@ -31,7 +31,7 @@
       "kwin"."Activate Window Demanding Attention" = "Meta+Ctrl+A";
       "kwin"."ClearLastMouseMark" = "Meta+Shift+F12\\, ,none";
       "kwin"."ClearMouseMarks" = "Meta+Shift+F11\\, ,none";
-      "kwin"."Cube" = ",none,Toggle Cube";
+      "kwin"."Cube" = "\\, \\, ,none,Toggle Cube";
       "kwin"."Cycle Overview" = [ ];
       "kwin"."Cycle Overview Opposite" = [ ];
       "kwin"."Decrease Opacity" = "none,,Decrease Opacity of Active Window by 5%";
@@ -255,7 +255,6 @@
       "baloofilerc"."General"."dbVersion" = 2;
       "baloofilerc"."General"."exclude filters" = "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
       "baloofilerc"."General"."exclude filters version" = 9;
-      "baloofilerc"."General"."exclude folders[$e]" = "$HOME/Programming/";
       "baloofilerc"."General"."exclude foldersx5b$ex5d" = "$HOME/Programming/";
       "dolphinrc"."DetailsMode"."PreviewSize" = 256;
       "dolphinrc"."General"."ViewPropsTimestamp" = "2024,4,28,14,31,52.291";
@@ -298,6 +297,7 @@
       "katerc"."filetree"."sortRole" = 0;
       "katerc"."filetree"."viewShade" = "211,190,222";
       "kcminputrc"."Keyboard"."NumLock" = 0;
+      "kcminputrc"."Keyboard"."RepeatRate" = 50;
       "kcminputrc"."Libinput/1133/49970/Logitech Gaming Mouse G502"."PointerAccelerationProfile" = 2;
       "kcminputrc"."Libinput/1133/49970/Logitech Gaming Mouse G502"."ScrollFactor" = 0.5;
       "kcminputrc"."Libinput/1133/50504/Logitech USB Receiver Mouse"."MiddleButtonEmulation" = false;
@@ -397,7 +397,7 @@
       "kwinrc"."MouseBindings"."CommandTitlebarWheel" = "Change Opacity";
       "kwinrc"."NightColor"."Active" = true;
       "kwinrc"."NightColor"."Mode" = "Times";
-      "kwinrc"."NightColor"."NightTemperature" = 4000;
+      "kwinrc"."NightColor"."NightTemperature" = 6500;
       "kwinrc"."NightColor"."TransitionTime" = 1;
       "kwinrc"."Plugins"."blurEnabled" = true;
       "kwinrc"."Plugins"."cubeEnabled" = true;
@@ -421,12 +421,12 @@
       "kwinrc"."Tiling/5e0aab53-ff8f-58db-aaca-df0f46f273c6"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/71ed7714-9051-5fa1-88b9-b1a4cb02cd13"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.3515624999999996},{\"width\":0.3593750000000003},{\"width\":0.2890625000000001}x5d}";
       "kwinrc"."Tiling/73f4fa9f-1055-5c2e-9515-22c988437f87"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
-      "kwinrc"."Tiling/805020f2-e93e-5b0a-8771-dc3fefebe3c4"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/805020f2-e93e-5b0a-8771-dc3fefebe3c4"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
       "kwinrc"."Tiling/80f152f6-6f99-533e-a971-0dadb3e879d1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/88b07ab8-dd78-5153-a6bc-f367d4aed265"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/a3d991e5-e4d6-5b87-b0c7-d6949c612be9"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
-      "kwinrc"."Tiling/a734e78f-0769-5b7e-9626-9fd6e6fb0887"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling/cbff9b14-ae6d-566e-843b-52ffde27afab"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/a734e78f-0769-5b7e-9626-9fd6e6fb0887"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
+      "kwinrc"."Tiling/cbff9b14-ae6d-566e-843b-52ffde27afab"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":\x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}\x5d}";
       "kwinrc"."Tiling/cd7851e2-e3b0-5632-98bb-216623a6ddca"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/d02c035d-eef0-5c68-aa2f-2e83d0ba08b1"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
       "kwinrc"."Tiling/d9f463ae-41ec-5300-8544-c0ee67dc8c63"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":x5b{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}x5d}";
@@ -474,6 +474,9 @@
       "plasmanotifyrc"."Notifications"."PopupPosition" = "BottomRight";
       "plasmarc"."Wallpapers"."usersWallpapers" = "/home/horseman/nix-config/misc/nixos_wallpaper_light_3840x2160.png,/home/horseman/nix-config/misc/nixos_wallpaper_dark_3840x2160.png";
       "spectaclerc"."Annotations"."annotationToolType" = 2;
+      "spectaclerc"."Annotations"."rectangleFillColor" = "255,0,0";
+      "spectaclerc"."Annotations"."rectangleShadow" = false;
+      "spectaclerc"."Annotations"."rectangleStrokeColor" = "255,0,0";
       "spectaclerc"."General"."clipboardGroup" = "PostScreenshotCopyImage";
       "spectaclerc"."GuiConfig"."captureMode" = 0;
       "spectaclerc"."ImageSave"."lastImageSaveAsLocation" = "file:///home/horseman/Pictures/Screenshots/Screenshot_20240917_133224.png";

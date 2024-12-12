@@ -10,6 +10,8 @@
     enable = true;
     enableCompletion = true;
 
+    histSize = 10000;
+
     shellAliases = {
       clone-dotfiles = "cp /home/horseman/nix-config/config/dotfiles/.\* /home/horseman/";
       rebuild = "clone-dotfiles && sudo nixos-rebuild switch --flake";
