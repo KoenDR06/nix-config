@@ -10,6 +10,7 @@
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix
     ../common/configuration.nix
+    ../../modules/sleep-at-night.nix
   ];
 
   home-manager = {
