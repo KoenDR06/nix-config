@@ -41,7 +41,6 @@
     fzf
     gcc
     ghex
-    gimp
     gnome-calculator
     gnupg
     htop
@@ -54,6 +53,7 @@
     jetbrains.webstorm
     inkscape
     inotify-tools
+    krita
     libreoffice
     lsix
     #msbuild
