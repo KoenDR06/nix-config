@@ -33,7 +33,7 @@
   systemd.timers."backupSyncthing" = {
     wantedBy = [ "timers.target" ];
       timerConfig = {
-        OnCalendar = "daily";
+        OnCalendar = "weekly";
         Persistent = true;
       };
   };
@@ -48,26 +48,13 @@
     };
   };
 
-  services.samba = {
-    enable = false;
-    securityType = "user";
-    openFirewall = true;
-    shares = {
-      public = {
-        path = "/home/horseman/mnt/sda1";
-        browseable = "yes";
-        "read only" = "yes";
-        "guest ok" = "yes";
-        "create mask" = "0644";
-        "directory mask" = "0755";
-        "force user" = "user";
-      };
-    };
-  };
-
-  services.samba-wsdd = {
+  services.sleep-at-night = {
     enable = true;
-    openFirewall = true;
+    shutdown = {
+      hour = 00;
+      minute = 30;
+    };
+    wakeup = "08:00:00";
   };
 
   networking.firewall.enable = true;

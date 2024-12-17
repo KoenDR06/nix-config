@@ -20,16 +20,16 @@
       "kmix"."increase_volume_small" = "Shift+Volume Up";
       "kmix"."mic_mute" = ["Microphone Mute" "Meta+Volume Mute,Microphone Mute" "Meta+Volume Mute,Mute Microphone"];
       "kmix"."mute" = "Volume Mute";
-      "ksmserver"."Halt Without Confirmation" = "none,,Shut Down Without Confirmation";
+      "ksmserver"."Halt Without Confirmation" = [ ];
       "ksmserver"."Lock Session" = ["Meta+L" "" "Screensaver\\, ,Meta+L" "Screensaver,Lock Session"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
       "ksmserver"."Log Out Without Confirmation" = [ ];
-      "ksmserver"."LogOut" = "\\, ,,Log Out";
+      "ksmserver"."LogOut" = [ ];
       "ksmserver"."Reboot" = [ ];
       "ksmserver"."Reboot Without Confirmation" = [ ];
       "ksmserver"."Shut Down" = [ ];
       "kwin"."Activate Window Demanding Attention" = "Meta+Ctrl+A";
-      "kwin"."Cube" = ",none,Toggle Cube";
+      "kwin"."Cube" = "Ctrl+Meta+G";
       "kwin"."Cycle Overview" = [ ];
       "kwin"."Cycle Overview Opposite" = [ ];
       "kwin"."Decrease Opacity" = [ ];
@@ -116,7 +116,7 @@
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
       "kwin"."Window Lower" = [ ];
-      "kwin"."Window Maximize" = "Meta+PgUp";
+      "kwin"."Window Maximize" = "Alt+Up";
       "kwin"."Window Maximize Horizontal" = [ ];
       "kwin"."Window Maximize Vertical" = [ ];
       "kwin"."Window Minimize" = "Meta+PgDown";
@@ -134,7 +134,7 @@
       "kwin"."Window One Screen to the Right" = [ ];
       "kwin"."Window Operations Menu" = "Alt+F3";
       "kwin"."Window Pack Down" = [ ];
-      "kwin"."Window Pack Left" = "none,,Move Window Left";
+      "kwin"."Window Pack Left" = [ ];
       "kwin"."Window Pack Right" = [ ];
       "kwin"."Window Pack Up" = [ ];
       "kwin"."Window Quick Tile Bottom" = "Meta+Down";
@@ -245,7 +245,6 @@
       "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
       "services/org.kde.spectacle.desktop"."WindowUnderCursorScreenShot" = [ ];
       "services/org.kde.spectacle.desktop"."_launch" = [ ];
-      "services/switch-to-light-theme.sh.desktop"."_launch" = "Ctrl+Shift+F12";
       "services/systemsettings.desktop"."_launch" = [ ];
     };
     configFile = {
@@ -253,7 +252,6 @@
       "baloofilerc"."General"."dbVersion" = 2;
       "baloofilerc"."General"."exclude filters" = "*~,*.part,*.o,*.la,*.lo,*.loT,*.moc,moc_*.cpp,qrc_*.cpp,ui_*.h,cmake_install.cmake,CMakeCache.txt,CTestTestfile.cmake,libtool,config.status,confdefs.h,autom4te,conftest,confstat,Makefile.am,*.gcode,.ninja_deps,.ninja_log,build.ninja,*.csproj,*.m4,*.rej,*.gmo,*.pc,*.omf,*.aux,*.tmp,*.po,*.vm*,*.nvram,*.rcore,*.swp,*.swap,lzo,litmain.sh,*.orig,.histfile.*,.xsession-errors*,*.map,*.so,*.a,*.db,*.qrc,*.ini,*.init,*.img,*.vdi,*.vbox*,vbox.log,*.qcow2,*.vmdk,*.vhd,*.vhdx,*.sql,*.sql.gz,*.ytdl,*.tfstate*,*.class,*.pyc,*.pyo,*.elc,*.qmlc,*.jsc,*.fastq,*.fq,*.gb,*.fasta,*.fna,*.gbff,*.faa,po,CVS,.svn,.git,_darcs,.bzr,.hg,CMakeFiles,CMakeTmp,CMakeTmpQmake,.moc,.obj,.pch,.uic,.npm,.yarn,.yarn-cache,__pycache__,node_modules,node_packages,nbproject,.terraform,.venv,venv,core-dumps,lost+found";
       "baloofilerc"."General"."exclude filters version" = 9;
-      "baloofilerc"."General"."exclude foldersx5b$ex5d" = "$HOME/Programming/";
       "dolphinrc"."DetailsMode"."PreviewSize" = 256;
       "dolphinrc"."General"."ViewPropsTimestamp" = "2024,4,28,14,31,52.291";
       "dolphinrc"."IconsMode"."PreviewSize" = 144;
@@ -338,7 +336,6 @@
       "kdeglobals"."KFileDialog Settings"."Speedbar Width" = 140;
       "kdeglobals"."KFileDialog Settings"."View Style" = "DetailTree";
       "kdeglobals"."Shortcuts"."Help" = "";
-      "kdeglobals"."Shortcuts"."Up" = "";
       "kdeglobals"."WM"."activeBackground" = "49,54,59";
       "kdeglobals"."WM"."activeBlend" = "252,252,252";
       "kdeglobals"."WM"."activeForeground" = "252,252,252";
