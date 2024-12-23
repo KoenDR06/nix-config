@@ -48,14 +48,14 @@
     };
   };
 
-  services.sleep-at-night = {
-    enable = true;
-    shutdown = {
-      hour = 00;
-      minute = 30;
-    };
-    wakeup = "08:00:00";
-  };
+  # services.sleep-at-night = {
+  #   enable = true;
+  #   shutdown = {
+  #     hour = 00;
+  #     minute = 30;
+  #   };
+  #   wakeup = "08:00:00";
+  # };
 
   networking.firewall.enable = true;
   networking.firewall.allowPing = true;
