@@ -63,12 +63,7 @@
     obsidian
     parsec-bin
     platformio-core
-    python3
-    python312Packages.joblib
-    python312Packages.numpy
-    python312Packages.scikit-learn
-    python312Packages.scipy
-    python312Packages.threadpoolctl
+    python313
     qbittorrent
     reaper
     retext
