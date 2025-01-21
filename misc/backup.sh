@@ -9,7 +9,6 @@ if grep -q $(sha256sum $file) backups/sum; then
     rm $file
     exit 0
 fi
-echo 'Writing new hash'
 echo $(sha256sum $file) > backups/sum
 
 exit 0
