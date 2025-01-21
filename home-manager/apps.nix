@@ -55,6 +55,7 @@
     jetbrains.webstorm
     inkscape
     inotify-tools
+    keepassxc
     krita
     libreoffice
     lsix
