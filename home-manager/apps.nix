@@ -43,6 +43,8 @@
     ghex
     gnome-calculator
     gnupg
+    haskell.compiler.native-bignum.ghcHEAD
+    haskell-language-server
     htop
     icu
     jdk
@@ -56,7 +58,6 @@
     krita
     libreoffice
     lsix
-    #msbuild
     mullvad-vpn
     neofetch
     nodejs_22
