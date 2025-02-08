@@ -29,6 +29,11 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/advent-of-code-delta-score/latest.xpi";
           installation_mode = "force_installed";
         };
+        # SponsorBlock
+        "{sponsorBlocker@ajay.app}" = {
+          install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/sponsorblock/latest.xpi";
+          installation_mode = "force_installed";
+        };
       };
     };
   };

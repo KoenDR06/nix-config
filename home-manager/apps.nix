@@ -34,8 +34,6 @@
     direnv
     discord-ptb
     docker-compose
-    dotnetCorePackages.sdk_8_0_1xx
-    dotnetPackages.Nuget
     ethtool
     file
     fzf
@@ -78,7 +76,6 @@
     termdown
     thunderbird
     tmux
-    unityhub
     unzip
     vlc
     wakeonlan
