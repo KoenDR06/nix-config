@@ -399,14 +399,12 @@
       "kwinrc"."Plugins"."cubeEnabled" = true;
       "kwinrc"."Plugins"."desktopchangeosdEnabled" = true;
       "kwinrc"."Plugins"."eyeonscreenEnabled" = true;
-      "kwinrc"."Plugins"."fadedesktopEnabled" = true;
       "kwinrc"."Plugins"."minimizeallEnabled" = true;
       "kwinrc"."Plugins"."shakecursorEnabled" = true;
-      "kwinrc"."Plugins"."slideEnabled" = false;
       "kwinrc"."Plugins"."trackmouseEnabled" = true;
       "kwinrc"."Plugins"."translucencyEnabled" = true;
       "kwinrc"."Plugins"."windowapertureEnabled" = false;
-      "kwinrc"."Script-desktopchangeosd"."PopupHideDelay" = 600;
+      "kwinrc"."Script-desktopchangeosd"."PopupHideDelay" = 250;
       "kwinrc"."SubSession: 037b4336-809c-4a07-a148-9ef660a5cc9c"."active" = "-1";
       "kwinrc"."SubSession: 037b4336-809c-4a07-a148-9ef660a5cc9c"."count" = 0;
       "kwinrc"."SubSession: c82192f5-3d2d-4f8d-9c58-364b4cca1b53"."active" = "-1";
