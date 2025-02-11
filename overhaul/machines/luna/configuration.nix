@@ -31,8 +31,6 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.autoNumlock = true;
   services.displayManager.defaultSession = "plasma";
-  boot.loader.systemd-boot.enable = true;  
-  boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
 
   hardware.bluetooth.enable = true;
   hardware.pulseaudio.enable = false;

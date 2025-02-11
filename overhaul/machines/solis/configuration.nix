@@ -22,9 +22,6 @@
 
   networking.hostName = "solis";
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-
   virtualisation.docker.enable = true;
 
   services.resolved.enable = true;

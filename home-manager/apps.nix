@@ -29,58 +29,8 @@
   };
 
   home.packages = with pkgs; [
-    alacritty
-    bitwarden
-    direnv
-    discord-ptb
-    docker-compose
-    ethtool
-    file
-    fzf
-    gcc
-    ghex
-    gnome-calculator
     gnupg
-    haskell.compiler.native-bignum.ghcHEAD
-    haskell-language-server
-    htop
-    icu
-    jdk
-    jetbrains.clion
-    jetbrains.idea-ultimate
-    jetbrains.pycharm-professional
-    jetbrains.rider
-    jetbrains.webstorm
-    inkscape
-    inotify-tools
-    keepassxc
-    krita
-    libreoffice
-    lsix
-    mullvad-vpn
-    neofetch
-    nodejs_22
-    obsidian
-    parsec-bin
     platformio-core
-    python313
-    qbittorrent
-    reaper
-    retext
-    solaar
-    sops
-    spotify
-    sqlite
-    sqlitebrowser
-    sxiv
-    termdown
-    thunderbird
-    tmux
-    unzip
-    vlc
-    wakeonlan
-    xclip
-    zsh
   ];
 
   programs.home-manager.enable = true;
