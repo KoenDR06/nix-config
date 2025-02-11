@@ -28,11 +28,6 @@
     homeDirectory = "/home/horseman";
   };
 
-  home.packages = with pkgs; [
-    gnupg
-    platformio-core
-  ];
-
   programs.home-manager.enable = true;
   programs.git = {
     enable = true;
