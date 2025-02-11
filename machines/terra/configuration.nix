@@ -91,6 +91,7 @@
   services.displayManager.sddm.wayland.enable = false;
   services.displayManager.defaultSession = "plasma";
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 10;
 
   programs.ssh.askPassword = lib.mkForce "/nix/store/qrzq7dqp8dkffb5dvi42q647dhm87ady-ksshaskpass-6.0.3/bin/ksshaskpass";
 
