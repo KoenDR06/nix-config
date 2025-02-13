@@ -65,6 +65,7 @@
     gnome-text-editor
   ];
 
+  services.power-profiles-daemon.enable = true;
 
   virtualisation.docker.enable = true;
 
