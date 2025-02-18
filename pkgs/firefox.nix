@@ -26,12 +26,22 @@
         };
         # SponsorBlock
         "sponsorBlocker@ajay.app" = {
-          install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/sponsorblock/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi";
           installation_mode = "force_installed";
         };
         # KeepassXC
         "keepassxc-browser@keepassxc.org" = {
-          install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/keepassxc-browser/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/keepassxc-browser/latest.xpi";
+          installation_mode = "force_installed";
+        };
+        # Cookie Blocker
+        "idcac-pub@guus.ninja" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/istilldontcareaboutcookies/latest.xpi";
+          installation_mode = "force_installed";
+        };
+        # Ghostery
+        "firefox@ghostery.com" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/ghostery/latest.xpi";
           installation_mode = "force_installed";
         };
       };
