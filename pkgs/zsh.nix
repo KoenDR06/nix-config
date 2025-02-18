@@ -13,7 +13,7 @@
     histSize = 10000;
 
     shellAliases = {
-      clone-dotfiles = "cp /home/horseman/nix-config/config/dotfiles/.\* /home/horseman/";
+      clone-dotfiles = "cp -r /home/horseman/nix-config/config/dotfiles/.\* /home/horseman/";
       rebuild = "clone-dotfiles && sudo nixos-rebuild switch --flake";
       update = "sudo nix flake update && rebuild";
       compose = "sudo docker compose";

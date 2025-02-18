@@ -30,6 +30,7 @@
 
   home.packages = with pkgs; [
     alacritty
+    albert
     bitwarden
     direnv
     discord-ptb
