@@ -1,0 +1,44 @@
+{
+  inputs,
+  outputs,
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [../../modules];
+
+  config.horseman = {
+    users.horseman.enable = true;
+
+    base = {
+      nix.enable = true;
+    };
+
+    boot = {
+      loader.systemd.enable = true;
+      greeter.sddm.enable = true;
+    };
+
+    wm = {
+      plasma.enable = true;
+    };
+
+    hardware = {
+      audio.enable = true;
+      bluetooth.enable = true;
+      wifi.enable = true;
+    };
+
+    network = {
+      mullvad.enable = true;
+      ssh.enable = true;
+      syncthing.enable = true;
+      tailscale.enable = true;
+    };
+
+    apps = {
+      dev.enable = true;
+    };
+  };
+}
