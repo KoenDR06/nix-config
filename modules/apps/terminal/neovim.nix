@@ -47,9 +47,6 @@
         nvim-lspconfig
         nvim-notify
         nvim-spectre
-        nvim-treesitter
-        nvim-treesitter-context
-        nvim-treesitter-textobjects
         nvim-ts-autotag
         nvim-ts-context-commentstring
         nvim-web-devicons
@@ -62,7 +59,6 @@
         trouble-nvim
         vim-illuminate
         vim-startuptime
-        which-key-nvim
         {
           name = "LuaSnip";
           path = luasnip;
@@ -124,10 +120,6 @@
           -- disable mason.nvim, use programs.neovim.extraPackages
           { "williamboman/mason-lspconfig.nvim", enabled = false },
           { "williamboman/mason.nvim", enabled = false },
-          -- import/override with your plugins
-          { import = "plugins" },
-          -- treesitter handled by xdg.configFile."nvim/parser", put this line at the end of spec to clear ensure_installed
-          { "nvim-treesitter/nvim-treesitter", opts = { ensure_installed = {} } },
         },
       })
     '';

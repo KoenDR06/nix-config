@@ -15,6 +15,7 @@
 
     base = {
       nix.enable = true;
+      locale.enable = true;
     };
 
     boot = {
