@@ -46,5 +46,9 @@
       visual.enable = true;
       terminal.enable = true;
     };
+
+    terminal = {
+      zsh.enable = true;
+    };
   };
 }
