@@ -75,6 +75,7 @@
         };
         modules = [
           ./machines/solis/configuration.nix
+          home-manager.nixosModules.home-manager
           sops-nix.nixosModules.sops
         ];
       };

@@ -4,7 +4,7 @@
     ./hardware
     ./network
     ./terminal
-    ( if !headless then ./wm else ./empty.nix )
+    ./wm
     ./users
     ./boot
     ./base
