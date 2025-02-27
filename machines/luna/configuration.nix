@@ -9,7 +9,11 @@
   imports = [
     ./hardware-configuration.nix
     ./modules.nix
+    ../../modules
   ];
+
+  horseman.username = "horseman";
+
 
   networking.hostName = "luna";
 

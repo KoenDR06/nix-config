@@ -9,7 +9,7 @@
   imports = [
     ../../modules
     ../../modules/boot/loader/systemd.nix
-  ];
+    ];
 
   config.horseman = {
     users.default.enable = true;
@@ -22,6 +22,7 @@
     boot = {
       loader.systemd.enable = true;
       greeter.sddm.enable = true;
+      refind.enable = true;
     };
 
     wm = {
@@ -29,9 +30,8 @@
     };
 
     hardware = {
+      gpu.nvidia.enable = true;
       audio.enable = true;
-      bluetooth.enable = true;
-      wifi.enable = true;
     };
 
     network = {
@@ -45,10 +45,6 @@
       dev.enable = true;
       visual.enable = true;
       terminal.enable = true;
-    };
-
-    terminal = {
-        zsh.enable = true;
     };
   };
 }

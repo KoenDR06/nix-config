@@ -41,7 +41,10 @@
 
     nixosConfigurations = {
       luna = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {
+          inherit inputs outputs;
+          headless = false;
+        };
         modules = [
           ./machines/luna/configuration.nix
           home-manager.nixosModules.home-manager
@@ -52,7 +55,10 @@
         ];
       };
       terra = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {
+          inherit inputs outputs;
+          headless = false;
+        };
         modules = [
           ./machines/terra/configuration.nix
           home-manager.nixosModules.home-manager
@@ -63,7 +69,10 @@
         ];
       };
       solis = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {
+          inherit inputs outputs;
+          headless = true;
+        };
         modules = [
           ./machines/solis/configuration.nix
           sops-nix.nixosModules.sops

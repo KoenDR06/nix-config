@@ -1,6 +1,8 @@
-{inputs, ...}: {
+{inputs, headless, ...}: {
   imports = [
-    ./loader/systemd.nix
     ./greeter/sddm.nix
+    ./refind.nix
+
+    ( if headless then ./loader/grub.nix else ./loader/systemd.nix )
   ];
 }

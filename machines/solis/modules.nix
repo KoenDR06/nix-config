@@ -8,7 +8,7 @@
 }: {
   imports = [
     ../../modules
-    ../../modules/boot/loader/systemd.nix
+    ../../modules/boot/loader/grub.nix
   ];
 
   config.horseman = {
@@ -20,18 +20,7 @@
     };
 
     boot = {
-      loader.systemd.enable = true;
-      greeter.sddm.enable = true;
-    };
-
-    wm = {
-      plasma.enable = true;
-    };
-
-    hardware = {
-      audio.enable = true;
-      bluetooth.enable = true;
-      wifi.enable = true;
+      loader.grub.enable = true;
     };
 
     network = {
@@ -42,13 +31,7 @@
     };
 
     apps = {
-      dev.enable = true;
-      visual.enable = true;
       terminal.enable = true;
-    };
-
-    terminal = {
-        zsh.enable = true;
     };
   };
 }

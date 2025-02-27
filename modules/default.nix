@@ -1,10 +1,10 @@
-{inputs, ...}: {
+{inputs, headless, ...}: {
   imports = [
     ./apps
     ./hardware
     ./network
     ./terminal
-    ./wm
+    ( if !headless then ./wm else ./empty.nix )
     ./users
     ./boot
     ./base
