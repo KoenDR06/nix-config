@@ -8,6 +8,7 @@
 }: let
   inherit (lib) mkEnableOption mkIf mkOption types;
   cfg = config.horseman.apps.dev;
+  homeCfg = config.horseman;
 in {
   options = {
     horseman.apps.dev = {
@@ -16,6 +17,43 @@ in {
   };
 
   config = {
+    home-manager.users.${homeCfg.username} = {
+      programs = {
+        gh.enable = true;
+        git = {
+          enable = true;
+          userName = "KoenDR06";
+          userEmail = "koen.de.ruiter@hotmail.com";
+        };
+      };
+
+      home.packages = with pkgs; [
+        direnv
+        docker-compose
+        ethtool
+        file
+        fzf
+        gcc
+        ghex
+        haskell.compiler.native-bignum.ghcHEAD
+        haskell-language-server
+        btop
+        jdk
+        jetbrains.clion
+        jetbrains.idea-ultimate
+        jetbrains.pycharm-professional
+        jetbrains.rider
+        jetbrains.webstorm
+        nodejs_22
+        platformio-core
+        python314
+        sqlite
+        sqlitebrowser
+        tmux
+        xclip
+      ];
+    };
+
     # Docker
     virtualisation.docker.enable = true;
   };

@@ -9,6 +9,8 @@
   imports = [../../modules];
 
   config.horseman = {
+    username = "horseman";
+
     users.horseman.enable = true;
 
     base = {
@@ -39,6 +41,7 @@
 
     apps = {
       dev.enable = true;
+
     };
   };
 }

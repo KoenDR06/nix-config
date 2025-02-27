@@ -17,9 +17,17 @@ in {
 
   config = {
     home-manager = {
-      extraSpecialArgs = {inherit inputs outputs;};
+      extraSpecialArgs = { inherit inputs outputs; };
       users.horseman = {
-        home.stateVersion = "24.11";
+        home = {
+          username = "horseman";
+          homeDirectory = "/home/horseman";
+          stateVersion = "24.11";
+        };
+
+        programs = {
+          home-manager.enable = true;
+        };
       };
     };
 

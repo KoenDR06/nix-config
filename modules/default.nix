@@ -8,5 +8,6 @@
     ./users
     ./boot
     ./base
+    ./username.nix
   ];
 }
