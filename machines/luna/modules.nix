@@ -48,7 +48,7 @@
     };
 
     terminal = {
-        zsh.enable = true;
+      zsh.enable = true;
     };
   };
 }

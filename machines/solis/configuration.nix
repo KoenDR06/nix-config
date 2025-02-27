@@ -17,11 +17,11 @@
   networking.hostName = "solis";
 
   systemd.timers."backupSyncthing" = {
-    wantedBy = [ "timers.target" ];
-      timerConfig = {
-        OnCalendar = "weekly";
-        Persistent = true;
-      };
+    wantedBy = ["timers.target"];
+    timerConfig = {
+      OnCalendar = "weekly";
+      Persistent = true;
+    };
   };
 
   systemd.services."backupSyncthing" = {

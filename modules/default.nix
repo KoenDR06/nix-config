@@ -1,4 +1,8 @@
-{inputs, headless, ...}: {
+{
+  inputs,
+  headless,
+  ...
+}: {
   imports = [
     ./apps
     ./hardware

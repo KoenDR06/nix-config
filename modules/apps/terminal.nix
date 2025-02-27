@@ -24,6 +24,12 @@ in {
     services.lorri.enable = true;
 
     environment.systemPackages = with pkgs; [
+      direnv
+      docker-compose
+      ethtool
+      file
+      fzf
+      btop
       gnupg
       neofetch
       sops

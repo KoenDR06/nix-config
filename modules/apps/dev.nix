@@ -28,16 +28,10 @@ in {
       };
 
       home.packages = with pkgs; [
-        direnv
-        docker-compose
-        ethtool
-        file
-        fzf
         gcc
         ghex
         haskell.compiler.native-bignum.ghcHEAD
         haskell-language-server
-        btop
         jdk
         jetbrains.clion
         jetbrains.idea-ultimate

@@ -36,6 +36,6 @@ in {
 
     home-manager.users.${homeCfg.username} = lib.mkIf (!headless) {
       imports = [./config.nix];
-    }; 
+    };
   };
 }
