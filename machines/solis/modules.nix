@@ -33,5 +33,9 @@
     apps = {
       terminal.enable = true;
     };
+
+    terminal = {
+      zsh.enable = true;
+    }:
   };
 }

@@ -47,8 +47,5 @@ in {
         xclip
       ];
     };
-
-    # Docker
-    virtualisation.docker.enable = true;
   };
 }

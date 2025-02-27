@@ -38,5 +38,8 @@ in {
       unzip
       wakeonlan
     ];
+
+    # Docker
+    virtualisation.docker.enable = true;
   };
 }
