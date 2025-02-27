@@ -28,6 +28,13 @@ in {
 
         programs = {
           home-manager.enable = true;
+
+          gh.enable = true;
+          git = {
+            enable = true;
+            userName = "KoenDR06";
+            userEmail = "koen.de.ruiter@hotmail.com";
+          };
         };
       };
     };

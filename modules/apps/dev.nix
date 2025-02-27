@@ -18,15 +18,6 @@ in {
 
   config = mkIf cfg.enable {
     home-manager.users.${homeCfg.username} = {
-      programs = {
-        gh.enable = true;
-        git = {
-          enable = true;
-          userName = "KoenDR06";
-          userEmail = "koen.de.ruiter@hotmail.com";
-        };
-      };
-
       home.packages = with pkgs; [
         gcc
         ghex
