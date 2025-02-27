@@ -16,7 +16,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     home-manager = {
       extraSpecialArgs = {inherit inputs outputs;};
       users.${homeCfg.username} = {

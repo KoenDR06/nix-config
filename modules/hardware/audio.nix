@@ -15,7 +15,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     hardware.pulseaudio.enable = false;
     services.jack = {
       jackd.enable = false;

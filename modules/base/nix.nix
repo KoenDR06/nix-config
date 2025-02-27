@@ -15,7 +15,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     nixpkgs = {
       config.allowUnfree = true;
     };

@@ -24,7 +24,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     programs.firefox = {
       enable = true;
       policies = {

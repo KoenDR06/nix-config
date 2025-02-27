@@ -15,7 +15,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     users.defaultUserShell = pkgs.zsh;
     environment.shells = with pkgs; [zsh];
 

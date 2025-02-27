@@ -15,6 +15,6 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
   };
 }

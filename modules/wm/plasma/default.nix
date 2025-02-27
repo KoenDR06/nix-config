@@ -17,7 +17,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     services = {
       xserver.enable = true;
 

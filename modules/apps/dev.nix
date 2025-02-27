@@ -16,7 +16,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     home-manager.users.${homeCfg.username} = {
       programs = {
         gh.enable = true;

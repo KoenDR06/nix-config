@@ -15,7 +15,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     services = {
       mullvad-vpn = {
         enable = true;

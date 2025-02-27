@@ -16,7 +16,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     horseman.apps.visual = {
       firefox.enable = true;
     };

@@ -15,7 +15,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     networking.networkmanager.enable = true;
     users.users.horseman.extraGroups = ["networkmanager"];
   };

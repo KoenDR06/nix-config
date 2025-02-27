@@ -10,12 +10,12 @@
   cfg = config.horseman.wm.gnome;
 in {
   options = {
-    horseman.desktop.gnome = {
+    horseman.wm.gnome = {
       enable = mkEnableOption "Gnome";
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     services.xserver = {
       enable = true;
       desktopManager.gnome.enable = true;

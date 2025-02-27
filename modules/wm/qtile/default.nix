@@ -10,12 +10,12 @@
   cfg = config.horseman.wm.qtile;
 in {
   options = {
-    horseman.desktop.qtile = {
+    horseman.wm.qtile = {
       enable = mkEnableOption "Qtile";
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     services.xserver = {
       enable = true;
       windowManager.qtile.enable = true;

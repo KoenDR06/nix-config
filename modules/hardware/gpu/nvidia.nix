@@ -15,7 +15,7 @@ in {
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     hardware.graphics.enable32Bit = true;
     hardware.graphics.enable = true;
     services.xserver.videoDrivers = ["nvidia"];
