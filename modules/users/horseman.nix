@@ -17,7 +17,7 @@ in {
 
   config = {
     home-manager = {
-      extraSpecialArgs = { inherit inputs outputs; };
+      extraSpecialArgs = {inherit inputs outputs;};
       users.horseman = {
         home = {
           username = "horseman";

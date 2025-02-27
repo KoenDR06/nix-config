@@ -41,7 +41,8 @@
 
     apps = {
       dev.enable = true;
-
+      visual.enable = true;
+      terminal.enable = true;
     };
   };
 }

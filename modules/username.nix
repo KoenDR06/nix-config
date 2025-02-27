@@ -11,7 +11,7 @@
 in {
   options = {
     horseman = {
-      username = mkOption { type = types.str; };
+      username = mkOption {type = types.str;};
     };
   };
 }

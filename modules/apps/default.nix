@@ -1,7 +1,10 @@
 {inputs, ...}: {
   imports = [
-    ./terminal.nix
-    ./visual.nix
     ./dev.nix
+
+    ./terminal.nix
+
+    ./visual.nix
+    ./visual/firefox.nix
   ];
 }

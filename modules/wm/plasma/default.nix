@@ -8,6 +8,7 @@
 }: let
   inherit (lib) mkEnableOption mkIf mkOption types;
   cfg = config.horseman.wm.plasma;
+  homeCfg = config.horseman;
 in {
   options = {
     horseman.wm.plasma = {
@@ -32,7 +33,7 @@ in {
       konsole
     ];
 
-    home-manager.users.horseman = {
+    home-manager.users.${homeCfg.username} = {
       imports = [./config.nix];
     };
   };

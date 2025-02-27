@@ -12,6 +12,6 @@
   ];
 
   networking.hostName = "luna";
-  
+
   system.stateVersion = "24.11";
 }
