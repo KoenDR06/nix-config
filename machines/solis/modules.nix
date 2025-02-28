@@ -36,6 +36,6 @@
 
     terminal = {
       zsh.enable = true;
-    }:
+    };
   };
 }
