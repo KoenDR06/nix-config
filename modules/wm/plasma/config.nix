@@ -233,7 +233,7 @@
       "plasmashell"."switch to next activity" = [];
       "plasmashell"."switch to previous activity" = [];
       "plasmashell"."toggle do not disturb" = [];
-      "services/alacritty.desktop"."_launch" = "Alt+Q";
+      "services/kitty.desktop"."_launch" = "Alt+Q";
       "services/lookandfeeltool-4.desktop"."_launch" = "Ctrl+F12";
       "services/org.kde.konsole.desktop"."_launch" = [];
       "services/org.kde.plasma-systemmonitor.desktop"."_launch" = ["Ctrl+Shift+Esc" "Meta+Esc"];
