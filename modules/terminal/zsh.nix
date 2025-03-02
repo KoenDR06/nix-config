@@ -27,7 +27,7 @@ in {
 
       shellAliases = {
         clone-dotfiles = "cp -r /home/horseman/nix-config/config/dotfiles/.\* /home/horseman/";
-        rebuild = "sudo nix fmt && clone-dotfiles && sudo nixos-rebuild switch --flake";
+        rebuild = "sudo nix fmt &> /dev/null && clone-dotfiles && sudo nixos-rebuild switch --flake";
         update = "sudo nix flake update && rebuild";
         compose = "sudo docker compose";
         wolpc = "wakeonlan D8:5E:D3:A8:B1:0A";
