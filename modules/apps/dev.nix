@@ -31,7 +31,7 @@ in {
         jetbrains.webstorm
         nodejs_22
         platformio-core
-        python314
+        python313
         sqlite
         sqlitebrowser
         tmux

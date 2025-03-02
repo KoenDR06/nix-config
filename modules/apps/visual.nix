@@ -22,13 +22,13 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
-      alacritty
       albert
       bitwarden
       discord-ptb
       gnome-calculator
       inkscape
       keepassxc
+      kitty
       krita
       libreoffice
       mullvad-vpn
