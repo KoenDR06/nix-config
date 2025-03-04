@@ -52,7 +52,7 @@
     };
 
     timers = {
-        wol.enable = true;
+      wol.enable = true;
     };
   };
 }

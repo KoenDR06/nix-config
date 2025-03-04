@@ -40,7 +40,7 @@ in {
     ];
 
     environment.sessionVariables = rec {
-      TERM = "kitty"
+      TERM = "kitty";
     };
 
     # Docker

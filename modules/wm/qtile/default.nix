@@ -25,7 +25,8 @@ in {
       cd /home/horseman && \
       rm -r .config/qtile && \
       cp -r nix-config/modules/wm/qtile/config \
-            .config/qtile
+            .config/qtile && \
+      sudo chown -R horseman:users .config/qtile
     '';
   };
 }

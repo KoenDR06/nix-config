@@ -17,8 +17,6 @@ in {
   };
 
   config = mkIf cfg.enable {
-    assert homeCfg.apps.terminal || throw "wakeonlan has not been not installed on this machine, refusing to add timer.";
-
     systemd.timers."enable-wol" = {
       wantedBy = ["timers.target"];
       timerConfig = {

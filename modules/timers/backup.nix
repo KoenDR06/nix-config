@@ -17,23 +17,21 @@ in {
   };
 
   config = mkIf cfg.enable {
-    assert homeCfg.network.syncthing || throw "Syncthing has not been enabled on this machine, refusing to add timer.";
-
-    systemd.timers."backupsyncthing" = {
-      wantedby = ["timers.target"];
-      timerconfig = {
-        oncalendar = "weekly";
-        persistent = true;
+    systemd.timers."backupSyncthing" = {
+      wantedBy = ["timers.target"];
+      timerConfig = {
+        onCalendar = "weekly";
+        Persistent = true;
       };
     };
 
-    systemd.services."backupsyncthing" = {
+    systemd.services."backupSyncthing" = {
       script = ''
         /home/horseman/nix-config/misc/backup.sh
       '';
-      serviceconfig = {
-        type = "oneshot";
-        user = "horseman";
+      serviceConfig = {
+        Type = "oneshot";
+        User = "horseman";
       };
     };
   };

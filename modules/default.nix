@@ -12,6 +12,7 @@
     ./users
     ./boot
     ./base
+    ./timers
     ./username.nix
   ];
 }
