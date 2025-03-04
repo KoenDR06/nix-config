@@ -39,6 +39,10 @@ in {
       wakeonlan
     ];
 
+    environment.sessionVariables = rec {
+      TERM = "kitty"
+    };
+
     # Docker
     virtualisation.docker.enable = true;
   };
