@@ -50,5 +50,9 @@
     terminal = {
       zsh.enable = true;
     };
+
+    timers = {
+        wol.enable = true;
+    };
   };
 }

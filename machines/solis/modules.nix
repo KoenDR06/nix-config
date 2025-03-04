@@ -37,5 +37,9 @@
     terminal = {
       zsh.enable = true;
     };
+
+    timers = {
+      backup.enable = true;
+    };
   };
 }
