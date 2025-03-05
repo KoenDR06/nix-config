@@ -2,6 +2,6 @@
   imports = [
     ./gnome
     ./plasma
-    ./qtile
+    ./hyprland
   ];
 }
