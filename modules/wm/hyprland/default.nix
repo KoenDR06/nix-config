@@ -25,6 +25,7 @@ in {
     environment.systemPackages = with pkgs; [
       xdg-desktop-portal-hyprland
       nerdfonts
+      networkmanagerapplet
     ];
   };
 }
