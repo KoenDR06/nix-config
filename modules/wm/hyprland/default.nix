@@ -23,9 +23,23 @@ in {
 
     security.polkit.enable = true;
     environment.systemPackages = with pkgs; [
-      xdg-desktop-portal-hyprland
+      eww
       nerdfonts
       networkmanagerapplet
+      wofi
+      xdg-desktop-portal-hyprland
     ];
+
+    services.logind.extraConfig = ''
+      HandlePowerKey=ignore
+    '';
+
+
+    system.activationScripts.script.text = ''
+      cd /home/horseman && \
+      rm -r .config/hypr && \
+      cp -r nix-config/modules/wm/hyprland/config \
+            .config/hypr && \
+    '';
   };
 }
