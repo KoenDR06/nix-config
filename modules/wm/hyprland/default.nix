@@ -34,12 +34,10 @@ in {
       HandlePowerKey=ignore
     '';
 
-
     system.activationScripts.script.text = ''
-      cd /home/horseman && \
-      rm -r .config/hypr && \
-      cp -r nix-config/modules/wm/hyprland/config \
-            .config/hypr && \
+      cd /home/horseman;
+      rm -r .config/hypr .config/eww;
+      cp -r nix-config/modules/wm/hyprland/config/* .config
     '';
   };
 }

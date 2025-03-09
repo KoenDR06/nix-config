@@ -26,7 +26,7 @@
     };
 
     wm = {
-      plasma.enable = true;
+      hyprland.enable = true;
     };
 
     hardware = {

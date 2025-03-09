@@ -1,12 +1,33 @@
-(defwindow example
+(defwindow main
            :monitor 0
            :geometry (geometry :x "0%"
-                               :y "20px"
-                               :width "90%"
-                               :height "30px"
-                               :anchor "top center")
+                               :y "0%"
+                               :width "50%"
+                               :height "50%"
+                               :anchor "center")
            :stacking "fg"
-           :reserve (struts :distance "40px" :side "top")
-           :windowtype "dock"
-           :exclusive true
-  "horseman's laptop")
+           :exclusive false
+           :focusable false
+  (workspaces)
+)
+
+(defwidget clock []
+  (box :class "clock"
+    {formattime(EWW_TIME, "%b %m %H:%M:%S")}
+  )
+)
+
+(defwidget workspaces []
+  (box :class "workspaces"
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+    (button :class "workspace-button")
+  )
+)
