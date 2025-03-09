@@ -16,7 +16,10 @@ in {
   };
 
   config = mkIf cfg.enable {
-    services.displayManager.sddm.enable = true;
-    services.displayManager.sddm.wayland.enable = true;
+    services.displayManager.sddm = {
+      enable = true;
+      wayland = true;
+      autoNumlock = true;
+    };
   };
 }

@@ -22,9 +22,6 @@ in {
       xserver.enable = true;
 
       desktopManager.plasma6.enable = true;
-      displayManager = {
-        sddm.autoNumlock = true;
-      };
 
       power-profiles-daemon.enable = true;
     };
