@@ -28,6 +28,7 @@ in {
       networkmanagerapplet
       wofi
       xdg-desktop-portal-hyprland
+      playerctl
     ];
 
     services.logind.extraConfig = ''

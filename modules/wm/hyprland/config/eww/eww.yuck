@@ -8,7 +8,14 @@
            :stacking "fg"
            :exclusive false
            :focusable false
-  (workspaces)
+  (topbar)
+)
+
+(defwidget topbar []
+  (box :class "topbar"
+    (clock)
+    (workspaces)
+  )
 )
 
 (defwidget clock []
@@ -19,15 +26,10 @@
 
 (defwidget workspaces []
   (box :class "workspaces"
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
-    (button :class "workspace-button")
+    (button :class "workspace-button" "◇")
+    (button :class "workspace-button" "◆")
+    (button :class "workspace-button" "◇")
+    (button :class "workspace-button" "◇")
+    (button :class "workspace-button" "◇")
   )
 )
