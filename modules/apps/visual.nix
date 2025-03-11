@@ -32,6 +32,7 @@ in {
       krita
       libreoffice
       mullvad-vpn
+      okular
       parsec-bin
       qbittorrent
       reaper
