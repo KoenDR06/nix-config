@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: {
-  environment.systemPackages = with pkgs [
+  environment.systemPackages = with pkgs; [
     gcc
   ];
   programs.neovim = {
