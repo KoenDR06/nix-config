@@ -20,8 +20,7 @@ in {
     systemd.timers."enable-wol" = {
       wantedBy = ["timers.target"];
       timerConfig = {
-        OnBootSec = "5m";
-        OnUnitActiveSec = "1m";
+        OnBootSec = "10s";
         Unit = "enable-wol.service";
       };
     };
