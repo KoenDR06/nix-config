@@ -43,7 +43,6 @@
       luna = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs outputs;
-          headless = false;
         };
         modules = [
           ./machines/luna/configuration.nix
@@ -57,7 +56,6 @@
       terra = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs outputs;
-          headless = false;
         };
         modules = [
           ./machines/terra/configuration.nix
@@ -71,7 +69,6 @@
       solis = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs outputs;
-          headless = true;
         };
         modules = [
           ./machines/solis/configuration.nix
