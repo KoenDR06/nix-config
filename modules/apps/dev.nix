@@ -34,7 +34,6 @@ in {
         python313
         sqlite
         sqlitebrowser
-        tmux
         xclip
       ];
     };

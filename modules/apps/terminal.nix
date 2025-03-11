@@ -35,6 +35,7 @@ in {
       sops
       sxiv
       termdown
+      tmux
       unzip
       wakeonlan
     ];
