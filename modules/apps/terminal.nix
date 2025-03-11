@@ -29,6 +29,7 @@ in {
       ethtool
       file
       fzf
+      gcc
       btop
       gnupg
       neofetch
