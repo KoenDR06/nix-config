@@ -29,6 +29,7 @@ in {
       wofi
       xdg-desktop-portal-hyprland
       playerctl
+      hyprlock
     ];
 
     services.logind.extraConfig = ''
