@@ -30,6 +30,7 @@ in {
       xdg-desktop-portal-hyprland
       playerctl
       hyprlock
+      brightnessctl
     ];
 
     services.logind.extraConfig = ''
