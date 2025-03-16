@@ -31,6 +31,7 @@ in {
       playerctl
       hyprlock
       brightnessctl
+      swaybg
     ];
 
     services.logind.extraConfig = ''
