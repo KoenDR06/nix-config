@@ -1,0 +1,12 @@
+(defpoll workspace
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j activeworkspace | jq '.id'"
+)
+
+(defpoll time
+  :interval "1s"
+  :initial-value ""
+  "date +'%H:%M:%S'"
+)
+
