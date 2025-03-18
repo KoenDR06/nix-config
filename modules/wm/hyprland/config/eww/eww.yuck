@@ -1,3 +1,5 @@
+(include "/home/horseman/.config/eww/vars.yuck")
+
 (defwindow main
   :monitor 0
   :geometry (geometry
@@ -10,5 +12,21 @@
   :exclusive false
   :focusable false
   
-  (box {workspace})
+  (workspaces)
+)
+
+(defwidget workspaces []
+  (box :class="workspaces"
+    ("a")
+    (button :onclick "hyprctl dispatch workspace 1"  { workspace == 1  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 2"  { workspace == 2  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 3"  { workspace == 3  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 4"  { workspace == 4  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 5"  { workspace == 5  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 6"  { workspace == 6  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 7"  { workspace == 7  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 8"  { workspace == 8  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 9"  { workspace == 9  ? "◆" : "◇" })
+    (button :onclick "hyprctl dispatch workspace 10" { workspace == 10 ? "◆" : "◇" })
+  )
 )

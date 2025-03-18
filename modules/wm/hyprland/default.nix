@@ -32,6 +32,7 @@ in {
       hyprlock
       brightnessctl
       swaybg
+      jq
     ];
 
     services.logind.extraConfig = ''

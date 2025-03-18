@@ -1,12 +1,71 @@
-(defpoll workspace
-  :interval '0.1s'
-  :initial-value ""
-  "hyprctl -j activeworkspace | jq '.id'"
-)
-
 (defpoll time
   :interval "1s"
   :initial-value ""
   "date +'%H:%M:%S'"
 )
 
+(defpoll workspace
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j activeworkspace | jq '.id'"
+)
+
+(defpoll windows-1
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 1 | wc -l"
+)
+
+(defpoll windows-2
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 2 | wc -l"
+)
+
+(defpoll windows-3
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 3 | wc -l"
+)
+
+(defpoll windows-4
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 4 | wc -l"
+)
+
+(defpoll windows-5
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 5 | wc -l"
+)
+
+(defpoll windows-6
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 6 | wc -l"
+)
+
+(defpoll windows-7
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 7 | wc -l"
+)
+
+(defpoll windows-8
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 8 | wc -l"
+)
+
+(defpoll windows-9
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 9 | wc -l"
+)
+
+(defpoll windows-10
+  :interval '0.1s'
+  :initial-value ""
+  "hyprctl -j clients | jq '[].workspace.id' | grep -w 10 | wc -l"
+)
