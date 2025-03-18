@@ -42,7 +42,8 @@ in {
     system.activationScripts.script.text = ''
       cd /home/horseman;
       rm -r .config/hypr .config/eww;
-      cp -r nix-config/modules/wm/hyprland/config/* .config
+      cp -r nix-config/modules/wm/hyprland/config/* .config;
+      chown -R horseman:users .config/hypr .config/eww
     '';
   };
 }
