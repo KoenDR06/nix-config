@@ -12,21 +12,37 @@
   :exclusive false
   :focusable false
   
-  (workspaces)
+  (topbar)
+)
+
+(defwidget topbar []
+  (centerbox :class="topbar"
+    ("a")
+    {time}
+    (workspaces)
+    (utils)
+  )
+)
+
+(defwidget utils []
+  (box :class="utils"
+    ("a")
+    {battery}
+  )
 )
 
 (defwidget workspaces []
   (box :class="workspaces"
     ("a")
-    (button :onclick "hyprctl dispatch workspace 1"  { workspace == 1  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 2"  { workspace == 2  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 3"  { workspace == 3  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 4"  { workspace == 4  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 5"  { workspace == 5  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 6"  { workspace == 6  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 7"  { workspace == 7  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 8"  { workspace == 8  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 9"  { workspace == 9  ? "◆" : "◇" })
-    (button :onclick "hyprctl dispatch workspace 10" { workspace == 10 ? "◆" : "◇" })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 1"  { workspace == 1  ? "◆" : windows-1 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 2"  { workspace == 2  ? "◆" : windows-2 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 3"  { workspace == 3  ? "◆" : windows-3 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 4"  { workspace == 4  ? "◆" : windows-4 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 5"  { workspace == 5  ? "◆" : windows-5 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 6"  { workspace == 6  ? "◆" : windows-6 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 7"  { workspace == 7  ? "◆" : windows-7 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 8"  { workspace == 8  ? "◆" : windows-8 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 9"  { workspace == 9  ? "◆" : windows-9 })
+    (button :class "workspace" :onclick "hyprctl dispatch workspace 10" { workspace == 10 ? "◆" : windows-10 })
   )
 )

@@ -3,7 +3,7 @@ $text-color: rgba(255, 255, 255, 1);
 $main-color: rgba(255, 0, 0, 1);
 $accent-color: rgba(0, 255, 0, 1);
 
-$font-size: 2.5rem;
+$font-size: 1.25rem;
 
 * {
   margin: 0.25rem;
@@ -14,4 +14,8 @@ window {
   border-radius: 2.5rem;
 
   font-size: $font-size;
+}
+
+.workspace {
+  background: rgba(0, 0, 0, 0);
 }

@@ -1,9 +1,25 @@
+; ---- TIME ----
 (defpoll time
   :interval "1s"
   :initial-value ""
   "date +'%H:%M:%S'"
 )
 
+
+
+; ---- SYSTRAY ----
+(defpoll battery
+  :interval "10s"
+  :initial-value ""
+  "./scripts/battery.sh"
+)
+
+(defpoll wifi
+  :interval "1s"
+)
+
+
+; ---- WORKSPACES ----
 (defpoll workspace
   :interval '0.1s'
   :initial-value ""
@@ -13,59 +29,59 @@
 (defpoll windows-1
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 1 | wc -l"
+  "./scripts/windows.sh 1"
 )
 
 (defpoll windows-2
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 2 | wc -l"
+  "./scripts/windows.sh 2"
 )
 
 (defpoll windows-3
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 3 | wc -l"
+  "./scripts/windows.sh 3"
 )
 
 (defpoll windows-4
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 4 | wc -l"
+  "./scripts/windows.sh 4"
 )
 
 (defpoll windows-5
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 5 | wc -l"
+  "./scripts/windows.sh 5"
 )
 
 (defpoll windows-6
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 6 | wc -l"
+  "./scripts/windows.sh 6"
 )
 
 (defpoll windows-7
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 7 | wc -l"
+  "./scripts/windows.sh 7"
 )
 
 (defpoll windows-8
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 8 | wc -l"
+  "./scripts/windows.sh 8"
 )
 
 (defpoll windows-9
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 9 | wc -l"
+  "./scripts/windows.sh 9"
 )
 
 (defpoll windows-10
   :interval '0.1s'
   :initial-value ""
-  "hyprctl -j clients | jq '[].workspace.id' | grep -w 10 | wc -l"
+  "./scripts/windows.sh 10"
 )
