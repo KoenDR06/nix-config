@@ -34,6 +34,7 @@ in {
         capture-config = "nix run github:pjones/plasma-manager > ~/nix-config/modules/wm/plasma/default.nix";
         reboot-to-windows = "sudo efibootmgr -n 0000";
         mkdir = "mkdir -p";
+        l = "ls -lAh --group-directories-first";
       };
 
       ohMyZsh = {
