@@ -3,19 +3,21 @@ $text-color: rgba(255, 255, 255, 1);
 $main-color: rgba(255, 0, 0, 1);
 $accent-color: rgba(0, 255, 0, 1);
 
-$font-size: 1.25rem;
+$font-size: 20px;
 
 * {
-  margin: 0.25rem;
+  margin: 4px;
+  background: rgba(0, 0, 0, 0)
 }
 
 window {
   background-color: $bg-color;
-  border-radius: 2.5rem;
+  border-radius: 30px;
 
   font-size: $font-size;
 }
 
-.workspace {
-  background: rgba(0, 0, 0, 0);
+.time {
+  border: 1px solid red;
+  border-radius: 15px;
 }

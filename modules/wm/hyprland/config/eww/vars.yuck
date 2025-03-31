@@ -14,74 +14,71 @@
   "./scripts/battery.sh"
 )
 
-(defpoll wifi
-  :interval "1s"
-)
 
 
 ; ---- WORKSPACES ----
-(defpoll workspace
-  :interval '0.1s'
-  :initial-value ""
-  "hyprctl -j activeworkspace | jq '.id'"
-)
-
-(defpoll windows-1
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 1"
-)
-
-(defpoll windows-2
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 2"
-)
-
-(defpoll windows-3
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 3"
-)
-
-(defpoll windows-4
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 4"
-)
-
-(defpoll windows-5
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 5"
-)
-
-(defpoll windows-6
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 6"
-)
-
-(defpoll windows-7
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 7"
-)
-
-(defpoll windows-8
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 8"
-)
-
-(defpoll windows-9
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 9"
-)
-
-(defpoll windows-10
-  :interval '0.1s'
-  :initial-value ""
-  "./scripts/windows.sh 10"
-)
+;(defpoll workspace
+;  :interval '0.1s'
+;  :initial-value ""
+;  "hyprctl -j activeworkspace | jq '.id'"
+;)
+;
+;(defpoll windows-1
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 1"
+;)
+;
+;(defpoll windows-2
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 2"
+;)
+;
+;(defpoll windows-3
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 3"
+;)
+;
+;(defpoll windows-4
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 4"
+;)
+;
+;(defpoll windows-5
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 5"
+;)
+;
+;(defpoll windows-6
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 6"
+;)
+;
+;(defpoll windows-7
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 7"
+;)
+;
+;(defpoll windows-8
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 8"
+;)
+;
+;(defpoll windows-9
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 9"
+;)
+;
+;(defpoll windows-10
+;  :interval '0.1s'
+;  :initial-value ""
+;  "./scripts/windows.sh 10"
+;)
