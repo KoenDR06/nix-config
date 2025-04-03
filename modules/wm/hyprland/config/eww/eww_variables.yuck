@@ -11,11 +11,16 @@
   `echo $(whoami)@$(hostname)`
 )
 
+(defpoll time
+  :interval "1s"
+  :initial-value ""
+  "date +'%H:%M:%S'"
+)
+
 (defpoll TODAY :interval "1s" `date +%m/%d/%y`)
 (defpoll distro :interval "12h" "awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }'")
 (defpoll de :interval "12h" "echo $XDG_CURRENT_DESKTOP")
 (defpoll shell :interval "5m" "echo $SHELL | awk -F'/' '{print $NF}'")
-(defpoll uptime :interval "30s" "./scripts/uptime.sh")
 (defpoll packages :interval "5m" "pacman -Q | wc -l")
 
 ;;;; NOTES, MUSIC, NETWORKING

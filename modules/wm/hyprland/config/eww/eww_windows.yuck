@@ -69,19 +69,6 @@
                       :anchor "top left")
 (appbar))
 
-;;;; Big Calendar Window
-
-(defwindow calendar
-  :wm-ignore: true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "20px"
-                      :y "415px"
-                      :width "240px"
-                      :height "160px"
-                      :anchor "top left")
-(cal))
-
 ;;;; Favorite Locations Window
 
 (defwindow favorites

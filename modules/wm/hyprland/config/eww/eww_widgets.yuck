@@ -24,11 +24,6 @@
     (button :onclick "pcmanfm ~/Downloads &" "")
     (button :onclick "pcmanfm ~/Pictures &" "")))
 
-;;;; Big Calendar Widget
-
-(defwidget cal []
-  (calendar :halign "center" :valign "center" :class "cal" :month 10 :year 2021))
-
 ;;;; Small date in mm/dd/yy format
 
 (defwidget smalldate []
@@ -54,7 +49,7 @@
       (label :style "color: #b48ead;" :halign "start" :text ": ${distro}")
       (label :style "color: #ebcb8b;" :halign "start" :text ": Hyprland")
       (label :style "color: #80a0c0;" :halign "start" :text ": ${shell}")
-      (label :style "color: #b48ead;" :halign "start" :text ": ${uptime}")
+      (label :style "color: #b48ead;" :halign "start" :text ": ${time}")
       ))))
 
 ;;;; System Information Widget
@@ -73,12 +68,11 @@
     (label :class "quote-text" :text "${quote_text}" :wrap true)))
 
 ;;;; QuickSettings widget
-
 (defwidget quicksettings []
   (box :orientation "h" :space-evenly true :class "quicksettings" :spacing "10" :halign "center" :valign "center"
-    (button :style "color: #5e81ac;" :onclick "mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_format=mjpeg av://v4l2:/dev/video0 &" (image :path "/home/horsema" :width 32 :height 32))
-    (button :style "color: #81a1c1; padding-left: 3px;" :onclick "pavucontrol &" (image :path "images/audio-headphones.svg" :width 32 :height 32))
-    (button :style "color: #b48ead;" :onclick "sh ~/.config/eww/scripts/airplane_mode.sh &" (image :path "images/network-card.svg" :width 32 :height 32))))
+    (button :onclick "playerctl previous &"   (image :path "images/prev.svg" :width 32 :height 32))
+    (button :onclick "playerctl play-pause &" (image :path "images/play.svg" :width 32 :height 32))
+    (button :onclick "playerctl next &"       (image :path "images/next.svg" :width 32 :height 32))))
 
 ;;;; AppBar widget
 (defwidget appbar []
