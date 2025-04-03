@@ -1,8 +1,8 @@
-;;;; QUOTE
+(defvar hostname "")
 
-(defpoll quote_text :interval "3600s" `./scripts/quote.sh`)
+(defpoll quote_text :interval "3600s" `fortune -n 90 -s`)
 
-;;;; FETCH AND DATE
+(defpoll gpu_load :interval "1s" `gpustat --json | jq '.gpus[]."utilization.gpu"'`)
 
 (defpoll host
   :initial-value ""
@@ -17,15 +17,9 @@
   "date +'%H:%M:%S'"
 )
 
-(defpoll TODAY :interval "1s" `date +%m/%d/%y`)
-(defpoll distro :interval "12h" "awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }'")
-(defpoll de :interval "12h" "echo $XDG_CURRENT_DESKTOP")
-(defpoll shell :interval "5m" "echo $SHELL | awk -F'/' '{print $NF}'")
-(defpoll packages :interval "5m" "pacman -Q | wc -l")
+(defpoll TODAY :interval "1s" `date +'%d %b %y'`)
+(defpoll distro :interval "12h" `nixos-version | sed -r 's/^(.....).*?\\((.*?)\\)/NixOS \\1/'`)
 
-;;;; NOTES, MUSIC, NETWORKING
-
-(defpoll NOTES :interval "1s" "cat -s ~/Documents/notes.txt")
 (defpoll music_current :interval "1s" "mpc current")
 (defpoll ssid :interval "1s" "iwgetid -r || echo 'Disconnected'")
 

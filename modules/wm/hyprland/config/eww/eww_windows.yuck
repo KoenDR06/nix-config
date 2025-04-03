@@ -65,35 +65,9 @@
   :geometry (geometry :x "20"
                       :y "335px"
                       :width "170px"
-                      :height "70px"
+                      :height "74px"
                       :anchor "top left")
 (appbar))
-
-;;;; Favorite Locations Window
-
-(defwindow favorites
-  :wm-ignore: true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "270px"
-                      :y "415px"
-                      :width "100px"
-                      :height "160px"
-                      :anchor "top left")
-(favorites))
-
-;;;; Small date Window
-
-(defwindow smalldate
-  :wm-ignore: true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "270px"
-                      :y "580px"
-                      :width "100px"
-                      :height "39px"
-                      :anchor "top left")
-(smalldate))
 
 ;;;; Background Container Window
 (defwindow bg
@@ -107,18 +81,6 @@
                       :height "800px"
                       :anchor "top left")
 (bg))
-
-;;;; TODO Notes window
-(defwindow notes
-  :wm-ignore: true
-  :monitor 0
-  :windowtype "dock"
-  :geometry (geometry :x "20px"
-                      :y "630px"
-                      :width "350px"
-                      :height "100px"
-                      :anchor "top left")
-(notes))
 
 ;;;; Searching Windows
 

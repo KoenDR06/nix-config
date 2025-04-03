@@ -34,6 +34,7 @@ in {
       swaybg
       jq
       fortune
+      python312Packages.gpustat
     ];
 
     services.logind.extraConfig = ''

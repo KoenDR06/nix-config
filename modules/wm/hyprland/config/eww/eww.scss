@@ -8,14 +8,10 @@
   border: 2px solid #80A0C0;
 }
 
-.notes {
-  padding: 10px 20px 10px 5px;
-}
-
 window {
   background: #2e3440;
   color: #ebcb8b;
-  //border-radius: 2rem;
+  border-radius: 1rem;
   border: 3px solid #80A0C0;
 }
 
@@ -68,19 +64,10 @@ window {
   color: #BF616A;
 }
 
-.appbar{
-  font-size: 2rem;
-}
-
 .cal {
   color: #8fbcbb;
   padding: 5px;
   padding-bottom: 1px;
-}
-
-.favs {
-  color: #ECEFF4;
-  font-size: 2rem;
 }
 
 .small-date {

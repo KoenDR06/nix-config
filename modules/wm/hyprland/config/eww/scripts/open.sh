@@ -1,3 +1,5 @@
 #!/bin/sh
 
-eww open-many --toggle notes quote smalldate quicksettings favorites appbar fetch sys
+eww update hostname="$(hostname)"
+
+eww open-many --toggle quote quicksettings appbar fetch sys

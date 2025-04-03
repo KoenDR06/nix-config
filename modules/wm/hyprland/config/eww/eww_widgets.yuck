@@ -4,7 +4,7 @@
 (include "/home/horseman/.config/eww/eww_variables.yuck")
 
 ;;;; Metric (cpu, ram, etc bars) constructor widget
-(defwidget metric [label value onchange]
+(defwidget metric [label value ?onchange]
   (box :orientation "h" :class "metric" :space-evenly false
     (box :class "label" label)
     (scale :min 0 :max 101 :active {onchange != ""} :value value :onchange onchange)))
@@ -14,27 +14,12 @@
 (defwidget bg []
   (box :class "bg-box" :orientation "v" :space-evenly false))
 
-
-;;;; Favorite App Locations
-
-(defwidget favorites[]
-  (box :class "favs" :orientation "v" :space-evenly false :halign "center" :valign "center"
-    (button :onclick "pcmanfm ~ &" "")
-    (button :onclick "pcmanfm ~/.config/ &" "漣")
-    (button :onclick "pcmanfm ~/Downloads &" "")
-    (button :onclick "pcmanfm ~/Pictures &" "")))
-
-;;;; Small date in mm/dd/yy format
-
-(defwidget smalldate []
-  (label :class "small-date" :valign "center" :halign "center" :text TODAY))
-
 ;;;; User information fetch widget
 
 (defwidget uinfo []
   (box :class "uinfo" :orientation "v" :space-evenly false :halign "center" :valign "center"
     (label :style "color: #5e81ac;" :text {host} :halign "center" :valign "center" :wrap "false" :limit-width 25)
-    (label :style "color: #efefef;" :text "⎯⎯⎯⎯⎯⎯⎯⎯" :halign "center" :valign "center" :wrap "false" :limit-width 25)
+    (label :style "color: #efefef;" :text "─────────────" :halign "center" :valign "center" :wrap "false" :limit-width 25)
     
     ;; Tags for values
     (box :orientation "h" :space-evenly "false" :spacing 10
@@ -48,18 +33,21 @@
     (box :orientation "v"   :class "fetch"
       (label :style "color: #b48ead;" :halign "start" :text ": ${distro}")
       (label :style "color: #ebcb8b;" :halign "start" :text ": Hyprland")
-      (label :style "color: #80a0c0;" :halign "start" :text ": ${shell}")
+      (label :style "color: #80a0c0;" :halign "start" :text ": ${TODAY}")
       (label :style "color: #b48ead;" :halign "start" :text ": ${time}")
       ))))
 
 ;;;; System Information Widget
 
-(defwidget sys[]
+(defwidget sys []
   (box :class "cpu" :orientation "v" :space-evenly false :halign "center" :valign "center"
-    (metric :label "﬙" :value {EWW_CPU.avg} :onchange "")
-    (metric :label "" :value {EWW_RAM.used_mem_perc} :onchange "")
-    (metric :label "龍" :value {(EWW_NET.wlan0.NET_UP)/100} :onchange "")
-    (metric :label "" :value {(EWW_DISK["/"].free / EWW_DISK["/"].total) * 100} :onchange "")))
+    (box :space-evenly false (image :path "images/cpu.svg")(metric :label "" :value {EWW_CPU.avg}) )
+    (box :space-evenly false (image :path "images/ram.svg")(metric :label "" :value {EWW_RAM.used_mem_perc}) )
+    (box :space-evenly false (image :path "images/disk.svg")(metric :label "" :value {EWW_DISK["/"].used_perc}) )
+    (box :space-evenly false :visible { hostname == "luna" } (image :path { EWW_BATTERY.BAT1.status == "Discharging" ? "images/battery.svg" : "images/charging.svg" })(metric :label "" :value {EWW_CPU.avg}) )
+    (box :space-evenly false :visible { hostname == "terra" } (image :path "images/gpu.svg")(metric :label "" :value gpu_load) )
+  )
+)
 
 ;;;; Random Quote Widget
 
@@ -70,26 +58,18 @@
 ;;;; QuickSettings widget
 (defwidget quicksettings []
   (box :orientation "h" :space-evenly true :class "quicksettings" :spacing "10" :halign "center" :valign "center"
-    (button :onclick "playerctl previous &"   (image :path "images/prev.svg" :width 32 :height 32))
-    (button :onclick "playerctl play-pause &" (image :path "images/play.svg" :width 32 :height 32))
-    (button :onclick "playerctl next &"       (image :path "images/next.svg" :width 32 :height 32))))
+    (button :onclick "playerctl previous &"   (image :path "images/prev.svg"))
+    (button :onclick "playerctl play-pause &" (image :path "images/play.svg"))
+    (button :onclick "playerctl next &"       (image :path "images/next.svg"))))
 
 ;;;; AppBar widget
 (defwidget appbar []
-  (box :orientation "h" :space-evenly true :class "appbar" :spacing "5" :halign "center" :valign "center"
-    (button :style "color: #5e81ac;" :onclick "krita&" (image :path "images/krita.svg" :width 32 :height 32))
-    (button :style "color: #81a1c1;" :onclick "firefox&" (image :path "images/firefox.svg" :width 32 :height 32))
-    (button :style "color: #b48ead;" :onclick "vscodium&" (image :path "images/vscode.svg" :width 32 :height 32))
-    (button :style "color: #bf616a;" :onclick "gimp&" (image :path "images/gimp.svg" :width 32 :height 32))))
-
-;;;; TODO Notes Displaying widget
-
-(defwidget notes []
-  (box :spacing 5 :class "notes" :orientation "v" :space-evenly false :halign "center" :valign "center"
-    (label :style "color: #5e81ac;" :text NOTES :halign "center" :valign "center" :wrap true :limit-width 150 :vexpand false :hexpand false)
-    (box :orientation "h"
-      (button :onclick "echo '' > ~/Documents/notes.txt" "[ Empty ]")
-      (button :onclick "pcmanfm ~/Documents/notes.txt" "[ Edit TODO ]"))))
+  (box :orientation "h" :space-evenly false :class "appbar" :spacing "10" :halign "center" :valign "center"
+    (button :onclick "firefox &" (image :path "images/firefox.svg"))
+    (button :onclick "kitty vim &" (image :path "images/vim.svg"))
+    (button :onclick "kitty &" (image :path "images/kitty.svg"))
+  )
+)
 
 ;;;; Rofi style search
 (defwidget searchapps []
