@@ -33,6 +33,7 @@ in {
       brightnessctl
       swaybg
       jq
+      fortune
     ];
 
     services.logind.extraConfig = ''
