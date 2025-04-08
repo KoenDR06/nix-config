@@ -44,7 +44,7 @@
     (box :space-evenly false (image :path "images/cpu.svg")(metric :label "" :value {EWW_CPU.avg}) )
     (box :space-evenly false (image :path "images/ram.svg")(metric :label "" :value {EWW_RAM.used_mem_perc}) )
     (box :space-evenly false (image :path "images/disk.svg")(metric :label "" :value {EWW_DISK["/"].used_perc}) )
-    (box :space-evenly false :visible { hostname == "luna" } (image :path { EWW_BATTERY.BAT1.status == "Discharging" ? "images/battery.svg" : "images/charging.svg" })(metric :label "" :value {EWW_CPU.avg}) )
+    (box :space-evenly false :visible { hostname == "luna" } (image :path { EWW_BATTERY.BAT1.status == "Discharging" ? "images/battery.svg" : "images/charging.svg" })(metric :label "" :value {EWW_BATTERY.BAT1.capacity}) )
     (box :space-evenly false :visible { hostname == "terra" } (image :path "images/gpu.svg")(metric :label "" :value gpu_load) )
   )
 )
