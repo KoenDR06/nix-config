@@ -35,6 +35,7 @@ in {
       jq
       fortune
       python312Packages.gpustat
+      hyprshot
     ];
 
     services.logind.extraConfig = ''
