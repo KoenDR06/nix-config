@@ -33,6 +33,7 @@ in {
       btop
       gnupg
       neofetch
+      nodejs_22
       sops
       sxiv
       termdown
