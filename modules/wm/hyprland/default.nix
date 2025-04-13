@@ -36,6 +36,7 @@ in {
       fortune
       python312Packages.gpustat
       hyprshot
+      pulsemixer
     ];
 
     services.logind.extraConfig = ''

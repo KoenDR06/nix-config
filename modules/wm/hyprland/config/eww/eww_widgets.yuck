@@ -11,8 +11,22 @@
 
 ;;;; Background Black Holder Widget
 
-(defwidget bg []
-  (box :class "bg-box" :orientation "v" :space-evenly false))
+(defwidget power []
+  (centerbox :class "bg-box"
+    (box :orientation "h" :space-evenly false :valign "center" :halign "start" :spacing 5
+      (button :onclick "kitty -T 'confirm-script' ~/.config/eww/scripts/confirm.sh 'shutdown now' &" (image :path "images/shutdown.svg"))
+      (button :onclick "kitty -T 'confirm-script' ~/.config/eww/scripts/confirm.sh 'reboot' &" (image :path "images/reboot.svg"))
+      (button :onclick "hyprlock" (image :path "images/lock.svg"))
+    )
+
+    ""
+
+    (box :orientation "h" :space-evenly false :valign "center" :halign "end" :spacing 5
+      (button :onclick "kitty pulsemixer &" (image :path {sound} ))
+      (button :onclick "" (image :path "images/ethernet.svg"))
+    )
+  )
+)
 
 ;;;; User information fetch widget
 
@@ -23,18 +37,19 @@
     
     ;; Tags for values
     (box :orientation "h" :space-evenly "false" :spacing 10
-        (box :orientation "v" :class "fetch" :spacing 2
-          (label :style "font-family: 'archcraft'; color: #b48ead;" :halign "end" :text "")
-          (label :style "color: #ebcb8b;" :halign "end" :text "缾")
-          (label :style "color: #80a0c0;" :halign "end" :text "")
-          (label :style "color: #b48ead;" :halign "end" :text ""))
+      (box :orientation "v" :class "fetch" :spacing 2
+        (image :path "images/workspace.svg")
+        (image :path "images/window.svg")
+        (image :path "images/date.svg")
+        (image :path "images/time.svg")
+      )
     
     ;; Fetch Values
-    (box :orientation "v"   :class "fetch"
-      (label :style "color: #b48ead;" :halign "start" :text ": ${distro}")
-      (label :style "color: #ebcb8b;" :halign "start" :text ": Hyprland")
-      (label :style "color: #80a0c0;" :halign "start" :text ": ${TODAY}")
-      (label :style "color: #b48ead;" :halign "start" :text ": ${time}")
+    (box :orientation "v" :class "fetch"
+      (label :style "color: #b48ead;" :halign "start" :text " Workspace ${workspace}")
+      (label :style "color: #ebcb8b;" :halign "start" :text " ${clients} Windows")
+      (label :style "color: #80a0c0;" :halign "start" :text " ${TODAY}")
+      (label :style "color: #b48ead;" :halign "start" :text " ${time}")
       ))))
 
 ;;;; System Information Widget
@@ -51,7 +66,7 @@
 
 ;;;; Random Quote Widget
 
-(defwidget quote[]
+(defwidget quote []
   (box :class "quote" :orientation "v" :space-evenly false :halign "center" :valign "center"
     (label :class "quote-text" :text "${quote_text}" :wrap true)))
 
@@ -71,49 +86,3 @@
   )
 )
 
-;;;; Rofi style search
-(defwidget searchapps []
-  (eventbox :onhoverlost "eww close searchapps"
-    (box :orientation "v" :space-evenly false :class "search-win" :halign "top" :valign "top"
-      (box :orientation "h" :space-evenly false :class "searchapps-bar" :halign "top" :valign "top"
-        (label :class "search-label" :text "")
-        (input :class "search-bar" :onchange "~/.config/eww/scripts/search.sh {}"))
-      (literal :halign "center" :valign "center" :class "app-container" :content search_listen))))
-
-;;;; Rofi style powermenu
-(defwidget bigpowermenu []
-  (box :orientation "h" :space-evenly false :class "bigpowermenu" :halign "center" :valign "center" :spacing 20
-    (button :style "color: #d8dee9;" :class "shutdown" :onrightclick "systemctl poweroff" "")
-    (button :style "color: #e5e9f0;" :class "reboot" :onrightclick "systemctl reboot" "")
-    (button :style "color: #eceff4;" :class "lock" :onrightclick "bsplock" "")
-    (button :style "color: #e8e8e8;" :class "suspend" :onrightclick "mpc -q pause & amixer set Master mute & systemctl suspend" "")
-    (button :style "color: #ffffff;" :class "logout" :onrightclick "bspc quit" "")))
-
-;;;; Music Player
-(defwidget musicplayer []
-
-  (box :orientation "v" :space-evenly false :class "musicplayer" :halign "center" :valign "center" :hexpand true :vexpand true  
-    (label :class "label-control" :text "${music_current}" :halign "center" :limit-width 50 :show-truncated true :hexpand true :vexpand true)
-    (box :orientation "h" :space-evenly false :class "controls" :halign "center" :valign "center" :spacing 20
-         (button :style "color: #d8dee9;" :onclick "mpc -q toggle && notify-send -u low -t 1800 ${music_current}" "懶")
-         (button :style "color: #e5e9f0;" :onclick "mpc -q stop" "")
-         (button :style "color: #eceff4;" :onclick "mpc -q next && notify-send -u low -t 1800 ${music_current}" "")
-         (button :style "color: #e8e8e8;" :onclick "mpc -q prev && notify0send -u low -t 1800 ${music_current}" ""))))
-
-(defwidget network []
-
-  (box :orientation "v" :space-evenly false :class "network" :halign "center" :valign "center" :hexpand true :vexpand true  
-    (label :class "label-control" :text "${ssid}" :halign "center" :limit-width 50 :show-truncated true :hexpand true :vexpand true)
-    (box :orientation "h" :space-evenly false :class "controls" :halign "center" :valign "center" :spacing 20
-         (button :style "color: #d8dee9;" :onclick "sh ~/.config/eww/scripts/airplane_mode.sh" "")
-         (button :style "color: #e5e9f0;" :onclick "alacritty --class 'alacritty-float,alacritty-float' -e bmon &" "")
-         (button :style "color: #eceff4;" :onclick "alacritty --class 'alacritty-float,alacritty-float' -e nmtui &" "")
-         (button :style "color: #e8e8e8;" :onclick "nm-connection-editor &" ""))))
-
-(defwidget screenshot []
-
-  (box :orientation "v" :space-evenly false :class "network" :halign "center" :valign "center" :hexpand true :vexpand true  
-    (label :class "label-control" :text "  Screenshot" :halign "center" :limit-width 50 :show-truncated true :hexpand true :vexpand true)
-    (box :orientation "h" :space-evenly false :class "controls" :halign "center" :valign "center" :spacing 20
-         (button :style "color: #d8dee9;" :onclick "eww close screenshot && ~/.config/eww/scripts/screenshot 'SCREEN'"  "")
-         (button :style "color: #e5e9f0;" :onclick "eww close screenshot && ~/.config/eww/scripts/screenshot 'SELECT'" ""))))

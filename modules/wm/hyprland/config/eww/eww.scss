@@ -3,11 +3,6 @@
   font-family: "JetBrains Mono";
 }
 // WINDOW RELATED CSS
-.bg {
-  background-color: #1E222A;
-  border: 2px solid #80A0C0;
-}
-
 window {
   background: #2e3440;
   color: #ebcb8b;
@@ -20,7 +15,7 @@ window {
   font-size: 1.25rem;
 }
 .cpu {
-  padding: 19px;
+  padding: 19px 1px;
 }
 
 // METRIC LOOKS
@@ -46,12 +41,8 @@ window {
 }
 
 // POWERMENU
-.bigpowermenu {
-  font-size: 3rem;
-}
-
-.quicksettings {
-  font-size: 1.75rem;
+.power {
+  padding: 0px 9px;
 }
 
 // WIDGET MISC SETTINGS

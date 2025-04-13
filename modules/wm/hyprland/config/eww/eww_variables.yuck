@@ -14,14 +14,30 @@
 (defpoll time
   :interval "1s"
   :initial-value ""
-  "date +'%H:%M:%S'"
+
+  `date +'%H:%M:%S'`
+)
+
+(defpoll workspace
+  :interval "1s"
+  :initial-value ""
+
+  `hyprctl activeworkspace -j | jq '.name' | sed -e 's/"//g'`
+)
+
+(defpoll clients
+  :interval "1s"
+  :initial-value ""
+
+  `hyprctl clients -j | jq '.[].address' | wc -l`
 )
 
 (defpoll TODAY :interval "1s" `date +'%d %b %y'`)
 (defpoll distro :interval "12h" `nixos-version | sed -r 's/^(.....).*?\\((.*?)\\)/NixOS \\1/'`)
 
-(defpoll music_current :interval "1s" "mpc current")
-(defpoll ssid :interval "1s" "iwgetid -r || echo 'Disconnected'")
+(defpoll sound
+  :interval "1s"
+  :initial-value "images/sound-lo.svg"
 
-;;;; App list LISTEN VAR
-(defpoll search_listen :interval "5m" "scripts/search_items.txt")
+  `./scripts/volume.sh`
+)
