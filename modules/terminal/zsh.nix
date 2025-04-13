@@ -35,6 +35,7 @@ in {
         reboot-to-windows = "sudo efibootmgr -n 0000";
         mkdir = "mkdir -p";
         l = "ls -lAh --group-directories-first";
+        zip = "zip -r";
       };
 
       ohMyZsh = {

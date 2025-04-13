@@ -39,6 +39,7 @@ in {
       tmux
       unzip
       wakeonlan
+      zip
     ];
 
     environment.sessionVariables = rec {
