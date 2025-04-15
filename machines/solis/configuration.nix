@@ -14,7 +14,10 @@
 
   horseman.username = "horseman";
 
-  networking.hostName = "solis";
+  networking = {
+    hostName = "solis";
+    firewall.allowedTCPPorts = [80 443];
+  };
 
   system.stateVersion = "24.11";
 }
