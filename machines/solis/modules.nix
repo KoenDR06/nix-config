@@ -32,6 +32,7 @@
 
     apps = {
       terminal.enable = true;
+      server.enable = true;
     };
 
     terminal = {

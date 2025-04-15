@@ -6,5 +6,7 @@
 
     ./visual.nix
     ./visual/firefox.nix
+
+    ./server.nix
   ];
 }
