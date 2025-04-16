@@ -16,7 +16,7 @@
 
   networking.hostName = "solis";
 
-  networking.firewall.allowedTCPPorts = [3000];
+  networking.firewall.allowedTCPPorts = [3000 3001];
 
   system.stateVersion = "24.11";
 }
