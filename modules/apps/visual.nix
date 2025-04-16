@@ -27,7 +27,6 @@ in {
       discord-ptb
       gnome-calculator
       inkscape
-      keepassxc
       kitty
       krita
       libreoffice
