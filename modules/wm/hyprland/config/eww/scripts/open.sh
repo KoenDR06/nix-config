@@ -2,4 +2,4 @@
 
 eww update hostname="$(hostname)"
 
-eww open-many --toggle quote quicksettings appbar fetch sys power
+eww open-many quote quicksettings appbar fetch sys power
