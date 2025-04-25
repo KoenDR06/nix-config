@@ -24,6 +24,7 @@ in {
     services.lorri.enable = true;
 
     environment.systemPackages = with pkgs; [
+      bat
       direnv
       docker-compose
       ethtool

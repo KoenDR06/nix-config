@@ -36,6 +36,7 @@ in {
         mkdir = "mkdir -p";
         l = "ls -lAh --group-directories-first";
         zip = "zip -r";
+        cat = "bat";
       };
 
       ohMyZsh = {
