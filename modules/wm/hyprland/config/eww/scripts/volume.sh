@@ -7,7 +7,7 @@ if (( $volume == 0 )); then
   exit 0
 fi
 
-if (( $volume < 20 )); then
+if (( $volume < 50 )); then
   echo 'images/sound-lo.svg'
   exit 0
 fi

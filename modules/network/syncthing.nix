@@ -22,7 +22,7 @@ in {
       dataDir = "/home/horseman";
       configDir = "/home/horseman/.config/syncthing";
       overrideDevices = true;
-      overrideFolders = true;
+      # overrideFolders = true;
       settings = {
         options = {
           urAccepted = -1;

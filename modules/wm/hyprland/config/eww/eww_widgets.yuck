@@ -9,21 +9,19 @@
     (box :class "label" label)
     (scale :min 0 :max 101 :active {onchange != ""} :value value :onchange onchange)))
 
-;;;; Background Black Holder Widget
-
 (defwidget power []
   (centerbox :class "bg-box"
     (box :orientation "h" :space-evenly false :valign "center" :halign "start" :spacing 5
-      (button :onclick "kitty -T 'confirm-script' ~/.config/eww/scripts/confirm.sh 'shutdown now' &" (image :path "images/shutdown.svg"))
-      (button :onclick "kitty -T 'confirm-script' ~/.config/eww/scripts/confirm.sh 'reboot' &" (image :path "images/reboot.svg"))
-      (button :onclick "hyprlock" (image :path "images/lock.svg"))
+      (button :onclick "shutdown now &" (image :path "images/shutdown.svg"))
+      (button :onclick "reboot &" (image :path "images/reboot.svg"))
+      (button :onclick "hyprlock &" (image :path "images/lock.svg"))
     )
 
     ""
 
     (box :orientation "h" :space-evenly false :valign "center" :halign "end" :spacing 5
       (button :onclick "kitty pulsemixer &" (image :path {sound} ))
-      (button :onclick "" (image :path "images/ethernet.svg"))
+      (button :onclick "" (image :path {wifi}))
     )
   )
 )

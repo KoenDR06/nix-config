@@ -23,20 +23,19 @@ in {
 
     security.polkit.enable = true;
     environment.systemPackages = with pkgs; [
+      brightnessctl
       eww
-      nerdfonts
+      fortune
+      hyprlock
+      hyprshot
+      jq
       networkmanagerapplet
+      playerctl
+      pulsemixer
+      python312Packages.gpustat
+      swaybg
       wofi
       xdg-desktop-portal-hyprland
-      playerctl
-      hyprlock
-      brightnessctl
-      swaybg
-      jq
-      fortune
-      python312Packages.gpustat
-      hyprshot
-      pulsemixer
     ];
 
     services.logind.extraConfig = ''

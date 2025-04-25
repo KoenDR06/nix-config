@@ -1,6 +1,6 @@
 (defvar hostname "")
 
-(defpoll quote_text :interval "3600s" `fortune -n 90 -s`)
+(defpoll quote_text :interval "3600s" `hyprctl splash`)
 
 (defpoll gpu_load :interval "1s" `gpustat --json | jq '.gpus[]."utilization.gpu"'`)
 
@@ -36,8 +36,15 @@
 (defpoll distro :interval "12h" `nixos-version | sed -r 's/^(.....).*?\\((.*?)\\)/NixOS \\1/'`)
 
 (defpoll sound
-  :interval "1s"
+  :interval ".25s"
   :initial-value "images/sound-lo.svg"
 
   `./scripts/volume.sh`
+)
+
+(defpoll wifi
+  :interval "1s"
+  :initial-value "images/ethernet.svg"
+
+  `./scripts/wifi.sh`
 )
