@@ -30,8 +30,8 @@
 
 (defwidget uinfo []
   (box :class "uinfo" :orientation "v" :space-evenly false :halign "center" :valign "center"
-    (label :style "color: #5e81ac;" :text {host} :halign "center" :valign "center" :wrap "false" :limit-width 25)
-    (label :style "color: #efefef;" :text "─────────────" :halign "center" :valign "center" :wrap "false" :limit-width 25)
+    (label :class "uinfo-host" :text {host} :halign "center" :valign "center" :wrap "false" :limit-width 25)
+    (label :class "uinfo-hr" :text "─────────────" :halign "center" :valign "center" :wrap "false" :limit-width 25)
     
     ;; Tags for values
     (box :orientation "h" :space-evenly "false" :spacing 10
@@ -44,10 +44,10 @@
     
     ;; Fetch Values
     (box :orientation "v" :class "fetch"
-      (label :style "color: #b48ead;" :halign "start" :text " Workspace ${workspace}")
-      (label :style "color: #ebcb8b;" :halign "start" :text " ${clients} Windows")
-      (label :style "color: #80a0c0;" :halign "start" :text " ${TODAY}")
-      (label :style "color: #b48ead;" :halign "start" :text " ${time}")
+      (label :class "uinfo-ws" :halign "start" :text " Workspace ${workspace}")
+      (label :class "uinfo-win" :halign "start" :text " ${clients} Windows")
+      (label :class "uinfo-date" :halign "start" :text " ${TODAY}")
+      (label :class "uinfo-time" :halign "start" :text " ${time}")
       ))))
 
 ;;;; System Information Widget
