@@ -48,7 +48,8 @@ in {
           "git-auto-fetch"
           "wd"
         ];
-        theme = "jonathan";
+        theme = "theme";
+        custom = "/home/horseman/nix-config/config/zsh";
       };
 
       shellInit = "eval \"$(direnv hook zsh)\"";
