@@ -1,8 +1,4 @@
-{
-  inputs,
-  headless,
-  ...
-}: {
+{inputs, ...}: {
   imports = [
     ./greeter/sddm.nix
     ./refind.nix

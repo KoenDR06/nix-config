@@ -4,7 +4,6 @@
   lib,
   config,
   pkgs,
-  headless,
   ...
 }: let
   inherit (lib) mkEnableOption mkIf mkOption types;
@@ -31,7 +30,7 @@ in {
       konsole
     ];
 
-    home-manager.users.${homeCfg.username} = lib.mkIf (!headless) {
+    home-manager.users.${homeCfg.username} = {
       imports = [./config.nix];
     };
   };

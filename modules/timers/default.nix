@@ -1,8 +1,4 @@
-{
-  inputs,
-  headless,
-  ...
-}: {
+{inputs, ...}: {
   imports = [
     ./wol.nix
     ./backup.nix
