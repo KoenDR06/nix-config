@@ -5,7 +5,7 @@
 (defwindow fetch
   :wm-ignore: true
   :monitor 0
-  :windowtype "dock"
+  :stacking "overlay"
   :geometry (geometry :x "10px"
                       :y "70px"
                       :width "170px"
@@ -17,7 +17,7 @@
   :class "cpu-win"
   :wm-ignore true
   :monitor 0
-  :windowtype "dock"
+  :stacking "overlay"
   :geometry (geometry :x "190px"
                       :y "280px"
                       :width "170px"
@@ -28,7 +28,7 @@
 (defwindow quote
   :wm-ignore true
   :monitor 0
-  :windowtype "dock"
+  :stacking "overlay"
   :geometry (geometry :x "190px"
                       :y "70px"
                       :width "170px"
@@ -39,7 +39,7 @@
 (defwindow quicksettings
   :wm-ignore true
   :monitor 0
-  :windowtype "dock"
+  :stacking "overlay"
   :geometry (geometry :x "10px"
                       :y "280px"
                       :width "170px"
@@ -50,7 +50,7 @@
 (defwindow appbar
   :wm-ignore true
   :monitor 0
-  :windowtype "dock"
+  :stacking "overlay"
   :geometry (geometry :x "10px"
                       :y "355px"
                       :width "170px"
@@ -62,7 +62,7 @@
   :class "bg"
   :wm-ignore true
   :monitor 0
-  :windowtype "dock"
+  :stacking "overlay"
   :geometry (geometry :x "10px"
                       :y "10px"
                       :width "350px"
