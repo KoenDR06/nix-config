@@ -26,7 +26,10 @@ in {
       brightnessctl
       eww
       fortune
+      hypridle
       hyprlock
+      hyprpaper
+      hyprpolkitagent
       hyprshot
       jq
       networkmanagerapplet
