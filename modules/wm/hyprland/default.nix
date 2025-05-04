@@ -36,7 +36,7 @@ in {
       playerctl
       pulsemixer
       python312Packages.gpustat
-      swaybg
+      swaynotificationcenter
       wirelesstools
       wofi
       xdg-desktop-portal-hyprland
