@@ -27,8 +27,8 @@ in {
         jdk
         jetbrains.clion
         jetbrains.idea-ultimate
-        jetbrains.pycharm-professional
         jetbrains.rider
+        jetbrains.rust-rover
         jetbrains.webstorm
         mono
         nodejs_22
