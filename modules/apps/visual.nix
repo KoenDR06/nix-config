@@ -22,7 +22,6 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
-      albert
       bitwarden
       discord-ptb
       gnome-calculator
