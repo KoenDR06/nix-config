@@ -36,6 +36,7 @@ in {
       reaper
       solaar
       spotify
+      vesktop
       vlc
     ];
   };
