@@ -1,14 +1,11 @@
 #!/run/current-system/sw/bin/zsh
 
+# Documents
 cd /home/horseman
-file=backups/$(date +%Y-%m-%d).tar
-tar -cf $file Documents
+tar -cf backups/documents.tar Documents
 
-if grep -q $(sha256sum $file) backups/sum; then
-    echo 'hashes match, quitting'
-    rm $file
-    exit 0
-fi
-echo $(sha256sum $file) > backups/sum
+# Vaultwarden
+cd /home/horseman
+tar -cf backups/vaultwarden.tar docker/vaulwarden/data
 
 exit 0

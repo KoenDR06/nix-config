@@ -20,7 +20,7 @@ in {
     systemd.timers."backupSyncthing" = {
       wantedBy = ["timers.target"];
       timerConfig = {
-        OnCalendar = "weekly";
+        OnCalendar = "daily";
         Persistent = true;
       };
     };
