@@ -17,28 +17,26 @@ in {
   };
 
   config = mkIf cfg.enable {
-    home-manager.users.${homeCfg.username} = {
-      home.packages = with pkgs; [
-        dotnetCorePackages.sdk_9_0
-        gcc
-        ghex
-        haskell.compiler.native-bignum.ghcHEAD
-        haskell-language-server
-        jdk
-        jetbrains.clion
-        jetbrains.idea-ultimate
-        jetbrains.rider
-        jetbrains.rust-rover
-        jetbrains.webstorm
-        mono
-        nodejs_22
-        platformio-core
-        python313
-        sqlite
-        sqlitebrowser
-        xclip
-        uv
-      ];
-    };
+    environment.systemPackages = with pkgs; [
+      dotnetCorePackages.sdk_9_0
+      gcc
+      ghex
+      haskell.compiler.native-bignum.ghcHEAD
+      haskell-language-server
+      jdk
+      jetbrains.clion
+      jetbrains.idea-ultimate
+      jetbrains.rider
+      jetbrains.rust-rover
+      jetbrains.webstorm
+      mono
+      nodejs_22
+      platformio-core
+      python313
+      sqlite
+      sqlitebrowser
+      xclip
+      uv
+    ];
   };
 }
