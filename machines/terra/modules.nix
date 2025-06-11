@@ -20,12 +20,12 @@
 
     boot = {
       loader.systemd.enable = true;
-      greeter.cosmic.enable = true;
+      greeter.sddm.enable = true;
       refind.enable = true;
     };
 
     wm = {
-      cosmic.enable = true;
+      hyprland.enable = true;
     };
 
     hardware = {
