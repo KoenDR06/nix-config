@@ -8,7 +8,6 @@
 }: {
   imports = [
     ../../modules
-    ../../modules/boot/loader/systemd.nix
   ];
 
   config.horseman = {
