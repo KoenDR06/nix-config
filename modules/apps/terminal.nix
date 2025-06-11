@@ -18,7 +18,7 @@ in {
 
   config = mkIf cfg.enable {
     home-manager.users.${homeCfg.username} = {
-      imports = [./terminal/neovim.nix];
+      imports = [./terminal/helix.nix];
     };
 
     services.lorri.enable = true;
