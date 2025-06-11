@@ -8,7 +8,6 @@
 }: {
   imports = [
     ../../modules
-    ../../modules/boot/loader/systemd.nix
   ];
 
   config.horseman = {
@@ -21,12 +20,12 @@
 
     boot = {
       loader.systemd.enable = true;
-      greeter.sddm.enable = true;
+      greeter.cosmic.enable = true;
       refind.enable = true;
     };
 
     wm = {
-      hyprland.enable = true;
+      cosmic.enable = true;
     };
 
     hardware = {

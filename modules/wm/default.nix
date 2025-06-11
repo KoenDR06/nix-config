@@ -3,5 +3,6 @@
     ./gnome
     ./plasma
     ./hyprland
+    ./cosmic
   ];
 }
