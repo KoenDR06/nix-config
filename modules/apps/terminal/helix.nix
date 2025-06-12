@@ -6,6 +6,7 @@
 }: {
   programs.helix = {
     enable = true;
+    defaultEditor = true;
     settings = {
       theme = "catppuccin_macchiato";
       editor.cursor-shape = {
@@ -14,11 +15,6 @@
         select = "underline";
       };
     };
-    languages.language = [
-      {
-        name = "nix";
-        auto-format = false;
-      }
-    ];
+    languages.language = [];
   };
 }

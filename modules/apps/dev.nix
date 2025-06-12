@@ -29,7 +29,10 @@ in {
       jetbrains.rider
       jetbrains.rust-rover
       jetbrains.webstorm
+      kotlin
+      kotlin-language-server
       mono
+      nixd
       nodejs_22
       platformio-core
       python313
